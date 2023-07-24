@@ -48,8 +48,9 @@
         height: 100%;
     }
 
-    .wps-sm-hummingbird-logo{
+    .wps-sm-bird-logo{
         width: 90%;
+        left: 20%;
     }
 
     .wps-sm-flyingpigeon-logo{
@@ -133,18 +134,13 @@
         height: 100%;
     }
 
-    .wps-lg-finch-logo{
+    .wps-lg-bird-logo{
         width: 50%;
         left: 20%;
     }
 
     .wps-lg-raven-logo{
         width: 53%;
-    }
-
-    .wps-lg-hummingbird-logo{
-        width: 50%;
-        left: 20%;
     }
 
     .daccs-lg-logo-node{
