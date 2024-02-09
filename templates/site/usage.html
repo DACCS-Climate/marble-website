@@ -13,17 +13,15 @@
             {% set title = "Grad Students" %}
             {% set intro_content = "" %}
             {% set content %}
-                <p>Marble provides an all-in-one data catalog and development environment hosted by U of T or another
-                    member of the Marble network.  Data stored on the Marble network can be accessed by all users, no
-                    matter where it is hosted.  Using web processing services tailored for climate analysis, Marble
-                    is great for those getting started in climate research. </p>
+                <p>Marble provides an all-in-one data catalog and development environment hosted by a member of the
+                    Marble network. Using web processing services tailored for climate analysis, Marble
+                    is great for those getting started in climate research. Data stored on the Marble network can be accessed by all users, no
+                    matter where it is hosted.  All data storage and data processing are done on the Marble platform.  No need to
+                    ensure your laptop has enough storage or computing power. </p>
 
                 <p>Marble uses JupyterLab as its development environment.  JupyterLab lets you create self-contained
                     notebooks that can access datasets stored on Marble's STAC catalog, and conduct data analysis using tools such as
                     data science oriented Python packages.</p>
-
-                <p>All data storage and data processing are done on the Marble platform.  No need to
-                    ensure your laptop has enough storage or computing power.</p>
             {% endset %}
             {% include "partials/info-row.html" %}
         {% endwith %}
