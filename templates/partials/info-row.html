@@ -1,6 +1,10 @@
 <div class="row mb-2 mx-auto">
     <div class="col-md-12 ">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative info-background">
+            {#   set img_srcs = [primary_img_src, second_img_src]  #}
+            {#  set left_i = 0 if orient == "left" else 1 #}
+            {# set right_i = 1 if orient == "left" else 0 #}
+
             {% set img_location_column_num %}
                 {% if primary_img_location %}
                     {% if primary_img_src and second_img_src %}
@@ -24,12 +28,12 @@
 
             {% if primary_img_location == "left" %}
                 <div class="col-3 {{ img_location_column_num }} d-block d-lg-block">
-                    <img class="w-sm-100 mt-sm-5 mt-lg-0 mx-auto d-block img-fluid" src="{{ primary_img_src }}" width="100%"/>
+                    <img class="w-sm-100 mt-sm-5 mt-lg-0 mx-auto d-block img-fluid {{ img_class|default('') }}" src="{{ primary_img_src }}" width="100%"/>
                 </div>
             {% endif %}
             {% if second_img_location == "left" %}
                 <div class="col-3 col-md-3 d-block d-lg-block p-0">
-                    <img class="w-sm-100 mt-sm-5 mt-lg-0 mx-auto d-block img-fluid" src="{{ second_img_src }}"/>
+                    <img class="w-sm-100 mt-sm-5 mt-lg-0 mx-auto d-block img-fluid {{ img_class|default('') }}" src="{{ second_img_src }}"/>
                 </div>
             {% endif %}
             <div class="{{ text_column_num }} px-4 d-flex flex-column position-static">
@@ -45,13 +49,13 @@
 
             {% if primary_img_location == "right" %}
                 <div class="col-3 {{ img_location_column_num }} d-block d-lg-block">
-                    <img class="w-sm-100 mt-sm-5 mt-lg-0 mx-auto d-block img-fluid" src="{{ primary_img_src }}" width="100%"/>
+                    <img class="w-sm-100 mt-sm-5 mt-lg-0 mx-auto d-block img-fluid {{ img_class|default('') }}" src="{{ primary_img_src }}" width="100%"/>
                 </div>
             {% endif %}
 
             {% if second_img_location == "right" %}
             <div class="col-3 col-md-3 d-block d-lg-block">
-                <img class="mt-sm-5 mt-lg-0 mx-auto d-block img-fluid" src="{{ second_img_src }}"/>
+                <img class="mt-sm-5 mt-lg-0 mx-auto d-block img-fluid {{ img_class|default('') }}" src="{{ second_img_src }}"/>
             </div>
             {% endif %}
 
