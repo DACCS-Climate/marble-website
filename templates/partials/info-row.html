@@ -1,10 +1,6 @@
 <div class="row mb-2 mx-auto">
     <div class="col-md-12 ">
         <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative info-background">
-            {#   set img_srcs = [primary_img_src, second_img_src]  #}
-            {#  set left_i = 0 if orient == "left" else 1 #}
-            {# set right_i = 1 if orient == "left" else 0 #}
-
             {% set img_location_column_num %}
                 {% if primary_img_location %}
                     {% if primary_img_src and second_img_src %}
