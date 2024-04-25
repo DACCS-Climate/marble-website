@@ -1,16 +1,11 @@
 {% 
-    set footer_content_row1 = [
+    set partners_and_funders = [
+    {"image": "images/logos/funders/reverse/logo-eccc-en.png", "link": "https://www.canada.ca/en/environment-climate-change.html"},
     {"image": "images/logos/funders/reverse/canadian-foundation-innovation-logo-new-light.svg", "link": "https://www.innovation.ca/"},
     {"image": "images/logos/funders/reverse/ontario-provincial-new-seeklogo 1.svg", "link": "https://www.canada.ca/en/environment-climate-change.html"},
     {"image": "images/logos/funders/reverse/BritishColumbia_Logo_Horizontal_Grey_Reverse.png", "link": "https://www2.gov.bc.ca/gov/content/home"},
     {"image": "images/logos/funders/reverse/economie-science-et-innovation-quebec-seeklogo 1.svg", "link": "https://www.economie.gouv.qc.ca/"},
-    {"image": "images/logos/funders/reverse/UofT-white-on-transparent.png", "link": "https://www.utoronto.ca/"}
-    ]
-
-%}
-
-{%
-    set footer_content_row2 = [
+    {"image": "images/logos/funders/reverse/UofT-white-on-transparent.png", "link": "https://www.utoronto.ca/"},
     {"image": "images/logos/funders/reverse/concordia-logo.svg", "link": "https://www.concordia.ca/"},
     {"image": "images/logos/funders/reverse/mcgill-university-2 1.svg", "link": "https://www.mcgill.ca/"},
     {"image": "images/logos/funders/reverse/ouranos_logo_horizontal_blanc.png", "link": "https://www.ouranos.ca/en"},
@@ -19,30 +14,12 @@
     ]
 %}
 
-
  <div class="container-fluid px-auto footer">
     <div class="row d-flex flex-column flex-lg-row justify-content-center">
-        <div class="d-flex flex-column flex-lg-row funder-logo-container">
-        <div class="w-25">
-            <a href="https://www.canada.ca/en/environment-climate-change.html"><img class="first-funder-logo" src="images/logos/funders/reverse/logo-eccc-en.png"></a>
-        </div>
-        <div class="w-75">
-            {% for funder in footer_content_row1 %}
-                <a href="{{ funder['link'] }}"><img class="img-fluid funder-logo" src="{{ funder['image'] }}"></a>
+        <div class="d-flex flex-row funder-logo-container">
+            {% for funder in partners_and_funders %}
+                <a class="funder-link" href="{{ funder['link'] }}"><img class="img-fluid funder-logo" src="{{ funder['image'] }}"></a>
             {% endfor %}
-        </div>
-
-        </div>
-    </div>
-    <div class="row d-flex flex-column flex-lg-row justify-content-center">
-        <div class="d-flex flex-column flex-lg-row funder-logo-container">
-        <div class="w-25"> </div>
-        <div class="w-75">
-            {% for funder in footer_content_row2 %}
-                <a href="{{ funder['link'] }}"><img class="img-fluid funder-logo" src="{{ funder['image'] }}"></a>
-            {% endfor %}
-        </div>
-
         </div>
     </div>
 

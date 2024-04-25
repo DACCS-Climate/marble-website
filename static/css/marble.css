@@ -856,19 +856,19 @@ h6{
 
 .funder-logo-container{
     width: 95%;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.first-funder-logo{
-    min-width: 200px;
-    max-width: 300px;
-    margin-right: 20px;
+.funder-link{
+    min-width: 150px;
+    max-width: 250px;
+    align-content: center;
 }
 
 .funder-logo{
-    min-width: 100px;
-    max-width: 150px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
 }
 
 .copyright{
