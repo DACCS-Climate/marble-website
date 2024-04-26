@@ -13,67 +13,83 @@
                 </div>
             </div>
             <div class="row">
-                <div class="d-flex justify-content-center mb-5">
-                    <div class="d-flex justify-content-center w-75 usage-menu-container">
-                        <a id="studentMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_1 }}</h3></a>
-                        <a id="researcherMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_2 }}</h3></a>
-                        <a id="hobbyistMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_3 }}</h3></a>
+                    <div class="d-flex justify-content-center mb-5 w-100">
+                        <div class="d-none d-md-flex justify-content-center w-75 usage-menu-container">
+                            <a id="studentMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_1 }}</h3></a>
+                            <a id="researcherMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_2 }}</h3></a>
+                            <a id="hobbyistMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_3 }}</h3></a>
+                        </div>
                     </div>
-                </div>
             </div>
             <div class="row">
                 <!-- NOTE: The getStartedDisplayArea is the only visible div.  The content divs, studentUser, etc. are swapped
                  into the display area on click of the menu above -->
-                <div id="getStartedDisplayArea" class="d-flex g-0">
+                <div id="getStartedDisplayArea" class="d-none d-md-flex g-0">
 
                 </div>
 
-                <div id="studentUser" class="d-none">
-                    <div class="d-flex student-user-image">
-                        <div class="d-flex align-items-end w-100">
-                            <div class="d-flex justify-content-center py-5 w-100 getStartedOpacity">
-                                <div class="student-user-content w-75">
-                                    <h2 class="usage-content-title">{{ student_user_title }}</h2>
-                                    <p>{{ student_user_content|safe }}</p>
-                                    <div class="usage-content-button">
-                                        {% with button_type = "transparent_button" %}
-                                            {%  set button_label = "Explore" %}
-                                            {% set button_href = button_href_student %}
-                                            {% include "partials/button.html" %}
-                                        {% endwith %}
+                <div id="studentUser" class="d-flex d-md-none g-0">
+                    <div class="d-flex flex-column w-100">
+                        <div class="d-flex student-user-image user-image-height">
+                            <div class="d-flex align-items-end w-100">
+                                <div class="d-flex justify-content-center py-5 w-100 getStartedOpacity">
+                                    <div class="student-user-content w-75">
+                                        <h2 class="usage-content-title">{{ student_user_title }}</h2>
+                                        <div class="d-none d-md-block">
+                                            <p>{{ student_user_content|safe }}</p>
+                                        </div>
+                                        <div class="usage-content-button">
+                                            {% with button_type = "transparent_button" %}
+                                                {%  set button_label = "Explore" %}
+                                                {% set button_href = button_href_student %}
+                                                {% include "partials/button.html" %}
+                                            {% endwith %}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-
-                </div>
-                <div id="researcherUser" class="d-none ">
-
-                    <div class="d-flex researcher-user-image">
-                        <div class="d-flex align-items-end w-100">
-                             <div class="d-flex justify-content-center py-5 w-100 getStartedOpacity">
-                                 <div class="researcher-user-content w-75">
-                                    <h2>{{ researcher_user_title }}</h2>
-                                    <p>{{ researcher_user_content|safe }}</p>
-                                     {% with button_type = "transparent_button" %}
-                                        {%  set button_label = "Explore" %}
-                                        {% set button_href = button_href_researcher %}
-                                        {% include "partials/button.html" %}
-                                     {% endwith %}
-                                 </div>
-                            </div>
+                        <div class="d-flex d-md-none">
+                            <p>{{ student_user_content|safe }}</p>
                         </div>
                     </div>
                 </div>
-                <div id="hobbyistUser" class="d-none ">
-                    <div class="d-flex hobbyist-user-image">
+
+                <div id="researcherUser" class="d-flex d-md-none g-0">
+                    <div class="d-flex flex-column w-100">
+                        <div class="d-flex researcher-user-image user-image-height">
+                            <div class="d-flex align-items-end w-100">
+                                 <div class="d-flex justify-content-center py-5 w-100 getStartedOpacity">
+                                     <div class="researcher-user-content w-75">
+                                        <h2>{{ researcher_user_title }}</h2>
+                                         <div class="d-none d-md-block">
+                                            <p>{{ researcher_user_content|safe }}</p>
+                                         </div>
+                                         {% with button_type = "transparent_button" %}
+                                            {%  set button_label = "Explore" %}
+                                            {% set button_href = button_href_researcher %}
+                                            {% include "partials/button.html" %}
+                                         {% endwith %}
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex d-md-none">
+                            <p>{{ researcher_user_content|safe }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="hobbyistUser" class="d-flex d-md-none g-0">
+                <div class="d-flex flex-column w-100">
+                    <div class="d-flex hobbyist-user-image user-image-height">
                         <div class="d-flex align-items-end w-100">
                             <div class="d-flex justify-content-center py-5 w-100 getStartedOpacity">
                                  <div class="hobbyist-user-content w-75">
-                                    <h2>{{ hobbyist_user_title }}</h2>
-                                    <p>{{ hobbyist_user_content|safe }}</p>
+                                     <h2>{{ hobbyist_user_title }}</h2>
+                                     <div class="d-none d-md-block">
+                                        <p>{{ hobbyist_user_content|safe }}</p>
+                                     </div>
                                     {% with button_type = "transparent_button" %}
                                         {%  set button_label = "Explore" %}
                                         {% set button_href = button_href_hobbyist %}
@@ -83,6 +99,10 @@
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex d-md-none">
+                        <p>{{ hobbyist_user_content|safe }}</p>
+                    </div>
+                </div>
                 </div>
                 </div>
         </div>
