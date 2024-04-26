@@ -527,7 +527,6 @@ h6{
 
 .student-user-image{
     width: 100%;
-    height: 842px;
     background-image: url("../images/student-user.jpg");
     background-position: center;
     background-size: cover;
@@ -539,7 +538,6 @@ h6{
 
 .researcher-user-image{
     width: 100%;
-    height: 842px;
     background-image: url("../images/researcher-user.jpg");
     background-position: center;
     background-size: cover;
@@ -551,7 +549,6 @@ h6{
 
 .hobbyist-user-image{
     width: 100%;
-    height: 842px;
     background-image: url("../images/hobbyist-user.jpg");
     background-position: center;
     background-size: cover;
@@ -916,4 +913,17 @@ h6{
 
 .registration-status-title{
     font-weight: bold;
+}
+
+@media (width < 768px) {
+    .user-image-height{
+    width: 100%;
+        height: auto;
+    }
+}
+
+@media (width > 768px) {
+    .user-image-height{
+        height: 842px;
+    }
 }
