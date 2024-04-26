@@ -21,6 +21,7 @@
     --background: #FFFFFF;
     --background-black: #000000;
     --background-transparent: transparent;
+    --background-mobile-menu: #4D4D4D;
     --black: #000000;
     --opaque-black: rgba(0,0,0,0.5);
     --linear-gradient-black: linear-gradient(90deg,transparent, #000000, transparent);
@@ -304,9 +305,11 @@ h6{
 }
 
 /*Menu*/
+/*See media queries at bottom of file*/
+
 .menu{
-    background-color: var(--background-transparent);
-    z-index: 10;
+        background-color: var(--background-transparent);
+        z-index: 10;
 }
 
 .menu-items{
@@ -335,7 +338,8 @@ h6{
 }
 
 .mobile-menu{
-    background-color: rgba(255,255,255, 0.5);
+    width: 100%;
+    background-color: var(--background-mobile-menu);
 }
 
 .mobile-toggler-button-white.navbar-toggler{
@@ -931,3 +935,20 @@ h6{
 .registration-status-title{
     font-weight: bold;
 }
+
+/*
+@media (width < 768px) {
+    .menu{
+    width: 100%;
+        background-color: var(--background-mobile-menu);
+
+    }
+}
+
+@media (width > 768px) {
+    .menu{
+        background-color: var(--background-transparent);
+        z-index: 10;
+    }
+}
+*/
