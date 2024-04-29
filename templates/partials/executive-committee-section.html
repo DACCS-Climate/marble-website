@@ -66,8 +66,10 @@
     }
 ]%}
 
-<div class = "d-flex flex-column flex-lg-row flex-wrap flex-lg-nowrap align-items-lg-start committee-container">
-    {% for profile_info in executive_commitee_data %}
-        {% include "partials/profile-card.html" %}
-    {% endfor %}
+<div id="executiveCommittee" class="d-flex justify-content-center">
+    <div class="d-flex flex-column flex-lg-row flex-wrap flex-lg-nowrap align-items-lg-start committee-container">
+        {% for profile_info in executive_commitee_data %}
+            {% include "partials/profile-card.html" %}
+        {% endfor %}
+    </div>
 </div>

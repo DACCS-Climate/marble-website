@@ -94,9 +94,10 @@
     }
 ]%}
 
-
-<div class = "d-flex flex-column flex-lg-row flex-nowrap flex-lg-wrap justify-content-center align-items-lg-start committee-container">
-    {% for profile_info in scientific_commitee_data %}
-        {% include "partials/profile-card.html" %}
-    {% endfor %}
+<div id="scientificCommittee" class="d-none justify-content-center">
+    <div class = "d-flex flex-column flex-lg-row flex-nowrap flex-lg-wrap justify-content-center align-items-lg-start committee-container">
+        {% for profile_info in scientific_commitee_data %}
+            {% include "partials/profile-card.html" %}
+        {% endfor %}
+    </div>
 </div>

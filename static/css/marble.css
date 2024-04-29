@@ -851,10 +851,6 @@ h6{
     cursor: pointer;
 }
 
-.committee-menu-button:focus{
-    color: var(--primary);
-}
-
 .committee-container{
     width: 93%;
 }
