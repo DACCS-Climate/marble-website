@@ -1,158 +1,102 @@
- {%  set scientific_commitee_data=[
-            {"name": "Steve Easterbrook",
-            "descriptions": [
-                {
-                    "department": "",
-                    "title": "",
-                    "expertise": "Computer Science, Machine Learning"
-                }
-            ],
-              "organization":[
-                        {
-                            "name": "University of Toronto",
-                            "icon-class": "fa-solid fa-building-columns"
-                        }
-                    ],
-            "image": "images/about/scientific/steve-easterbrook.jpg",
-            "links":
-                [
-                    {
-                        "text": "Profile",
-                        "href": "",
-                        "alt": "University of Toronto",
-                        "icon-class": "fa-solid fa-user"
-                    },
-                    {
-                        "href": "",
-                        "alt": "",
-                        "icon-class": "fab fa-orcid fa-lg"},
-                    {
-                        "href": "",
-                        "alt": "",
-                        "icon-class": "fab fa-researchgate fa-lg"
-                    },
-                    {
-                        "href": "",
-                        "alt": "",
-                        "icon-class": "fab fa-linkedin fa-lg"
-                    },
-                    {
-                        "href": "",
-                        "alt": "GitHub",
-                        "icon-class": "fab fa-github fa-lg"
-                    }
-                ]
-            },
- {"name": "David Huard",
-    "descriptions":
-        [
+{%  set scientific_commitee_data=[
+    {
+        "name": "Steve Easterbrook",
+        "image": "images/about/scientific/steve-easterbrook.jpg",
+        "expertise": "computer science, machine learning",
+        "organization": {
+            "name": "University of Toronto",
+            "href": "https://www.utoronto.ca/"
+        },
+        "links": []
+    },
+    {
+        "name": "David Huard",
+        "image": "images/about/executive/david-huard.jpg",
+        "expertise": "climate services, climate data analysis",
+        "organization": {
+            "name": "Ouranos",
+            "href": "https://www.ouranos.ca"
+        },
+        "links": [
             {
-                "title": "Research Specialist",
-                "expertise": ""
+                "href": "https://github.com/huard",
+                "icon_class": "fab fa-github fa-lg"
+            },
+            {
+                "href": "https://www.researchgate.net/profile/David-Huard",
+                "icon_class": "fab fa-researchgate fa-lg"
+            },
+            {
+                "href": "https://www.linkedin.com/in/david-huard/",
+                "icon_class": "fab fa-linkedin fa-lg"
             }
-        ],
-      "organization":[
-                {
-                    "name": "Ouranos",
-                    "href": "https://www.ouranos.ca/en",
-                    "icon-class": "fa-solid fa-building-columns"
-                }
-            ],
-    "image": "images/about/executive/david-huard.jpg",
-    "links":
-        [
-            {"text": "Profile",
-            "href": "https://www.ouranos.ca/en/equipe#david-huard-408",
-            "alt": "Ouranos",
-            "icon-class": "fa-solid fa-user"
+        ]
+    },
+    {
+        "name": "H. Damon Matthews",
+        "image": "images/about/scientific/damon-matthews.jpg",
+        "expertise": "climate science, climate modelling, carbon-cycle processes, nature-based climate solutions, remaining carbon budgets, climate targets and scenarios",
+        "organization": {
+            "name": "Concordia University",
+            "href": "https://www.concordia.ca"
+        },
+        "links": [
+            {
+                "href": "https://www.concordia.ca/faculty/damon-matthews.html",
+                "icon_class": "fa-user fa-lg"
             },
-            {"href": "",
-            "alt": "",
-            "icon-class": "fab fa-orcid fa-lg"},
-            {"href": "https://www.researchgate.net/profile/David-Huard",
-            "alt": "",
-            "icon-class": "fab fa-researchgate fa-lg"
+            {
+                "href": "https://scholar.google.com/citations?user=BY1jk5kAAAAJ",
+                "icon_class": "fab fa-google-scholar fa-lg"
             },
-            {"href": "https://www.linkedin.com/in/david-huard/",
-            "alt": "",
-            "icon-class": "fab fa-linkedin fa-lg"
+            {
+                "href": "https://twitter.com/damon_matthews",
+                "icon_class": "fab fa-twitter fa-lg"
             },
-            {"href": "https://github.com/huard",
-            "alt": "",
-            "icon-class": "fab fa-github fa-lg"
+            {
+                "href": "https://www.linkedin.com/in/damon-matthews-b47a5210/",
+                "icon_class": "fab fa-linkedin fa-lg"
+            }
+        ]
+    },
+    {
+        "name": "Samuel Foucher",
+        "image": "images/about/scientific/samuel-foucher.png",
+        "expertise": "remote sensing, deep learning, land cover mapping",
+        "organization": {
+            "name": "University of Sherbrooke",
+            "href": "https://www.usherbrooke.ca/"
+        },
+        "links": [
+            {
+                "href": "https://www.linkedin.com/in/samuelfoucher/",
+                "icon_class": "fab fa-linkedin fa-lg"
+            }
+        ]
+    },
+    {
+        "name": "Dan McKenney",
+        "expertise": "climate change, spatial climate modelling, environmental and forest economics, behavioural economics, non-market valuation and cost-benefit analysis",
+        "organization": {
+            "name": "Natural Resources Canada",
+            "href": "https://natural-resources.canada.ca/"
+        },
+        "links": [
+            {
+                "href": "https://www.researchgate.net/lab/Daniel-McKenney-Lab",
+                "icon_class": "fab fa-researchgate fa-lg"
+            },
+            {
+                "href": "https://ostrnrcan-dostrncan.canada.ca/browse/author?scope=45538ec0-c247-4f18-b907-e38e23f4c025&value=McKenney,%20D.%20W.",
+                "icon_class": "fab fa-canadian-maple-leaf fa-lg"
             }
         ]
     }
 ]%}
 
 
-<div class="d-flex justify-content-center">
-<div class="d-flex flex-column flex-lg-row flex-wrap flex-lg-nowrap justify-content-start scientific-committee-container">
-    {% for entry in scientific_commitee_data %}
-            <table class="table-responsive">
-            <tr><td>
-            <div class="d-flex flex-column committee-card">
-                <img class="profile-image" src=" {{ entry["image"] }} ">
-                <p class="subtitle-1 profile-entry">{{ entry["name"] }}</p>
-                {% for description in entry["descriptions"] %}
-                    {% if description["department"] != "" %}
-                        <p class="profile-entry">{{ description["department"] }}</p>
-                    {% endif %}
-                    {% if description["title"] != "" %}
-                        <p class="profile-entry">{{ description["title"] }}</p>
-                    {% endif %}
-                    {% if description["expertise"] != "" %}
-                        <p class="profile-entry">{{ description["expertise"] }}</p>
-                    {% endif %}
-                {% endfor %}
-
-                {% for link in entry["links"] %}
-                    {% if (link["icon-class"] == "fa-solid fa-user") %}
-                        {% if link["href"] == "" %}
-                            {% set icon_class = "profile-icon-grey disabled" %}
-                            {% set link_class = "disabled" %}
-                        {% else %}
-                            {% set icon_colour_class = "profile-icon-primary" %}
-                        {% endif %}
-                        <div class="d-flex flex-column profile-entry">
-                            <a class="marble-github-link pe-1 {{ icon_class }}" href="{{ link["href"] }}" alt="{{ link["alt"] }}" target="_blank">
-                            <i class='{{ link["icon-class"] }} {{ link_class }}'></i> {{ link["text"] }}
-                            </a>
-                        </div>
-                   {% endif %}
-                {% endfor %}
-
-                {% for org_entry in entry["organization"] %}
-                    <div class="d-flex flex-column profile-entry">
-                        <a class="marble-github-link pe-1" href="{{ org_entry["href"] }}" alt="{{ org_entry["name"] }}" target="_blank">
-                        <i class='{{ org_entry["icon-class"] }}'></i> {{ org_entry["name"] }}
-                        </a>
-                    </div>
-                {% endfor %}
-
-
-
-            </div>
-             </td></tr>
-                 <tr><td class="align-bottom">
-                <div class="d-flex flex-row justify-content-center profile-entry">
-                    {% for link in entry["links"] %}
-                        {% if (link["icon-class"] != "fa-solid fa-user") %}
-                            {% if link["href"] == "" %}
-                                {% set icon_colour_class = "profile-icon-grey" %}
-                                {% set link_class = "disabled" %}
-                            {% else %}
-                                {% set icon_colour_class = "profile-icon-primary" %}
-                            {% endif %}
-                                <a class="marble-github-link pe-1 profile-social-media {{ link_class }}" href="{{ link["href"] }}" alt="{{ link["alt"] }}" target="_blank">
-                                <i class='{{ link["icon-class"] }} {{ icon_colour_class }}'></i> {{ link["text"] }}
-                                </a>
-                        {% endif %}
-                    {% endfor %}
-                </div>
-            </td></tr>
-            </table>
-
+<div class = "d-flex flex-column flex-lg-row flex-nowrap flex-lg-wrap justify-content-center align-items-lg-start committee-container">
+    {% for profile_info in scientific_commitee_data %}
+        {% include "partials/profile-card.html" %}
     {% endfor %}
-   </div>
 </div>
