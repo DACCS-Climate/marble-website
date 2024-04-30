@@ -576,11 +576,20 @@ h6{
 .social-media-section{
     margin-top: 120px;
 }
-.social-media-icon{
+
+.social-media-link{
+    /* height and width matches social-media-icon */
     height: 40px;
     width: 40px;
     margin-top: 15px;
     margin-right: 30px;
+    display: inline-block;
+    text-decoration: unset;
+}
+
+.social-media-icon{
+    height: 40px;
+    width: 40px;
 }
 
 /*Node Page*/
