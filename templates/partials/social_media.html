@@ -1,22 +1,33 @@
+{% set social_links = [
+    {
+        'icon': 'images/logos/social-media/icon_Linkedin.svg',
+        'href': 'https://www.linkedin.com/company/marbleclimate'
+    },
+    {
+        'icon': 'images/logos/social-media/icon_Github.svg',
+        'href': 'https://github.com/DACCS-Climate'
+    },
+    {
+        'icon': 'images/logos/social-media/icon_Mastodon.svg',
+        'href': 'https://mastodon.social/@marbleclimate'
+    },
+    {
+        'icon': 'images/logos/social-media/instagram.svg',
+        'href': 'https://www.instagram.com/marbleclimate'
+    },
+    {
+        'icon': 'images/logos/social-media/twitter.svg',
+        'href': 'https://twitter.com/marble_climate'
+    }
+] %}
+
 <div class="social-media-section">
-    <h3 class="h3-title-margin">{{ social_media_title }}</h3>
-
-    {% set link_icon_array = ["images/logos/social-media/icon_Linkedin.svg",
-    "images/logos/social-media/icon_Github.svg",
-    "images/logos/social-media/icon_Mastodon.svg",
-    "images/logos/social-media/instagram.svg",
-    "images/logos/social-media/twitter.svg"] %}
-    {% set link_url_array = ["https://www.linkedin.com/company/marbleclimate",
-    "https://github.com/DACCS-Climate",
-    "https://mastodon.social/@marbleclimate",
-    "https://www.instagram.com/marbleclimate",
-    "https://twitter.com/marble_climate"] %}
-
-    {% set array_length = link_icon_array|length %}
-
+    <h3 class="h3-title-margin">Connect With Us</h3>
     <div>
-        {% for array_item in range(array_length) %}
-            <a href="{{ link_url_array[array_item] }}"><img class="social-media-icon" src="{{ link_icon_array[array_item] }}"></a>
+        {% for social in social_links %}
+            <a href="{{ social['href'] }}">
+                <img class="social-media-icon" src="{{ social['icon'] }}">
+            </a>
         {% endfor %}
     </div>
 </div>
