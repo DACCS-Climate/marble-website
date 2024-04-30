@@ -1,49 +1,50 @@
-{% set menu_link_class = menu_link_class|default("menu-link-white") %}
-{% if menu_link_class == "menu-link-white" %}
-    {% set toggler_button_class = "mobile-toggler-button-white" %}
+{% set mobile_menu_title = "MARBLE" %}
+{% set menu_text_class = menu_text_class|default("menu-text-white") %}
+{% if menu_text_class == "menu-text-white" %}
     {% set toggler_icon_class = "mobile-toggler-icon-white"  %}
+    {% set mobile_title_class = "mobile-menu-title-white" %}
 {% else %}
-    {% set toggler_button_class = "" %}
+    {% set mobile_title_class = "mobile-menu-title" %}
     {% set toggler_icon_class = ""  %}
 {% endif %}
 <div class="d-flex justify-content-start justify-content-lg-center position-relative">
     <nav class="navbar navbar-expand-lg position-absolute menu">
         <div class="container-fluid">
-
-            <button class="navbar-toggler {{ toggler_button_class }}" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent"
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon {{ toggler_icon_class }}"></span>
             </button>
 
-            <div class="offcanvas offcanvas-start collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="offcanvas offcanvas-start collapse navbar-collapse w-100 mobile-menu" id="navbarSupportedContent">
                 <div class="offcanvas-body w-100">
                     <div class="col-1">
                         <a href="index.html">
                             <img id="menu-logo" src="images/logos/marble.png" class="img-fluid ms-4 d-none d-lg-block menu-logo" />
                         </a>
                     </div>
-                    <div class="offcanvas-header d-flex d-sm-none justify-content-end w-100">
+                    <div class="offcanvas-header d-flex d-md-none justify-content-end w-100">
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
+                    <div class="d-flex d-md-none {{ mobile_title_class }}"><h3>{{ mobile_menu_title }}</h3></div>
                     <div class="col-10 menu-items">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                             <li class="nav-item">
-                                <h6><a id="homeMenuButton" class="p-2 {{ menu_link_class }}" aria-current="page" href="index.html">Home</a></h6>
+                                <h6><a id="homeMenuButton" class="p-2 {{ menu_text_class }}" aria-current="page" href="index.html">Home</a></h6>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="technologyMenuButton" class="p-2 {{ menu_link_class }}" href="index.html#technology">Technology</a></h6>
+                                <h6><a id="technologyMenuButton" class="p-2 {{ menu_text_class }}" href="index.html#technology">Technology</a></h6>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="nodeMenuButton" class="p-2 {{ menu_link_class }}" href="node.html">Nodes</a></h6>
+                                <h6><a id="nodeMenuButton" class="p-2 {{ menu_text_class }}" href="node.html">Nodes</a></h6>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="tutorialsMenuButton" class="p-2 {{ menu_link_class }}" href="tutorials/index.html">Tutorials</a></h6>
+                                <h6><a id="tutorialsMenuButton" class="p-2 {{ menu_text_class }}" href="tutorials/index.html">Tutorials</a></h6>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="communityMenuButton" class="p-2 {{ menu_link_class }}" href="https://discourse.marbleclimate.com" target="_blank">Community</a></h6>
+                                <h6><a id="communityMenuButton" class="p-2 {{ menu_text_class }}" href="https://discourse.marbleclimate.com" target="_blank">Community</a></h6>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="aboutMenuButton" class="p-2 {{ menu_link_class }}" href="about.html">About</a></h6>
+                                <h6><a id="aboutMenuButton" class="p-2 {{ menu_text_class }}" href="about.html">About</a></h6>
                             </li>
                         </ul>
                     </div>

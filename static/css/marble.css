@@ -21,7 +21,6 @@
     --background: #FFFFFF;
     --background-black: #000000;
     --background-transparent: transparent;
-    --background-mobile-menu: #4D4D4D;
     --black: #000000;
     --opaque-black: rgba(0,0,0,0.5);
     --linear-gradient-black: linear-gradient(90deg,transparent, #000000, transparent);
@@ -328,7 +327,7 @@ h6{
     margin-bottom: 16px;
 }
 
-.menu-link-white{
+.menu-text-white{
     color: var(--text-on-dark);
     text-decoration: none;
     margin-left: 80px;
@@ -341,19 +340,29 @@ h6{
     height: 50px;
 }
 
-.mobile-menu{
-    width: 100%;
-    background-color: var(--background-mobile-menu);
-}
-
-.mobile-toggler-button-white.navbar-toggler{
-  border-color: var(--white);
+/*Override Bootstrap classes*/
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
 }
 
 .mobile-toggler-icon-white.navbar-toggler-icon{
     background-image: url(
         "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
         );
+}
+
+.mobile-menu-title{
+    margin-left: 49px;
+}
+
+.mobile-menu-title-white{
+    color: var(--text-on-dark);
+    margin-left: 49px;
 }
 
 /*Banner*/
@@ -940,19 +949,22 @@ h6{
     font-weight: bold;
 }
 
-/*
-@media (width < 768px) {
-    .menu{
-    width: 100%;
-        background-color: var(--background-mobile-menu);
-
-    }
-}
-
-@media (width > 768px) {
-    .menu{
+@media (width <= 576px) {
+      .mobile-menu{
+        width: 100%;
         background-color: var(--background-transparent);
-        z-index: 10;
+        backdrop-filter: blur(15px);
     }
 }
-*/
+
+@media (width <= 768px) {
+      .mobile-menu{
+        width: 100%;
+        background-color: var(--background-transparent);
+        backdrop-filter: blur(15px);
+    }
+}
+
+.red{
+    background-color: red;
+}
