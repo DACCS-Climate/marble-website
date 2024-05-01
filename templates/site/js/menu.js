@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var communityButton = document.getElementById('communityMenuButton');
     var aboutButton = document.getElementById('aboutMenuButton');
 
+    technologyButton.addEventListener("click", goToTechnology);
+
     var currentURL = window.location.href;
     var currentPath = window.location.pathname;
 
@@ -49,4 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
         aboutButton.classList.remove("text-primary");
     }
 })
+
+function goToTechnology(event){
+    window.location.href='index.html#technology';
+    event.preventDefault()
+}
 
