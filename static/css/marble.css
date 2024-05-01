@@ -362,6 +362,11 @@ h6{
     margin-left: 49px;
 }
 
+.technology-menu-item{
+    background-color: var(--background-transparent);
+    border: none;
+}
+
 /*Banner*/
 
 .banner-title-home{
@@ -947,12 +952,7 @@ h6{
 }
 
 @media (width <= 576px) {
-      .mobile-menu{
-        width: 100%;
-        background-color: var(--background-transparent);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
-    }
+
 }
 
 @media (width <= 768px) {
@@ -965,8 +965,14 @@ h6{
 
     .menu-items-margin{
         margin-left: 49px;
-        margin-top: 16px;
-        margin-bottom: 16px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .menu-items-border{
+        border-top: solid;
+        border-top-width: thin;
+        border-top-color: var(--white);
     }
 }
 
