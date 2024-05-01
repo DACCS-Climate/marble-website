@@ -7,7 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var communityButton = document.getElementById('communityMenuButton');
     var aboutButton = document.getElementById('aboutMenuButton');
 
-    technologyButton.addEventListener("click", goToTechnology);
+    technologyButton.addEventListener("click", function(event){
+        window.location.href="index.html#technology";
+        event.preventDefault();
+        return true;
+    });
 
     var currentURL = window.location.href;
     var currentPath = window.location.pathname;
@@ -52,8 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 })
 
-function goToTechnology(event){
-    window.location.href='index.html#technology';
-    event.preventDefault()
+function goToTechnology(){
+
 }
 
