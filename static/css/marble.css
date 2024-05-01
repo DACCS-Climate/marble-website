@@ -315,7 +315,7 @@ h6{
         z-index: 10;
 }
 
-.menu-items{
+.menu-items-container{
         padding-top: 20px;
 }
 
@@ -327,17 +327,14 @@ h6{
     margin-bottom: 16px;
 }
 
-.menu-text-white{
-    color: var(--text-on-dark);
-    text-decoration: none;
-    margin-left: 80px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
 .menu-logo{
     width: 50px;
     height: 50px;
+}
+
+.menu-text-white{
+    color: var(--text-on-dark);
+    text-decoration: none;
 }
 
 /*Override Bootstrap classes*/
@@ -954,6 +951,7 @@ h6{
         width: 100%;
         background-color: var(--background-transparent);
         backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
     }
 }
 
@@ -962,9 +960,20 @@ h6{
         width: 100%;
         background-color: var(--background-transparent);
         backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+    }
+
+    .menu-items-margin{
+        margin-left: 49px;
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
 }
 
-.red{
-    background-color: red;
+@media (width > 768px) {
+    .menu-items-margin{
+        margin-left: 80px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
 }

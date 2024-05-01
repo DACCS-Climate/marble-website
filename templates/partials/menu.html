@@ -1,4 +1,4 @@
-{% set mobile_menu_title = "MARBLE" %}
+{% set mobile_title = "MARBLE" %}
 {% set menu_text_class = menu_text_class|default("menu-text-white") %}
 {% if menu_text_class == "menu-text-white" %}
     {% set toggler_icon_class = "mobile-toggler-icon-white"  %}
@@ -25,26 +25,26 @@
                     <div class="offcanvas-header d-flex d-md-none justify-content-end w-100">
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="d-flex d-md-none {{ mobile_title_class }}"><h3>{{ mobile_menu_title }}</h3></div>
-                    <div class="col-10 menu-items">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <div class="d-flex d-md-none {{ mobile_title_class }}"><h3>{{ mobile_title }}</h3></div>
+                    <div class="d-flex flex-column flex-lg-row menu-items-container">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <h6><a id="homeMenuButton" class="p-2 {{ menu_text_class }}" aria-current="page" href="index.html">Home</a></h6>
+                                <h6><a id="homeMenuButton" class="menu-items-margin {{ menu_text_class }}" aria-current="page" href="index.html">Home</a></h6>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="technologyMenuButton" class="p-2 {{ menu_text_class }}" href="index.html#technology">Technology</a></h6>
+                                <h6><a id="technologyMenuButton" class="menu-items-margin {{ menu_text_class }}" href="index.html#technology">Technology</a></h6>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="nodeMenuButton" class="p-2 {{ menu_text_class }}" href="node.html">Nodes</a></h6>
+                                <h6><a id="nodeMenuButton" class="menu-items-margin {{ menu_text_class }}" href="node.html">Nodes</a></h6>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="tutorialsMenuButton" class="p-2 {{ menu_text_class }}" href="tutorials/index.html">Tutorials</a></h6>
+                                <h6><a id="tutorialsMenuButton" class="menu-items-margin {{ menu_text_class }}" href="tutorials/index.html">Tutorials</a></h6>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="communityMenuButton" class="p-2 {{ menu_text_class }}" href="https://discourse.marbleclimate.com" target="_blank">Community</a></h6>
+                                <h6><a id="communityMenuButton" class="menu-items-margin {{ menu_text_class }}" href="https://discourse.marbleclimate.com" target="_blank">Community</a></h6>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="aboutMenuButton" class="p-2 {{ menu_text_class }}" href="about.html">About</a></h6>
+                                <h6><a id="aboutMenuButton" class="menu-items-margin {{ menu_text_class }}" href="about.html">About</a></h6>
                             </li>
                         </ul>
                     </div>
