@@ -8,9 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var aboutButton = document.getElementById('aboutMenuButton');
 
     technologyButton.addEventListener("click", function(event){
-        window.location.href="index.html#technology";
-        event.preventDefault();
-        return true;
+        //window.location.href="index.html#technology";
+        //event.preventDefault();
+        //return true;
+        var navbar = document.getElementById("navbarSupportedContent");
+        //var bsOffcanvas = new bootstrap.Offcanvas(navbar)
+        var offcanvasPanel = bootstrap.Offcanvas.getInstance(navbar);
+        offcanvasPanel.toggle();
+        window.location.href = "index.html#technology";
+        //hide.bs.offcanvas
     });
 
     var currentURL = window.location.href;
