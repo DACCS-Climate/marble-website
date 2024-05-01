@@ -23,28 +23,54 @@
                         </a>
                     </div>
                     <div class="offcanvas-header d-flex d-md-none justify-content-end w-100">
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <button type="button" class="btn-close text-reset" data-bs-toggle="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="d-flex d-md-none {{ mobile_title_class }}"><h3>{{ mobile_title }}</h3></div>
                     <div class="d-flex flex-column flex-lg-row menu-items-container">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <h6><a id="homeMenuButton" class="menu-items-margin {{ menu_text_class }}" aria-current="page" href="index.html">Home</a></h6>
+                                <div>
+                                    <h6 class="menu-items-margin"><a id="homeMenuButton" class=" {{ menu_text_class }}" aria-current="page" href="index.html">Home</a></h6>
+                                </div>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="technologyMenuButton" class="menu-items-margin {{ menu_text_class }}" href="index.html#technology">Technology</a></h6>
+                                <div class="w-50 menu-items-border">
+                                    <h6 class="menu-items-margin">
+                                         <!--<button type="button" class="technology-menu-item" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent">
+                                            <a id="technologyMenuButton" class="{{ menu_text_class }}" href="index.html#technology">Technology</a>
+                                        </button>-->
+                                        <!--
+                                        <a class="btn {{ menu_text_class }}" data-bs-dismiss="offcanvas" data-bs-target="navbarSupportedContent" href="index.html#technology"  role="button">
+                                          Technology
+                                        </a>-->
+                                        <!--<a id="technologyMenuButton" class="{{ menu_text_class }}" data-bs-dismiss="offcanvas" href="#navbarSupportedContent" role="button" aria-controls="navbarSupportedContent" onclick="location.href='index.html#technology'">
+                                          Technology
+                                        </a>-->
+                                        <button id="technologyMenuButton" type="button" class="technology-menu-item" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent">
+                                            <span class="{{ menu_text_class }}" >Technology</span>
+                                        </button>
+                                    </h6>
+                                </div>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="nodeMenuButton" class="menu-items-margin {{ menu_text_class }}" href="node.html">Nodes</a></h6>
+                                <div class="w-50 menu-items-border">
+                                    <h6 class="menu-items-margin"><a id="nodeMenuButton" class="{{ menu_text_class }}" href="node.html">Nodes</a></h6>
+                                </div>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="tutorialsMenuButton" class="menu-items-margin {{ menu_text_class }}" href="tutorials/index.html">Tutorials</a></h6>
+                                <div class="w-50 menu-items-border">
+                                    <h6 class="menu-items-margin"><a id="tutorialsMenuButton" class="{{ menu_text_class }}" href="tutorials/index.html">Tutorials</a></h6>
+                                </div>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="communityMenuButton" class="menu-items-margin {{ menu_text_class }}" href="https://discourse.marbleclimate.com" target="_blank">Community</a></h6>
+                                <div class="w-50 menu-items-border">
+                                    <h6 class="menu-items-margin"><a id="communityMenuButton" class="{{ menu_text_class }}" href="https://discourse.marbleclimate.com" target="_blank">Community</a></h6>
+                                </div>
                             </li>
                             <li class="nav-item">
-                                <h6><a id="aboutMenuButton" class="menu-items-margin {{ menu_text_class }}" href="about.html">About</a></h6>
+                                <div class="w-50 menu-items-border">
+                                    <h6 class="menu-items-margin"><a id="aboutMenuButton" class="{{ menu_text_class }}" href="about.html">About</a></h6>
+                                </div>
                             </li>
                         </ul>
                     </div>
