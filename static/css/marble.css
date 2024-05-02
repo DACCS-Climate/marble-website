@@ -850,8 +850,11 @@ h6{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 100px;
-    padding-bottom: 100px;
+}
+
+.footer-overlay{
+    background: var(--opaque-black);
+    height: 100%;
 }
 
 .funder-logo-container{

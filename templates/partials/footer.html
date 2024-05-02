@@ -14,19 +14,21 @@
     ]
 %}
 
- <div class="container-fluid px-auto footer">
-    <div class="row d-flex flex-column flex-lg-row justify-content-center">
-        <div class="d-flex flex-row funder-logo-container">
-            {% for funder in partners_and_funders %}
-                <a class="funder-link" href="{{ funder['link'] }}"><img class="img-fluid funder-logo" src="{{ funder['image'] }}"></a>
-            {% endfor %}
+ <div class="container-fluid px-auto footer g-0">
+    <div class="footer-overlay">
+        <div class="row d-flex flex-column flex-lg-row justify-content-center">
+            <div class="d-flex flex-row funder-logo-container">
+                {% for funder in partners_and_funders %}
+                    <a class="funder-link" href="{{ funder['link'] }}"><img class="img-fluid funder-logo" src="{{ funder['image'] }}"></a>
+                {% endfor %}
+            </div>
         </div>
-    </div>
 
 
-    <div class="row">
-        <div class="d-flex justify-content-center copyright">
-            <p class="text-on-dark"><i class="fa-solid fa-copyright"></i> 2024 marbleclimate.com. All rights reserved.</p>
+        <div class="row">
+            <div class="d-flex justify-content-center copyright">
+                <p class="text-on-dark"><i class="fa-solid fa-copyright"></i> 2024 marbleclimate.com. All rights reserved.</p>
+            </div>
         </div>
     </div>
  </div>
