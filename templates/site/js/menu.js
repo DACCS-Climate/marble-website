@@ -63,8 +63,3 @@ document.addEventListener("DOMContentLoaded", function () {
         aboutButton.classList.remove("text-primary");
     }
 })
-
-function goToTechnology(){
-
-}
-
