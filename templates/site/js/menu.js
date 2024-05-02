@@ -7,20 +7,22 @@ document.addEventListener("DOMContentLoaded", function () {
     var communityButton = document.getElementById('communityMenuButton');
     var aboutButton = document.getElementById('aboutMenuButton');
 
-    technologyButton.addEventListener("click", function(event){
-        //window.location.href="index.html#technology";
-        //event.preventDefault();
-        //return true;
-        var navbar = document.getElementById("navbarSupportedContent");
-        //var bsOffcanvas = new bootstrap.Offcanvas(navbar)
-        var offcanvasPanel = bootstrap.Offcanvas.getInstance(navbar);
-        offcanvasPanel.toggle();
-        window.location.href = "index.html#technology";
-        //hide.bs.offcanvas
-    });
-
     var currentURL = window.location.href;
     var currentPath = window.location.pathname;
+
+    var navbar = document.getElementById("navbarSupportedContent");
+    var bsOffcanvas = new bootstrap.Offcanvas(navbar)
+    var navbarButton = document.getElementById("navbarButton");
+
+    navbarButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        bsOffcanvas.toggle();
+    })
+
+    technologyButton.addEventListener("click", () => {
+        bsOffcanvas.toggle();
+    })
 
     if (currentPath.includes("index.html") && currentURL.includes("index.html#technology") == false) {
         homeButton.classList.add("text-primary");
