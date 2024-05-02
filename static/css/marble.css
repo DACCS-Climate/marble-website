@@ -26,7 +26,7 @@
     --transparent: transparent;
     --background-transparent: transparent;
     --black: #000000;
-    --black-opacity-0-25: rgba(0,0,0,0.25);
+    --black-opacity-0-30: rgba(0,0,0,0.30);
     --black-opacity-0-5: rgba(0,0,0,0.5);
     --linear-gradient-black: linear-gradient(90deg,transparent, #000000, transparent);
     --linear-gradient-marble: linear-gradient(90deg, #3F6BAE 3%, #6DA39F 33.33%, #D89E37 66.67%, #823628 100%);
@@ -432,24 +432,31 @@ h6{
     background: var(--linear-gradient-black);
 }
 
+.banner-overlay-elements{
+    width: 75%;
+}
+
 /*Quick Start menu*/
 .quick-start-title{
     padding-bottom: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 3px;
     border-bottom: solid;
     border-bottom-width: thin;
     border-color: var(--white);
 }
 
-.hero-menu{
-    max-width: 515px;
-    max-height: 417px;
+.hero-menu-wrap{
+    min-width: 400px;
+    max-width: 500px;
+    max-height: 400px;
     padding: 30px;
-    margin: 0 0 20px 0;
-    background-color: var(--black-opacity-0-25);
+    background-color: var(--black-opacity-0-30);
     box-shadow: var(--elevation-3);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    z-index: 3;
+}
+
+.hero-menu{
+    width: 45%;
 }
 
 .hero-menu a {
@@ -467,11 +474,7 @@ h6{
 }
 
 .hero-menu ul li{
-    margin-bottom: 22px;
-}
-
-.hero-menu-wrap{
-    z-index: 3;
+    margin-top: 22px;
 }
 
 /*Home Page*/
