@@ -439,7 +439,6 @@ h6{
     border-bottom: solid;
     border-bottom-width: thin;
     border-color: var(--white);
-    text-shadow: var(--text-shadow);
 }
 
 .hero-menu{
@@ -456,7 +455,6 @@ h6{
 .hero-menu a {
     color: var(--white);
     text-decoration: none;
-    text-shadow: var(--text-shadow);
 }
 
 .hero-menu a:hover {
