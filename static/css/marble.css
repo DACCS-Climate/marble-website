@@ -439,16 +439,15 @@ h6{
 /*Quick Start menu*/
 .quick-start-title{
     padding-bottom: 15px;
-    margin-bottom: 3px;
+    margin-bottom: 25px;
     border-bottom: solid;
     border-bottom-width: thin;
     border-color: var(--white);
 }
 
 .hero-menu-wrap{
-    min-width: 400px;
-    max-width: 500px;
-    max-height: 400px;
+    width: 500px;
+    height: 400px;
     padding: 30px;
     background-color: var(--black-opacity-0-30);
     box-shadow: var(--elevation-3);
@@ -470,11 +469,12 @@ h6{
 
 .hero-menu ul{
     padding-left: 0px;
+    margin-bottom: 0px;
     list-style-type: none;
 }
 
 .hero-menu ul li{
-    margin-top: 22px;
+    margin-bottom: 20px;
 }
 
 /*Home Page*/
