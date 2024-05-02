@@ -1,11 +1,13 @@
 {% set mobile_title = "MARBLE" %}
 {% set menu_text_class = menu_text_class|default("menu-text-white") %}
 {% if menu_text_class == "menu-text-white" %}
-    {% set toggler_icon_class = "mobile-toggler-icon-white"  %}
+    {% set toggler_icon_class = "mobile-toggler-icon-white" %}
+    {% set close_icon_class = "mobile-close-icon-white" %}
     {% set mobile_title_class = "mobile-menu-title-white" %}
 {% else %}
-    {% set mobile_title_class = "mobile-menu-title" %}
     {% set toggler_icon_class = ""  %}
+    {% set close_icon_class = "btn-close" %}
+    {% set mobile_title_class = "mobile-menu-title" %}
 {% endif %}
 <div class="d-flex justify-content-start justify-content-lg-center position-relative">
     <nav class="navbar navbar-expand-lg position-absolute menu">
@@ -28,49 +30,23 @@
                     <div class="d-flex d-md-none {{ mobile_title_class }}"><h3>{{ mobile_title }}</h3></div>
                     <div class="d-flex flex-column flex-lg-row menu-items-container">
                         <ul class="navbar-nav mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <div>
-                                    <h6 class="menu-items-margin"><a id="homeMenuButton" class=" {{ menu_text_class }}" aria-current="page" href="index.html">Home</a></h6>
-                                </div>
+                            <li class="nav-item w-75">
+                                <h6 class="menu-items-spacing menu-items-border"><a id="homeMenuButton" class=" {{ menu_text_class }}" aria-current="page" href="index.html">Home</a></h6>
                             </li>
-                            <li class="nav-item">
-                                <div class="w-50 menu-items-border">
-                                    <h6 class="menu-items-margin">
-                                         <!--<button type="button" class="technology-menu-item" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent">
-                                            <a id="technologyMenuButton" class="{{ menu_text_class }}" href="index.html#technology">Technology</a>
-                                        </button>-->
-
-                                        <a id="technologyMenuButton" class="{{ menu_text_class }}" href="index.html#technology">
-                                          Technology
-                                        </a>
-                                        <!--<a id="technologyMenuButton" class="{{ menu_text_class }}" data-bs-dismiss="offcanvas" href="#navbarSupportedContent" role="button" aria-controls="navbarSupportedContent">
-                                          Technology
-                                        </a>-->
-                                        <!--<button id="technologyMenuButton" type="button" class="technology-menu-item" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" onclick="return goToTechnology()">
-                                            <span class="{{ menu_text_class }}" >Technology</span>
-                                        </button>-->
-                                    </h6>
-                                </div>
+                            <li class="nav-item w-75">
+                                <h6 class="menu-items-spacing menu-items-border"><a id="technologyMenuButton" class="{{ menu_text_class }}" href="index.html#technology">Technology</a></h6>
                             </li>
-                            <li class="nav-item">
-                                <div class="w-50 menu-items-border">
-                                    <h6 class="menu-items-margin"><a id="nodeMenuButton" class="{{ menu_text_class }}" href="node.html">Nodes</a></h6>
-                                </div>
+                            <li class="nav-item w-75">
+                                <h6 class="menu-items-spacing menu-items-border"><a id="nodeMenuButton" class="{{ menu_text_class }}" href="node.html">Nodes</a></h6>
                             </li>
-                            <li class="nav-item">
-                                <div class="w-50 menu-items-border">
-                                    <h6 class="menu-items-margin"><a id="tutorialsMenuButton" class="{{ menu_text_class }}" href="tutorials/index.html">Tutorials</a></h6>
-                                </div>
+                            <li class="nav-item w-75">
+                                <h6 class="menu-items-spacing menu-items-border"><a id="tutorialsMenuButton" class="{{ menu_text_class }}" href="tutorials/index.html">Tutorials</a></h6>
                             </li>
-                            <li class="nav-item">
-                                <div class="w-50 menu-items-border">
-                                    <h6 class="menu-items-margin"><a id="communityMenuButton" class="{{ menu_text_class }}" href="https://discourse.marbleclimate.com" target="_blank">Community</a></h6>
-                                </div>
+                            <li class="nav-item w-75">
+                                <h6 class="menu-items-spacing menu-items-border"><a id="communityMenuButton" class="{{ menu_text_class }}" href="https://discourse.marbleclimate.com" target="_blank">Community</a></h6>
                             </li>
-                            <li class="nav-item">
-                                <div class="w-50 menu-items-border">
-                                    <h6 class="menu-items-margin"><a id="aboutMenuButton" class="{{ menu_text_class }}" href="about.html">About</a></h6>
-                                </div>
+                            <li class="nav-item w-75 ">
+                                <h6 class="menu-items-spacing"><a id="aboutMenuButton" class="{{ menu_text_class }}" href="about.html">About</a></h6>
                             </li>
                         </ul>
                     </div>

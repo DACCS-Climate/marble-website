@@ -159,7 +159,6 @@ h6{
     font-weight: var(--reg-font-weight);
     font-size: 20px;
     letter-spacing: 0.03px;
-    margin-bottom: 30px;
 }
 
 .subtitle-1, .leading-text-1{
@@ -302,6 +301,10 @@ h6{
     margin-bottom: 30px;
 }
 
+.h6-title-margin{
+    margin-bottom: 30px;
+}
+
 .paragraph-href{
     color: var(--primary);
     text-decoration: none;
@@ -351,6 +354,12 @@ h6{
     background-image: url(
         "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
         );
+}
+
+.mobile-close-icon-white{
+    background-image: url(
+        "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e"
+    );
 }
 
 .mobile-menu-title{
@@ -963,22 +972,24 @@ h6{
         -webkit-backdrop-filter: blur(15px);
     }
 
-    .menu-items-margin{
+    .menu-items-spacing{
         margin-left: 49px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .menu-items-border{
-        border-top: solid;
-        border-top-width: thin;
-        border-top-color: var(--white);
+        border-bottom: solid;
+        border-bottom-width: thin;
+        border-bottom-color: var(--white);
     }
 }
 
 @media (width > 768px) {
-    .menu-items-margin{
+    .menu-items-spacing{
         margin-left: 80px;
+        margin-bottom: 0px;
         margin-top: 16px;
         margin-bottom: 16px;
     }
