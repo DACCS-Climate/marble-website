@@ -1,0 +1,48 @@
+{% if profile_info %}
+    {% set image = profile_info["image"] %}
+    {% set name = profile_info["name"] %}
+    {% set title = profile_info["title"] %}
+    {% set expertise = profile_info["expertise"] %}
+    {% set profile = profile_info["profile"] %}
+    {% set organization = profile_info["organization"] %}
+    {% set links = profile_info["links"] %}
+{% endif %}
+
+<div class="d-flex flex-column committee-card justify-content-between">
+    <div class="d-flex flex-column">
+        <img class="profile-image" src="{{ image|default('images/logos/marble.png') }}">
+        <p class="subtitle-1 profile-entry">{{ name }}</p>
+        {% if title %}
+            <p class="subtitle-1 profile-entry body-1">{{ title }}</p>
+        {% endif %}
+        {% if expertise %}
+            <div class="profile-entry" content="{{ expertise }}">
+                <span class="subtitle-1">Expertise:</span>
+                <div class="profile-entry-overflow-content">{{ expertise }}</div>
+            </div>
+        {% endif %}
+    </div>
+    <div class="d-flex flex-column">
+        <div class="d-flex flex-column profile-entry">
+            {% if organization %}
+                    {% with %}
+                        {% set href = organization["href"] %}
+                        {% set title = organization["name"] %}
+                        {% set text = organization["name"] %}
+                        {% set icon_class = organization["icon_class"]|default("fa-building-columns") %}
+                        {% include "partials/profile-link.html" %}
+                    {% endwith %}
+            {% endif %}
+        </div>
+        <div class="d-flex flex-row profile-entry justify-content-start">
+            {% for link in links %}
+                {% with %}
+                    {% set href = link["href"] %}
+                    {% set title = link["name"] %}
+                    {% set icon_class = link["icon_class"]|default("fa-link") %}
+                    {% include "partials/profile-link.html" %}
+                {% endwith %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
