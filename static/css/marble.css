@@ -846,7 +846,7 @@ h6{
 /*Footer*/
 
 .footer{
-    background-image: url("../images/footer/world-relief-map.jpg");
+    background-image: url("../images/footer/world-relief-map.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -854,7 +854,6 @@ h6{
 
 .footer-overlay{
     background: var(--opaque-black);
-    height: 100%;
 }
 
 .funder-logo-container{
@@ -862,6 +861,8 @@ h6{
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .funder-link{
