@@ -960,10 +960,6 @@ h6{
     font-weight: bold;
 }
 
-@media (width <= 576px) {
-
-}
-
 @media (width <= 768px) {
       .mobile-menu{
         width: 100%;
