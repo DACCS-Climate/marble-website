@@ -310,12 +310,12 @@ h6{
 /*See media queries at bottom of file*/
 
 .menu{
-        background-color: var(--background-transparent);
-        z-index: 10;
+    background-color: var(--background-transparent);
+    z-index: 10;
 }
 
 .menu-items-container{
-        padding-top: 20px;
+    padding-top: 20px;
 }
 
 .menu-link{
