@@ -471,17 +471,23 @@ h6{
 }
 
 .card-button-margin{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .technology-card{
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 30px;
+    min-width: 33%;
+}
+
+.technology-card h6{
+    margin-bottom: unset;
+}
+
+.technology-card-title{
+    min-height: 2.5em;
 }
 
 .technology-card-content{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .faq-card-content{
