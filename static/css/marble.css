@@ -21,6 +21,7 @@
     --background: #FFFFFF;
     --background-black: #000000;
     --background-transparent: transparent;
+    --background-blur: blur(15px);
     --black: #000000;
     --opaque-black: rgba(0,0,0,0.5);
     --linear-gradient-black: linear-gradient(90deg,transparent, #000000, transparent);
@@ -468,8 +469,8 @@ h6{
     margin: 0 0 20px 0;
     background-color: var(--background-transparent);
     box-shadow: var(--elevation-3);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: var(--background-blur);
+    -webkit-backdrop-filter: var(--background-blur);
 }
 
 .hero-menu a {
@@ -956,8 +957,8 @@ h6{
     .mobile-menu{
         width: 100%;
         background-color: var(--background-transparent);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter:var(--background-blur);
+        -webkit-backdrop-filter: var(--background-blur);
     }
 
     .menu-items-spacing{
