@@ -976,6 +976,7 @@ h6{
     }
 
     .menu-items-border{
+        width: 221px;
         border-bottom: solid;
         border-bottom-width: thin;
         border-bottom-color: var(--white);
