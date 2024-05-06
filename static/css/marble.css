@@ -22,8 +22,10 @@
     --background-black: #000000;
     --background-transparent: transparent;
     --background-blur: blur(15px);
+    --background-blur-mobile: blur(7.5px);
     --black: #000000;
     --opaque-black: rgba(0,0,0,0.5);
+    --opaque-light-grey: rgba(255,255,255, 0.3);
     --linear-gradient-black: linear-gradient(90deg,transparent, #000000, transparent);
     --white: #FFFFFF;
 
@@ -327,6 +329,11 @@ h6{
 }
 
 /*Override Bootstrap classes*/
+.navbar-toggler{
+    width: 40px;
+    height: 40px;
+}
+
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -336,10 +343,20 @@ h6{
     box-shadow: none;
 }
 
+.offcanvas-header{
+    padding: 0px;
+}
+
 .mobile-toggler-icon-white.navbar-toggler-icon{
     background-image: url(
-        "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
+        "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
         );
+}
+
+.mobile-close-icon-default{
+    background-image: url(
+        "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239E9E9E'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e"
+    );
 }
 
 .mobile-close-icon-white{
@@ -348,11 +365,8 @@ h6{
     );
 }
 
-.mobile-close-spacing{
-    padding-right: 49px;
-}
-
-.mobile-menu-title{
+.mobile-menu-title-default{
+    color: var(--indigo-100);
     margin-left: 49px;
 }
 
@@ -979,9 +993,12 @@ h6{
 @media (width <= 992px) {
     .mobile-menu{
         width: 100%;
+        background-image: url(../images/banner/banner-home-mobile.jpg);
+        background-size: cover;
+        /*
         background-color: var(--background-transparent);
-        backdrop-filter:var(--background-blur);
-        -webkit-backdrop-filter: var(--background-blur);
+        backdrop-filter:var(--background-blur-mobile);
+        -webkit-backdrop-filter: var(--background-blur-mobile);*/
     }
 
     .menu-text-colour{

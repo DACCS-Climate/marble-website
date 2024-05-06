@@ -2,10 +2,12 @@
 {% if menu_text_class == "menu-text-white" %}
     {% set toggler_icon_class = "mobile-toggler-icon-white" %}
     {% set close_icon_class = "mobile-close-icon-white" %}
+    {% set mobile_title_class = "mobile-menu-title-white" %}
+
 {% else %}
     {% set toggler_icon_class = ""  %}
-    {% set close_icon_class = "btn-close" %}
-    {% set mobile_title_class = "mobile-menu-title" %}
+    {% set close_icon_class = "mobile-close-icon-default" %}
+    {% set mobile_title_class = "mobile-menu-title-default" %}
 {% endif %}
 <div class="d-flex justify-content-start justify-content-lg-center position-relative">
     <nav class="navbar navbar-expand-lg position-absolute menu">
@@ -17,12 +19,12 @@
 
             <div class="offcanvas offcanvas-start collapse navbar-collapse w-100 mobile-menu" id="navbarSupportedContent">
                 <div class="offcanvas-body w-100">
-                    <div class="col-1">
+                    <div class="col-1 d-none d-lg-block">
                         <a href="index.html">
-                            <img id="menu-logo" src="images/logos/marble.png" class="img-fluid d-none d-lg-block menu-logo" />
+                            <img id="menu-logo" src="images/logos/marble.png" class="img-fluid menu-logo" />
                         </a>
                     </div>
-                    <div class="offcanvas-header d-flex d-lg-none justify-content-end w-100 mobile-close-spacing">
+                    <div class="offcanvas-header d-flex d-lg-none">
                         <button type="button" class="btn-close text-reset {{ close_icon_class }}" data-bs-toggle="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="d-flex d-lg-none mobile-menu-title-white"><h3>MARBLE</h3></div>
