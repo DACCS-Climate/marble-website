@@ -23,11 +23,11 @@
     --alert-background: #F6DC3D;
     --background: #FFFFFF;
     --background-black: #000000;
-    --transparent: transparent;
     --background-transparent: transparent;
     --black: #000000;
-    --black-opacity-0-30: rgba(0,0,0,0.30);
-    --black-opacity-0-5: rgba(0,0,0,0.5);
+    --black-opacity-light: rgba(0,0,0,0.25);
+    --black-opacity-midlight: rgba(0,0,0,0.30);
+    --black-opacity-mid: rgba(0,0,0,0.5);
     --linear-gradient-black: linear-gradient(90deg,transparent, #000000, transparent);
     --linear-gradient-marble: linear-gradient(90deg, #3F6BAE 3%, #6DA39F 33.33%, #D89E37 66.67%, #823628 100%);
     --white: #FFFFFF;
@@ -350,7 +350,7 @@ h6{
     background: var(--linear-gradient-marble);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.25));
+    filter: drop-shadow(0px 4px 4px var(--black-opacity-light));
 }
 
 .banner-title-node{
@@ -424,7 +424,7 @@ h6{
 }
 
 .banner-overlay-opacity{
-    background-color: var(--black-opacity-0-5);
+    background-color: var(--black-opacity-mid);
 }
 
 .banner-overlay-linear-opacity{
@@ -449,7 +449,7 @@ h6{
     width: 500px;
     height: 400px;
     padding: 30px;
-    background-color: var(--black-opacity-0-30);
+    background-color: var(--black-opacity-midlight);
     box-shadow: var(--elevation-3);
     z-index: 3;
 }
@@ -535,7 +535,7 @@ h6{
 }
 
 .getStartedOpacity{
-    background-color: var(--black-opacity-0-5);
+    background-color: var(--black-opacity-mid);
 }
 
 .student-user-content{
