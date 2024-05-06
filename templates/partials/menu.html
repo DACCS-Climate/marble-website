@@ -2,7 +2,6 @@
 {% if menu_text_class == "menu-text-white" %}
     {% set toggler_icon_class = "mobile-toggler-icon-white" %}
     {% set close_icon_class = "mobile-close-icon-white" %}
-    {% set mobile_title_class = "mobile-menu-title-white" %}
 {% else %}
     {% set toggler_icon_class = ""  %}
     {% set close_icon_class = "btn-close" %}
@@ -20,13 +19,13 @@
                 <div class="offcanvas-body w-100">
                     <div class="col-1">
                         <a href="index.html">
-                            <img id="menu-logo" src="images/logos/marble.png" class="img-fluid ms-4 d-none d-lg-block menu-logo" />
+                            <img id="menu-logo" src="images/logos/marble.png" class="img-fluid d-none d-lg-block menu-logo" />
                         </a>
                     </div>
                     <div class="offcanvas-header d-flex d-lg-none justify-content-end w-100 mobile-close-spacing">
                         <button type="button" class="btn-close text-reset {{ close_icon_class }}" data-bs-toggle="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="d-flex d-lg-none {{ mobile_title_class }}"><h3>MARBLE</h3></div>
+                    <div class="d-flex d-lg-none mobile-menu-title-white"><h3>MARBLE</h3></div>
                     <div class="d-flex flex-column flex-lg-row menu-items-container">
                         <ul class="navbar-nav mb-2 mb-lg-0">
                             <li class="nav-item menu-items-spacing">
