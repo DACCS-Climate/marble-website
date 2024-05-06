@@ -1,31 +1,63 @@
-{% set array_length = section_title|length %}
-{% set link_href = href %}
-<div class="container-fluid w-100 content-section">
-        <div class="container-fluid w-75">
+{% set section_content = [
+    {
+        "title": "Integrated Development Environment",
+        "tutorial_href": "tutorials/users/ide/ide.html",
+        "technology_name": "JupyterLab",
+        "technology_href": "https://jupyter.org/",
+        "technology_description": "is integrated within the Marble platform as its development environment. It provides
+                                   users with access to climate based data analytics tools, and allows users to store
+                                   data analytics results and workflows online."
+    },
+    {
+        "title": "Data Catalog",
+        "tutorial_href": "tutorials/users/catalog/catalog.html",
+        "technology_name": "SpatioTemporal Asset Catalog (STAC)",
+        "technology_href": "https://stacspec.org",
+        "technology_description": "is integrated within the Marble platform as its data catalog. STAC allows users to
+                                   discover and access climate data that is available on the Marble network."
+    },
+    {
+        "title": "Remote Processing Services",
+        "tutorial_href": "tutorials/users/remote-processing/remote-processing.html",
+        "technology_name": "Weaver",
+        "technology_href": "https://pavics-weaver.readthedocs.io",
+        "technology_description": "is a remote processing tool integrated within the Marble platform. Weaver allows users to create
+                                   and run processes remotely across the Marble network."
+    },
+]%}
+
+<div class="container-fluid w-75 content-section">
+    <div class="row">
+        <h3 class="h3-title-margin">
+            <a id="technology">Explore the Technologies</a>
+        </h3>
+        <div>
             <div class="row">
-                <h3 class="header-title-margin"><a id="technology">{{ title }}</a></h3>
-                <div><p class="lead-in-text">{{ lead_in_text }}</p></div>
-                <div>
-                    <div class="row">
-                        <div class="d-flex flex-column flex-lg-row">
-                            {% for array_item in range(array_length) %}
-                                <div class="d-flex flex-column technology-card">
-                                    <div class="technology-card-content">
-                                        <h6 class="header-title-margin">{{ section_title[array_item] }}</h6>
-                                        <p>{{ section_content[array_item] | safe}}</p>
-                                    </div>
-                                    <div class="align-items-end mt-auto card-button-margin">
-                                        {% with button_type = "med_action_button"%}
-                                            {% set button_label = "Tutorials" %}
-                                            {% set button_href = link_href[array_item] %}
-                                            {% include "partials/button.html" %}
-                                        {% endwith %}
-                                    </div>
-                                </div>
-                            {% endfor %}
+                <div class="d-flex flex-column flex-lg-row gap-5">
+                    {% for section in section_content %}
+                        <div class="d-flex flex-column flex-grow-1 technology-card">
+                            <div class="d-flex flex-column flex-grow-1 gap-2 technology-card-content">
+                                <h6 class="technology-card-title">{{ section["title"] }}</h6>
+                                <p>
+                                    <a class="paragraph-href"
+                                       href='{{ section["technology_href"] }}'
+                                       target="_blank">
+                                        {{ section["technology_name"] }}
+                                    </a>
+                                    {{ section["technology_description"] }}
+                                </p>
+                            </div>
+                            <div class="align-items-end mt-auto card-button-margin">
+                                {% with button_type = "med_action_button"%}
+                                    {% set button_label = "Tutorials" %}
+                                    {% set button_href = section["tutorial_href"] %}
+                                    {% include "partials/button.html" %}
+                                {% endwith %}
+                            </div>
                         </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
+    </div>
 </div>

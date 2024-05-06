@@ -71,7 +71,7 @@ def build_tutorials(build_directory, clean=False):
     )
 
 
-def build(build_directory, node_registry_url, clean=False):
+def build(build_directory, node_registry_url, clean=False, also_build_tutorials=True):
     if clean:
         shutil.rmtree(build_directory, ignore_errors=True)
     env = Environment(
@@ -93,7 +93,8 @@ def build(build_directory, node_registry_url, clean=False):
             f.write(
                 env.get_template(template).render(node_registry_url=node_registry_url)
             )
-    build_tutorials(build_directory, clean)
+    if also_build_tutorials:
+        build_tutorials(build_directory, clean)
 
 
 if __name__ == "__main__":
@@ -118,5 +119,10 @@ if __name__ == "__main__":
         action="store_true",
         help="clean build directories before building.",
     )
+    parser.add_argument(
+        "--no-tutorials",
+        action="store_true",
+        help="do not build the tutorials."
+    )
     args = parser.parse_args()
-    build(args.build_directory, args.node_registry_url, args.clean)
+    build(args.build_directory, args.node_registry_url, args.clean, not args.no_tutorials)
