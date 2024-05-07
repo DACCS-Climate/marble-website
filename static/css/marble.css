@@ -1027,7 +1027,7 @@ h6{
     }
 
     .menu-text-colour:hover{
-        color: var(--text-on-surface);
+        color: var(--text-on-dark);
     }
 
     .menu-items-spacing{
