@@ -1,5 +1,9 @@
 
 :root{
+    /*Override Bootstrap*/
+    --bs-nav-link-font-size: 20px;
+    --bs-offcanvas-padding-y: 100px;
+
     /*Fonts*/
     --main-font-family: 'Helvetica Neue', Helvetica, Arial,  sans-serif;
     --secondary-font-family: Helvetica, Arial, sans-serif;
@@ -22,7 +26,7 @@
     --background-black: #000000;
     --background-transparent: transparent;
     --background-blur: blur(15px);
-    --background-blur-mobile: blur(7.5px);
+    --background-blur-mobile: blur(15px);
     --black: #000000;
     --opaque-black: rgba(0,0,0,0.5);
     --opaque-light-grey: rgba(255,255,255, 0.3);
@@ -351,11 +355,17 @@ h6{
     box-shadow: none;
 }
 
+.offcanvas-header .btn-close{
+    margin-top: calc(-.5 * var(--bs-offcanvas-padding-y));
+}
+
 .offcanvas-header{
     padding: 0px;
 }
 
 .mobile-toggler-icon-white.navbar-toggler-icon{
+    width: 40px;
+    height: 40px;
     background-image: url(
         "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
         );
@@ -363,15 +373,12 @@ h6{
 
 .mobile-close-icon-default{
     margin-left: 3px;
-    margin-top: 3px;
     background-image: url(
         "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239E9E9E'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e"
     );
 }
 
 .mobile-close-icon-white{
-    margin-left: 3px;
-    margin-top: 3px;
     background-image: url(
         "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e"
     );
@@ -1042,7 +1049,6 @@ h6{
     }
 
     .menu-items-spacing{
-        /*margin-left: 80px;*/
         margin-bottom: 0px;
         padding-top: 16px;
         padding-bottom: 16px;
