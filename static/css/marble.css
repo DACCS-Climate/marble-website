@@ -327,6 +327,10 @@ h6{
     text-decoration: none;
 }
 
+.menu-text-white:hover{
+    color: var(--text-on-dark);
+}
+
 .menu-logo{
     width: 50px;
     height: 50px;
@@ -1022,6 +1026,10 @@ h6{
         text-decoration: none;
     }
 
+    .menu-text-colour:hover{
+        color: var(--text-on-surface);
+    }
+
     .menu-items-spacing{
         margin-left: 49px;
         margin-bottom: 0px;
@@ -1046,6 +1054,10 @@ h6{
     .menu-text-colour{
         color: var(--text-on-surface);
         text-decoration: none;
+    }
+
+    .menu-text-colour:hover{
+        color: var(--text-on-surface);
     }
 
     .menu-items-spacing{
