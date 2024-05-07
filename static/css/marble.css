@@ -1022,7 +1022,7 @@ h6{
         padding-bottom: 30px;
     }
 
-    .navbar-nav .nav-item:not(:last-child) {
+    .navbar-nav .nav-link:not(:last-child) {
         width: 221px;
         border-bottom: solid;
         border-bottom-width: thin;
@@ -1032,13 +1032,17 @@ h6{
 
 @media (width > 992px) {
 
+    .menu-items-container{
+        width: 1000px;
+    }
+
     .menu-text-colour{
         color: var(--text-on-surface);
         text-decoration: none;
     }
 
     .menu-items-spacing{
-        margin-left: 80px;
+        /*margin-left: 80px;*/
         margin-bottom: 0px;
         padding-top: 16px;
         padding-bottom: 16px;
