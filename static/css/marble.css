@@ -1,8 +1,8 @@
 
 :root{
     /*Override Bootstrap*/
-    --bs-nav-link-font-size: 20px;
-    --bs-offcanvas-padding-y: 100px;
+    --bs-offcanvas-padding-y: 20px;
+
 
     /*Fonts*/
     --main-font-family: 'Helvetica Neue', Helvetica, Arial,  sans-serif;
@@ -351,6 +351,10 @@ h6{
     box-shadow: none;
 }
 
+.navbar-toggler-icon{
+    margin-top: 9px;
+}
+
 .btn-close,
 .btn-close:focus,
 .btn-close:active {
@@ -359,8 +363,11 @@ h6{
     box-shadow: none;
 }
 
-.offcanvas-header .btn-close{
-    margin-top: calc(-.5 * var(--bs-offcanvas-padding-y));
+/*Overrides default margin and padding for close button*/
+.btn-close{
+    margin-left: 10px;
+    margin-top: calc(.5 * var(--bs-offcanvas-padding-y)) !important;
+    padding: calc(0px * .5) calc(0px * .5) !important;
 }
 
 .offcanvas-header{
