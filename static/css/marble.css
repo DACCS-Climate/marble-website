@@ -28,6 +28,7 @@
     --background-blur-mobile: blur(15px);
     --black: #000000;
     --opaque-black: rgba(0,0,0,0.5);
+    --black-opacity-midlight: rgba(0,0,0,0.30);
     --opaque-light-grey: rgba(255,255,255, 0.3);
     --linear-gradient-black: linear-gradient(90deg,transparent, #000000, transparent);
     --white: #FFFFFF;
@@ -500,20 +501,23 @@ h6{
 /*Quick Start menu*/
 .quick-start-title{
     padding-bottom: 15px;
+    margin-bottom: 25px;
     border-bottom: solid;
     border-bottom-width: thin;
     border-color: var(--white);
 }
 
-.hero-menu{
-    max-width: 515px;
-    max-height: 417px;
-    padding: 20px;
-    margin: 0 0 20px 0;
-    background-color: var(--background-transparent);
+.hero-menu-wrap{
+    width: 500px;
+    height: 400px;
+    padding: 40px;
+    background-color: var(--black-opacity-midlight);
     box-shadow: var(--elevation-3);
-    backdrop-filter: var(--background-blur);
-    -webkit-backdrop-filter: var(--background-blur);
+    z-index: 3;
+}
+
+.hero-menu{
+    width: 45%;
 }
 
 .hero-menu a {
@@ -530,12 +534,8 @@ h6{
     list-style-type: none;
 }
 
-.hero-menu ul li{
-    margin-top: 22px;
-}
-
-.hero-menu-wrap{
-    z-index: 3;
+.hero-menu ul li:not(:last-child){
+    margin-bottom: 20px;
 }
 
 /*Home Page*/
