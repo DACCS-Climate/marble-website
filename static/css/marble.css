@@ -472,7 +472,7 @@ h6{
     list-style-type: none;
 }
 
-.hero-menu ul li{
+.hero-menu ul li:not(:last-child) {
     margin-bottom: 20px;
 }
 
