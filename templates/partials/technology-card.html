@@ -3,7 +3,7 @@
 <div class="container-fluid w-100 content-section">
         <div class="container-fluid w-75">
             <div class="row">
-                <h3 class="h3-title-margin"><a id="technology">{{ title }}</a></h3>
+                <h3 class="header-title-margin"><a id="technology">{{ title }}</a></h3>
                 <div><p class="lead-in-text">{{ lead_in_text }}</p></div>
                 <div>
                     <div class="row">
@@ -11,7 +11,7 @@
                             {% for array_item in range(array_length) %}
                                 <div class="d-flex flex-column technology-card">
                                     <div class="technology-card-content">
-                                        <h6>{{ section_title[array_item] }}</h6>
+                                        <h6 class="header-title-margin">{{ section_title[array_item] }}</h6>
                                         <p>{{ section_content[array_item] | safe}}</p>
                                     </div>
                                     <div class="align-items-end mt-auto card-button-margin">
