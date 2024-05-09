@@ -488,6 +488,15 @@ h6{
     list-style-type: none;
 }
 
+.hero-menu ul li h6 a{
+    display: flex;
+    width: 192px;
+    height: 47px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
 .hero-menu ul li:not(:last-child) {
     margin-bottom: 20px;
 }
