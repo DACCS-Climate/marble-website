@@ -352,10 +352,6 @@ h6{
     color: var(--white);
 }
 
-.value-statement{
-    margin-top: 60px;
-}
-
 .bg {
   position: absolute;
   top: 0;
@@ -466,10 +462,6 @@ h6{
 
 /*Home Page*/
 /*Custom Settings For Each Home Page Content Section*/
-.content-section{
-    margin-bottom: 120px;
-}
-
 .card-button-margin{
     margin-top: 30px;
 }
@@ -853,14 +845,6 @@ h6{
     text-decoration: none;
 }
 
-.committee-menu-button{
-    color: var(--black);
-    text-decoration: none;
-    margin-left: 60px;
-    margin-right: 60px;
-    cursor: pointer;
-}
-
 .committee-container{
     width: 93%;
 }
@@ -946,4 +930,67 @@ h6{
 
 .registration-status-title{
     font-weight: bold;
+}
+
+/*Media Queries*/
+@media (width <= 992px){
+    .value-statement{
+        margin-top: 60px;
+        width: 60%;
+    }
+
+    .content-section{
+        margin-bottom: 50px;
+    }
+
+    .margin-faq-top{
+        margin-top: 30px;
+    }
+
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 25px;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+}
+
+@media (width > 992px) {
+    .value-statement{
+        margin-top: 60px;
+    }
+
+    .content-section{
+        margin-bottom: 120px;
+    }
+
+    .margin-faq-top{
+        margin-top: 9px;
+    }
+
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 60px;
+        margin-right: 60px;
+        cursor: pointer;
+    }
 }
