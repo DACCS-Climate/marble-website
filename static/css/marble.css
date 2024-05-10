@@ -405,7 +405,6 @@ h6{
 
 .mobile-menu-title-white{
     color: var(--text-on-dark);
-    margin-left: 49px;
 }
 
 .technology-menu-item{
@@ -1022,6 +1021,34 @@ h6{
     font-weight: bold;
 }
 
+@media (width < 576px) {
+
+    .mobile-menu-title-spacing{
+        margin-left: 0px;
+    }
+
+    .menu-items-spacing{
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (width >= 576px) {
+
+    .mobile-menu-title-spacing{
+        margin-left: 49px;
+    }
+
+    .menu-items-spacing{
+        margin-left: 49px;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
 @media (width <= 992px) {
     .mobile-menu{
         width: 100%;
@@ -1037,13 +1064,6 @@ h6{
 
     .menu-text-colour:hover{
         color: var(--text-on-dark);
-    }
-
-    .menu-items-spacing{
-        margin-left: 49px;
-        margin-bottom: 0px;
-        padding-top: 30px;
-        padding-bottom: 30px;
     }
 
     .navbar-nav .nav-link:not(:last-child) {
@@ -1069,9 +1089,4 @@ h6{
         color: var(--text-on-surface);
     }
 
-    .menu-items-spacing{
-        margin-bottom: 0px;
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
 }
