@@ -879,6 +879,11 @@ h6{
 @media (width <= 992px) {
 
     /*Node Page*/
+    .value-statement-node{
+        width: 85%;
+        text-align: center;
+      }
+
     .node-menu-header{
         font-family: var(--secondary-font-family);
         font-weight: var(--reg-font-weight);
