@@ -404,6 +404,7 @@ h6{
 }
 
 .mobile-menu-title-white{
+    width: 221px;
     color: var(--text-on-dark);
 }
 
