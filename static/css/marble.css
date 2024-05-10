@@ -934,6 +934,10 @@ h6{
 
 /*Media Queries*/
 @media (width <= 992px){
+    .banner-width-mobile{
+        width: 90%;
+    }
+
     .value-statement{
         margin-top: 60px;
         width: 60%;
