@@ -463,6 +463,7 @@ h6{
 .hero-menu-wrap{
     width: 500px;
     height: 400px;
+    margin-left: 50px;
     padding: 40px;
     background-color: var(--black-opacity-midlight);
     box-shadow: var(--elevation-3);
