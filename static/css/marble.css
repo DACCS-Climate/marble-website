@@ -915,14 +915,18 @@ h6{
     font-weight: bold;
 }
 
-@media (width < 768px) {
+@media (width < 576px) {
+    .usage-content-spacing{
+        padding-top: 25px;
+    }
+
     .user-image-height{
-    width: 100%;
+        width: 100%;
         height: auto;
     }
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
     .user-image-height{
         height: 842px;
     }
