@@ -1067,8 +1067,11 @@ h6{
         color: var(--text-on-dark);
     }
 
-    .navbar-nav .nav-link:not(:last-child) {
+    .nav-link{
         width: 221px;
+    }
+
+    .navbar-nav .nav-link:not(:last-child){
         border-bottom: solid;
         border-bottom-width: thin;
         border-bottom-color: var(--white);
