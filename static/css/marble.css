@@ -452,26 +452,13 @@ h6{
 }
 
 /*Quick Start menu*/
+/*See media queries at end of file*/
 .quick-start-title{
     padding-bottom: 15px;
     margin-bottom: 25px;
     border-bottom: solid;
     border-bottom-width: thin;
     border-color: var(--white);
-}
-
-.hero-menu-wrap{
-    width: 500px;
-    height: 400px;
-    margin-left: 50px;
-    padding: 40px;
-    background-color: var(--black-opacity-midlight);
-    box-shadow: var(--elevation-3);
-    z-index: 3;
-}
-
-.hero-menu{
-    width: 45%;
 }
 
 .hero-menu a {
@@ -986,3 +973,36 @@ h6{
 .registration-status-title{
     font-weight: bold;
 }
+
+@media (width < 576px) {
+    .hero-menu-wrap{
+        width: 241px;
+        height: 417px;
+        margin-left: 0px;
+        padding: 40px;
+        background-color: var(--black-opacity-midlight);
+        box-shadow: var(--elevation-3);
+        z-index: 3;
+    }
+
+    .hero-menu{
+        width: 80%;
+    }
+}
+
+@media (width >= 576px) {
+        .hero-menu-wrap{
+        width: 500px;
+        height: 400px;
+        margin-left: 50px;
+        padding: 40px;
+        background-color: var(--black-opacity-midlight);
+        box-shadow: var(--elevation-3);
+        z-index: 3;
+    }
+
+    .hero-menu{
+        width: 45%;
+    }
+}
+
