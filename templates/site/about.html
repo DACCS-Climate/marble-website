@@ -10,7 +10,7 @@
         {% include "partials/banner.html" %}
     {% endwith %}
 
-    {% with page = "about" %}
+    {% with title_position = "left" %}
         {% set title = "Mission" %}
         {% set mobile_title = "Mission" %}
         {% set content = "<p>Our mission is to eliminate the technical barriers faced by individuals working
@@ -18,7 +18,7 @@
         {% include "partials/general-content.html" %}
     {% endwith %}
 
-    {% with page = "about" %}
+    {% with title_position = "left" %}
         {% set title = "Our Story" %}
         {% set mobile_title = "Our Story" %}
         {% set content = "<p>Climate change is already affecting flood risks, storm trajectories, heatwave intensity,
@@ -31,7 +31,7 @@
         {% include "partials/general-content.html" %}
     {% endwith %}
 
-    {% with about_github = "https://github.com/DACCS-Climate/" %}
+    {% with github_href = "https://github.com/DACCS-Climate/" %}
         {% set title = "Data Analytics for Canadian Climate Services" %}
         {% set mobile_title = "DACCS" %}
         {% set content = "<p>Marble is developed by <a class='paragraph-href' href='https://daccs.ca/' target='_blank'>Data Analytics for Canadian Climate Services (DACCS)</a> collaboration.
