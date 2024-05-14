@@ -462,31 +462,6 @@ h6{
 
 /*Home Page*/
 /*Custom Settings For Each Home Page Content Section*/
-.content-section{
-    margin-bottom: 120px;
-}
-
-.card-button-margin{
-    margin-top: 50px;
-}
-
-.technology-card{
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 30px;
-}
-
-.technology-card-content{
-    margin-bottom: 50px;
-}
-
-.faq-card-content{
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    width: 100%;
-}
 
 .usage-content-title{
     margin-bottom: 20px;
@@ -916,7 +891,35 @@ h6{
 }
 
 @media (width < 576px) {
-    .usage-content-spacing{
+    .margin-content-section{
+        margin-bottom: 50px;
+    }
+
+    .width-content-section{
+        width: 100%;
+    }
+
+    .technology-container-width{
+        width: 100%;
+    }
+
+    .technology-card{
+        margin-bottom: 30px;
+    }
+
+    .header-technology-card{
+        margin-bottom: 20px;
+    }
+
+    .margin-technology-card-content{
+        margin-bottom: 20px;
+    }
+
+    .width-usage-section{
+        width: 100%;
+    }
+
+    .padding-usage-content{
         padding-top: 20px;
     }
 
@@ -924,10 +927,45 @@ h6{
         width: 100%;
         height: auto;
     }
+
+    .width-faq-section{
+       width: 100%;
+    }
+
+    .faq-card-content{
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
 }
 
 @media (width >= 576px) {
-    .usage-content-spacing{
+    .width-content-section{
+        width: 75%;
+    }
+
+    .technology-container-width{
+        width: 75%;
+    }
+
+    .technology-card{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+
+    .margin-technology-card-content{
+        margin-bottom: 50px;
+    }
+
+    .width-usage-section{
+        width: 75%;
+    }
+
+    .padding-usage-content{
         padding-top: 25px;
     }
 
@@ -935,9 +973,27 @@ h6{
         width: 100%;
         height: auto;
     }
+
+    .width-faq-section{
+       width: 75%;
+    }
+
+    .faq-card-content{
+        width: 100%;
+        margin-bottom: 9px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
 }
 
 @media (width >= 992px) {
+    .margin-content-section{
+        margin-bottom: 120px;
+    }
+
     .user-image-height{
         height: 842px;
     }
