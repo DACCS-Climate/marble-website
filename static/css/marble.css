@@ -933,7 +933,43 @@ h6{
 }
 
 /*Media Queries*/
-@media (width <= 992px){
+@media (width < 576px){
+    .banner-width-mobile{
+        width: 90%;
+    }
+
+    .value-statement{
+        margin-top: 60px;
+        width: 60%;
+    }
+
+    .content-section{
+        margin-bottom: 50px;
+    }
+
+    .margin-faq-top{
+        margin-top: 30px;
+    }
+
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 25px;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+}
+
+@media (width >= 576px){
     .banner-width-mobile{
         width: 90%;
     }
