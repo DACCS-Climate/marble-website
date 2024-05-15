@@ -225,6 +225,10 @@ h6{
     border: none;
 }
 
+.button-reg:hover, .button-med:hover{
+    background-color: var(--indigo-800);
+}
+
 .button-sm{
     width: 75px;
     height: 51px;
@@ -232,7 +236,7 @@ h6{
     border: none;
 }
 
-.button-sm:hover, .button-med:hover{
+.button-sm:hover{
     background-color: var(--background-black);
 }
 
@@ -463,6 +467,30 @@ h6{
 /*Custom Settings For Each Home Page Content Section*/
 .card-button-margin{
     margin-top: 30px;
+}
+
+.technology-card{
+    min-width: 33%;
+}
+
+.technology-card h6{
+    margin-bottom: unset;
+}
+
+.technology-card-title{
+    min-height: 2.5em;
+}
+
+.technology-card-content{
+    margin-bottom: 30px;
+}
+
+.faq-card-content{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 100%;
 }
 
 .usage-content-title{
@@ -756,10 +784,34 @@ h6{
 
 .profile-image{
     width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 21px;
 }
 
 .profile-entry{
+    min-height: 24px;
     margin-bottom: 21px;
+}
+
+.profile-entry-overflow-content{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.profile-entry-overflow-content:hover{
+    overflow: visible;
+    white-space: inherit;
+    width: 200px;
+    background: var(--background);
+    display: block;
+    position: absolute;
+    border: var(--border-black);
+    border-style: solid;
+    border-width: thin;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 .profile-social-media{
@@ -795,17 +847,13 @@ h6{
     cursor: pointer;
 }
 
-.committee-menu-button:focus{
-    color: var(--primary);
-}
-
-.scientific-committee-container{
+.committee-container{
     width: 93%;
 }
 
 .committee-card{
-    width: 210px;
-    max-height: 400px;
+    width: 240px;
+    height: 450px;
     margin-top: 60px;
     margin-left: 60px;
     margin-right: 60px;

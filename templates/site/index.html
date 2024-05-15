@@ -30,28 +30,13 @@
         climate change without worrying about the technical logistics.Marble is the bridge between intricate climate
         data and the people who seek to understand it, fostering a community of inquiry and discovery in the realm of
         climate science.</p>" %}
+
         {% set button_href = "about.html" %}
         {% set button_label = "Learn More" %}
         {% include "partials/general-content.html" %}
     {% endwith %}
 
-    {% with %}
-        {% set href = ["tutorials/users/ide/ide.html",
-        "tutorials/users/catalog/catalog.html",
-        "tutorials/users/remote-processing/remote-processing.html"] |default("{{href}}") %}
-        {% set title = "Explore the Technologies" %}
-        {% set section_title = ["Integrated Development Environment", "Data Catalog", "Remote Processing Services"] %}
-        {% set section_content = [
-        "<a class='paragraph-href' href='https://jupyter.org/' target='_blank'>JupyterLab</a> is integrated within the Marble platform as its development environment. It provides users with
-         access to climate based data analytics tools, and allows users to store data analytics results and workflows
-         online.",
-         "<a class='paragraph-href' href='https://stacspec.org/en' target='_blank'>SpatioTemporal Asset Catalog (STAC)</a> is integrated within the Marble platform as its data catalog. STAC allows
-         users to discover and access climate data that is available on the Marble network.",
-         "<a class='paragraph-href' href='https://pavics-weaver.readthedocs.io/en/latest/' target='_blank'>Weaver</a> is a remote processing tool integrated within the Marble platform. Weaver allows users to create
-         and run processes remotely across the Marble network."] %}
-
-        {% include "partials/technology-card.html" %}
-    {% endwith %}
+    {% include "partials/technology-card.html" %}
 
     {% with %}
         {% set title="Getting Started"%}
