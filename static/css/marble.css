@@ -997,10 +997,9 @@ h6{
       }
 
     .node-menu-header{
-        font-family: var(--secondary-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 20px;
-        letter-spacing: 0.03px;
+        font-family: var(--main-font-family);
+        font-weight: var(--h3-reg-font-weight);
+        font-size: 48px;
         line-height: var(--line-height-normal);
     }
 
