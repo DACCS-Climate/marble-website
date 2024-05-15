@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="container-fluid width-usage-section">
                     <div class="row">
-                        <h3 class="h3-title-margin"><a>{{ title }}</a></h3>
+                        <h3 class="header-title-margin"><a>{{ title }}</a></h3>
                         <div>
                             <p class="lead-in-text">{{ lead_in_text }}</p>
                         </div>
@@ -13,13 +13,13 @@
                 </div>
             </div>
             <div class="row">
-                    <div class="d-flex justify-content-center mb-5 w-100">
-                        <div class="d-none d-lg-flex justify-content-center w-75 usage-menu-container">
-                            <a id="studentMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_1 }}</h3></a>
-                            <a id="researcherMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_2 }}</h3></a>
-                            <a id="hobbyistMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_3 }}</h3></a>
-                        </div>
+                <div class="d-none d-lg-flex justify-content-center mb-5 w-100">
+                    <div class="d-flex justify-content-center w-75 usage-menu-container">
+                        <a id="studentMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_1 }}</h3></a>
+                        <a id="researcherMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_2 }}</h3></a>
+                        <a id="hobbyistMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_3 }}</h3></a>
                     </div>
+                </div>
             </div>
             <div class="row">
                 <!-- NOTE: The getStartedDisplayArea is the only visible div.  The content divs, studentUser, etc. are swapped
@@ -28,7 +28,7 @@
 
                 </div>
 
-                <div id="studentUser" class="d-flex d-lg-none g-0">
+                <div id="studentUser" class="d-flex d-lg-none g-0 margin-usage-card">
                     <div class="d-flex flex-column w-100">
                         <div class="d-flex student-user-image user-image-height">
                             <div class="d-flex align-items-end w-100">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
 
-                <div id="researcherUser" class="d-flex d-lg-none g-0">
+                <div id="researcherUser" class="d-flex d-lg-none g-0 margin-usage-card">
                     <div class="d-flex flex-column w-100">
                         <div class="d-flex researcher-user-image user-image-height">
                             <div class="d-flex align-items-end w-100">
@@ -80,7 +80,7 @@
                     </div>
                 </div>
 
-                <div id="hobbyistUser" class="d-flex d-lg-none g-0">
+                <div id="hobbyistUser" class="d-flex d-lg-none g-0 margin-usage-card">
                 <div class="d-flex flex-column w-100">
                     <div class="d-flex hobbyist-user-image user-image-height">
                         <div class="d-flex align-items-end w-100">

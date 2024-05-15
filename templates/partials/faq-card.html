@@ -16,7 +16,7 @@
     <div class="row mt-5">
         <div class="container-fluid width-faq-section">
             <div class="row">
-                <h3 class="h3-title-margin"><a>FAQ</a></h3>
+                <h3 class="header-title-margin"><a>FAQ's</a></h3>
                 <div>
                     <p class="lead-in-text">Find answers to common questions about Marble services.</p>
                 </div>
@@ -26,10 +26,10 @@
             {% for content in faq_content %}
             <div class="row">
                 <div class="d-flex justify-content-center">
-                    <div class="border border-1 rounded faq-card-content">
+                    <div class="border border-1 rounded spacing-faq-card">
                         <div class="d-flex justify-content-between">
-                            <div class="">
-                                <h6> {{ content["title"] }}</h6>
+                            <div>
+                                <h6 class="header-title-margin"> {{ content["title"] }}</h6>
                             </div>
                             <div>
                                 {% if content["link"] %}
@@ -41,7 +41,7 @@
 
                             </div>
                         </div>
-                        <div class="flex-row">
+                        <div class="flex-row margin-faq-content">
                             <p> {{ content["content"]|safe }}</p>
                         </div>
                     </div>
