@@ -1,7 +1,7 @@
 <div class="d-flex flex-row flex-lg-column feedback-card">
     <p>{{ feedback_question }}</p>
     <div class="d-none d-lg-flex card-button-margin">
-        {% with button_type = "med_action_button"%}
+        {% with button_type = "reg_action_button"%}
             {% set button_href = feedback_url %}
             {% set button_label = button_label %}
             {% include "partials/button.html" %}
