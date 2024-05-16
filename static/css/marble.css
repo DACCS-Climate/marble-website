@@ -423,6 +423,10 @@ h6{
 }
 
 /*Quick Start menu*/
+.banner-overlay-elements{
+    width: 75%;
+}
+
 .quick-start-title{
     padding-bottom: 15px;
     border-bottom: solid;
@@ -974,6 +978,7 @@ h6{
         height: auto;
     }
 
+    /*Extras*/
     .width-faq-section{
        width: 95%;
     }
@@ -985,6 +990,14 @@ h6{
         padding-right: 25px;
         padding-top: 25px;
         padding-bottom: 25px;
+    }
+
+    .margin-feedback-button{
+        margin-left: 20px;
+    }
+
+    .margin-useful-links{
+        margin-left: 0px;
     }
 
     .width-extras-section{
@@ -1046,6 +1059,7 @@ h6{
         height: auto;
     }
 
+    /*Extras*/
     .width-faq-section{
        width: 75%;
     }
@@ -1057,6 +1071,14 @@ h6{
         padding-right: 25px;
         padding-top: 48px;
         padding-bottom: 48px;
+    }
+
+    .margin-feedback-button{
+        margin-left: 30px;
+    }
+
+    .margin-useful-links{
+        margin-left: 50px;
     }
 
     .width-extras-section{
@@ -1090,8 +1112,13 @@ h6{
         height: 842px;
     }
 
+    /*Extras*/
     .width-extras-section{
         width: 75%;
+    }
+
+    .margin-feedback-button{
+        margin-left: 0px;
     }
 
     /*Social Media*/
