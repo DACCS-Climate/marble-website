@@ -10,6 +10,20 @@ document.addEventListener("DOMContentLoaded", function () {
     var currentURL = window.location.href;
     var currentPath = window.location.pathname;
 
+    var navbar = document.getElementById("navbarSupportedContent");
+    var bsOffcanvas = new bootstrap.Offcanvas(navbar)
+    var navbarButton = document.getElementById("navbarButton");
+
+    navbarButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        bsOffcanvas.toggle();
+    })
+
+    technologyButton.addEventListener("click", () => {
+        bsOffcanvas.toggle();
+    })
+
     if (currentPath.includes("index.html") && currentURL.includes("index.html#technology") == false) {
         homeButton.classList.add("text-primary");
         technologyButton.classList.remove("text-primary");
@@ -49,4 +63,3 @@ document.addEventListener("DOMContentLoaded", function () {
         aboutButton.classList.remove("text-primary");
     }
 })
-
