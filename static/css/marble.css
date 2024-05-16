@@ -1,5 +1,8 @@
 
 :root{
+    /*Override Bootstrap*/
+    --bs-offcanvas-padding-y: 20px;
+
     /*Fonts*/
     --main-font-family: 'Helvetica Neue', Helvetica, Arial,  sans-serif;
     --secondary-font-family: Helvetica, Arial, sans-serif;
@@ -21,15 +24,21 @@
     /*Shadows*/
     --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+    /*Margins*/
+    --close-button-padding-y: 10px;
+
     /*Colours*/
     --alert-background: #F6DC3D;
     --background: #FFFFFF;
     --background-black: #000000;
     --background-transparent: transparent;
+    --background-blur: blur(15px);
+    --background-blur-mobile: blur(15px);
     --black: #000000;
     --black-opacity-light: rgba(0,0,0,0.25);
     --black-opacity-midlight: rgba(0,0,0,0.30);
     --black-opacity-mid: rgba(0,0,0,0.5);
+    --opaque-light-grey: rgba(255,255,255, 0.3);
     --linear-gradient-black: linear-gradient(90deg,transparent, #000000, transparent);
     --linear-gradient-marble: linear-gradient(90deg, #3F6BAE 3%, #6DA39F 33.33%, #D89E37 66.67%, #823628 100%);
     --white: #FFFFFF;
@@ -329,34 +338,104 @@ h6{
 }
 
 /*Menu*/
+/*See media queries at bottom of file*/
+
 .menu{
     background-color: var(--background-transparent);
     z-index: 10;
 }
 
-.menu-items{
-        padding-top: 20px;
-}
-
-.menu-link{
-    color: var(--text-on-surface);
-    text-decoration: none;
-    margin-left: 80px;
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-.menu-link-white{
+/*Used for desktop mode in pages with dark backgrounds*/
+.menu-text-white{
     color: var(--text-on-dark);
     text-decoration: none;
-    margin-left: 80px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+}
+
+.menu-text-white:hover{
+    color: var(--text-on-dark);
 }
 
 .menu-logo{
     width: 50px;
     height: 50px;
+}
+
+/*Override Bootstrap classes*/
+.navbar-toggler{
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon{
+    margin-top: 9px;
+}
+
+.btn-close,
+.btn-close:focus,
+.btn-close:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+/*Overrides default margin, padding, and opacity for close button*/
+.btn-close{
+    margin-left: 10px;
+    margin-top: calc(.5 * var(--bs-offcanvas-padding-y)) !important;
+    margin-bottom: calc(.5 * var(--close-button-padding-y)) !important;
+    padding: calc(0px * .5) calc(0px * .5) !important;
+    --bs-btn-close-color: var(--white);
+    --bs-btn-close-opacity: 1;
+    --bs-btn-close-hover-opacity: 1;
+}
+
+.offcanvas-header{
+    padding: 0px;
+}
+
+.mobile-toggler-icon-white.navbar-toggler-icon{
+    width: 40px;
+    height: 40px;
+    background-image: url(
+        "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
+        );
+}
+
+.mobile-close-icon-default{
+    margin-left: 3px;
+    background-image: url(
+        "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239E9E9E'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e"
+    );
+}
+
+.mobile-close-icon-white{
+    background-image: url(
+        "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e"
+    );
+}
+
+.mobile-menu-title-default{
+    color: var(--indigo-100);
+    margin-left: 49px;
+}
+
+.mobile-menu-title-white{
+    width: 221px;
+    color: var(--text-on-dark);
+}
+
+.technology-menu-item{
+    background-color: var(--background-transparent);
+    border: none;
 }
 
 /*Banner*/
@@ -381,21 +460,21 @@ h6{
 }
 
 .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 1;
 }
 
 .bg-attachment-fixed {
-  background-attachment: fixed;
+    background-attachment: fixed;
 }
 
 .banner-image-home{
-    background-image: url(../images/banner/banner-dry-earth-1920x1097.jpg);
+    background-image: url(../images/banner/banner-home-mobile.jpg);
     z-index: -99;
 }
 
@@ -459,6 +538,19 @@ h6{
     border-bottom: solid;
     border-bottom-width: thin;
     border-color: var(--white);
+}
+
+.hero-menu-wrap{
+    width: 500px;
+    height: 400px;
+    padding: 40px;
+    background-color: var(--black-opacity-midlight);
+    box-shadow: var(--elevation-3);
+    z-index: 3;
+}
+
+.hero-menu{
+    width: 45%;
 }
 
 .hero-menu a {
@@ -987,6 +1079,16 @@ h6{
 
     .hero-menu{
         width: 80%;
+
+    .mobile-menu-title-spacing{
+        margin-left: 0px;
+    }
+
+    .menu-items-spacing{
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -1004,5 +1106,60 @@ h6{
     .hero-menu{
         width: 45%;
     }
+
+    .mobile-menu-title-spacing{
+        margin-left: 49px;
+    }
+
+    .menu-items-spacing{
+        margin-left: 49px;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
+@media (width <= 992px) {
+    .mobile-menu{
+        width: 100%;
+        background-color: var(--background-transparent);
+        backdrop-filter:var(--background-blur-mobile);
+        -webkit-backdrop-filter: var(--background-blur-mobile);
+    }
+
+    .menu-text-colour{
+        color: var(--text-on-dark);
+        text-decoration: none;
+    }
+
+    .menu-text-colour:hover{
+        color: var(--text-on-dark);
+    }
+
+    .nav-link{
+        width: 221px;
+    }
+
+    .navbar-nav .nav-link:not(:last-child){
+        border-bottom: solid;
+        border-bottom-width: thin;
+        border-bottom-color: var(--white);
+    }
+}
+
+@media (width > 992px) {
+
+    .menu-items-container{
+        width: 1000px;
+    }
+
+    .menu-text-colour{
+        color: var(--text-on-surface);
+        text-decoration: none;
+    }
+
+    .menu-text-colour:hover{
+        color: var(--text-on-surface);
+    }
+
+}
