@@ -1018,7 +1018,7 @@ h6{
 
     .value-statement{
         margin-top: 60px;
-        width: 60%;
+        width: 65%;
     }
 
     .content-section{
@@ -1054,7 +1054,7 @@ h6{
 
     .value-statement{
         margin-top: 60px;
-        width: 60%;
+        width: 65%;
     }
 
     .content-section{
@@ -1086,6 +1086,7 @@ h6{
 @media (width > 992px) {
     .value-statement{
         margin-top: 60px;
+        width: auto;
     }
 
     .content-section{
