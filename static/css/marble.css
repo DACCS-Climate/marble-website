@@ -1017,6 +1017,21 @@ h6{
 }
 
 @media (width < 576px) {
+    /*Banner*/
+    .hero-menu-wrap{
+        width: 241px;
+        height: 417px;
+        margin-left: 0px;
+        padding: 40px;
+        background-color: var(--black-opacity-midlight);
+        box-shadow: var(--elevation-3);
+        z-index: 3;
+    }
+
+    .hero-menu{
+        width: 80%;
+    }
+
     /*Home*/
     .margin-content-section{
         margin-bottom: 50px;
@@ -1097,6 +1112,21 @@ h6{
 }
 
 @media (width >= 576px) {
+    /*Banner*/
+    .hero-menu-wrap{
+        width: 500px;
+        height: 400px;
+        margin-left: 50px;
+        padding: 40px;
+        background-color: var(--black-opacity-midlight);
+        box-shadow: var(--elevation-3);
+        z-index: 3;
+    }
+
+    .hero-menu{
+        width: 45%;
+    }
+
     /*Home*/
     .width-content-section{
         width: 75%;
@@ -1178,38 +1208,39 @@ h6{
 
 @media (width >= 992px) {
     /*Home*/
-    .margin-content-section{
+    .margin-content-section {
         margin-bottom: 120px;
     }
 
-    .margin-usage-card{
+    .margin-usage-card {
         margin-top: 0px;
     }
 
-    .user-image-height{
+    .user-image-height {
         height: 842px;
     }
 
     /*Extras*/
-    .width-extras-section{
+    .width-extras-section {
         width: 75%;
     }
 
-    .margin-feedback-button{
+    .margin-feedback-button {
         margin-left: 0px;
     }
 
     /*Social Media*/
-    .margin-social-media{
+    .margin-social-media {
         margin-top: 120px;
     }
 
-    .social-media-icon{
+    .social-media-icon {
         height: 40px;
         width: 40px;
         margin-top: 15px;
         margin-right: 30px;
     }
+}
 
 @media (width > 992px) {
 
