@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const initial_node_count = 3;
         node_keys.forEach((key, index) => {
             const node_menu_item = document.createElement('div'); //Replace h3 tag for mobile
-            node_menu_item.classList.add("node-menu-header");
+            node_menu_item.classList.add("node-menu-header", "margin-node-menu-item");
             node_menu_item.setAttribute('onclick', 'getNode(' + '"'+ key +'"' + ')');
             node_menu_item.innerText = json[key].name;
             if (index < initial_node_count) {

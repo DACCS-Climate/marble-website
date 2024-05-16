@@ -354,7 +354,8 @@ h6{
 }
 
 .value-statement{
-    margin-top: 60px;
+    width: 85%;
+    text-align: center;
 }
 
 .bg {
@@ -604,6 +605,19 @@ h6{
     color: var(--text-on-dark);
 }
 
+.node-menu-container{
+    width: 100%;
+    border-bottom: var(--border-black);
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+.node-menu-item{
+    color: var(--text-on-surface);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .node-menu-item:focus{
     color: var(--primary);
 }
@@ -706,6 +720,12 @@ h6{
     padding-top: 8px;
     padding-bottom: 8px;
     text-decoration: none;
+}
+
+.services-title-border{
+    border-bottom-style: solid;
+    border-bottom-color: var(--black);
+    border-bottom-width: thin;
 }
 
 /*About Page*/
@@ -875,10 +895,9 @@ h6{
 @media (width < 576px) {
 
     /*Node Page*/
-    .value-statement-node{
-        width: 85%;
-        text-align: center;
-      }
+    .margin-value-statement{
+        margin-top: 50px;
+    }
 
     .node-menu-header{
         font-family: var(--secondary-font-family);
@@ -896,25 +915,20 @@ h6{
         line-height: var(--line-height-normal);
     }
 
-    .node-menu-container{
-        width: 100%;
+    .margin-node-menu-container{
+        margin-left: 0px;
         margin-top: 25px;
+        margin-right: 0px;
         margin-bottom: 20px;
-        border-bottom: var(--border-black);
-        border-bottom-style: solid;
-        border-bottom-width: thin;
     }
 
     .node-menu-container a:not(:last-child){
         margin-right: 20px;
     }
 
-    .node-menu-item{
-        color: var(--text-on-surface);
-        text-decoration: none;
+    .margin-node-menu-item{
         margin-top: 10px;
         margin-bottom: 20px;
-        cursor: pointer;
     }
 
     .node-image-background{
@@ -962,11 +976,14 @@ h6{
     }
 
     .services-title-border{
-        margin-top: 30px;
-        margin-bottom: 30px;
         border-bottom-style: solid;
         border-bottom-color: var(--black);
         border-bottom-width: thin;
+    }
+
+    .margin-services-title{
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .width-node-services-div{
@@ -991,10 +1008,9 @@ h6{
 @media (width >= 576px) {
 
     /*Node Page*/
-    .value-statement-node{
-        width: 85%;
-        text-align: center;
-      }
+    .margin-value-statement{
+        margin-top: 60px;
+    }
 
     .node-menu-header{
         font-family: var(--main-font-family);
@@ -1004,32 +1020,22 @@ h6{
     }
 
     .node-dropdown-chevron{
-        margin-left: 10px;
+        margin-left: 28px;
         font-family: var(--secondary-font-family);
         font-weight: var(--reg-font-weight);
-        font-size: 20px;
+        font-size: 24px;
         line-height: var(--line-height-normal);
     }
 
-    .node-menu-container{
-        width: 100%;
+    .margin-node-menu-container{
+        margin-left: 0px;
         margin-top: 25px;
+        margin-right: 0px;
         margin-bottom: 20px;
-        border-bottom: var(--border-black);
-        border-bottom-style: solid;
-        border-bottom-width: thin;
     }
 
     .node-menu-container a:not(:last-child){
         margin-right: 20px;
-    }
-
-    .node-menu-item{
-        color: var(--text-on-surface);
-        text-decoration: none;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        cursor: pointer;
     }
 
     .node-image-background{
@@ -1052,13 +1058,6 @@ h6{
         margin-left: 0px;
     }
 
-    .node-info-bottom-right{
-        width: 100%;
-        margin-left: 0px;
-        margin-top:0px;
-        margin-right: 0px;
-    }
-
     .node-version-text{
         font-family: var(--main-font-family);
         font-weight: var(--reg-font-weight);
@@ -1076,16 +1075,13 @@ h6{
         line-height: var(--line-height-normal);
     }
 
-    .services-title-border{
+    .margin-services-title{
         margin-top: 30px;
         margin-bottom: 30px;
-        border-bottom-style: solid;
-        border-bottom-color: var(--black);
-        border-bottom-width: thin;
     }
 
     .width-node-services-div{
-        width: 90%;
+        width: 85%;
     }
 
     .services-margin-div{
@@ -1103,6 +1099,22 @@ h6{
     }
 }
 
+@media (width >= 768px) {
+
+    .width-node-services-div{
+        width: 80%;
+    }
+
+    .node-version-text{
+        font-family: var(--main-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 16px;
+        letter-spacing: 0.024px;
+        line-height: var(--line-height-normal);
+        margin-left: 0px;
+    }
+}
+
 @media (width > 992px) {
 
     /*Node Page*/
@@ -1114,32 +1126,22 @@ h6{
     }
 
     .node-dropdown-chevron{
-        margin-left: 27px;
+        margin-left: 28px;
         font-family: var(--main-font-family);
         font-weight: var(--reg-font-weight);
         font-size: 24px;
         line-height: var(--line-height-normal);
     }
 
-    .node-menu-container{
-        width: 100%;
+    .margin-node-menu-container{
         margin-left: 50px;
         margin-top: 50px;
         margin-right: 50px;
         margin-bottom: 50px;
-        border-bottom: var(--border-black);
-        border-bottom-style: solid;
-        border-bottom-width: thin;
     }
 
     .node-menu-container a:not(:last-child){
         margin-right: 118px;
-    }
-
-    .node-menu-item{
-        color: var(--text-on-surface);
-        text-decoration: none;
-        cursor: pointer;
     }
 
     .node-image-background{
@@ -1168,14 +1170,6 @@ h6{
         margin-right: 50px;
     }
 
-    .node-version-text{
-        font-family: var(--main-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 16px;
-        letter-spacing: 0.024px;
-        line-height: var(--line-height-normal);
-    }
-
     .services-header{
         font-family: var(--main-font-family);
         font-weight: var(--h3-reg-font-weight);
@@ -1183,12 +1177,9 @@ h6{
         line-height: var(--line-height-normal);
     }
 
-    .services-title-border{
+    .margin-services-title{
         margin-top: 120px;
         margin-bottom:40px;
-        border-bottom-style: solid;
-        border-bottom-color: var(--black);
-        border-bottom-width: thin;
     }
 
     .width-node-services-div{
