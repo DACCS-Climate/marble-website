@@ -328,10 +328,6 @@ h6{
 
 /*Body Components*/
 
-.header-title-margin{
-    margin-bottom: 30px;
-}
-
 .paragraph-href{
     color: var(--primary);
     text-decoration: none;
@@ -1091,6 +1087,11 @@ h6{
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
+    /*Body Components*/
+    .header-title-margin{
+        margin-bottom: 30px;
+    }
 }
 
 @media (width >= 576px) {
@@ -1161,6 +1162,11 @@ h6{
 
     .menu-text-colour:hover{
         color: var(--text-on-surface);
+    }
+
+    /*Body Components*/
+    .header-title-margin{
+        margin-bottom: 50px;
     }
 
 }
