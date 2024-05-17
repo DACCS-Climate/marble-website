@@ -1014,6 +1014,10 @@ h6{
         margin-top: 50px;
     }
 
+    .width-node-intro{
+        width: 65%;
+    }
+
     .node-menu-header {
         font-family: var(--secondary-font-family);
         font-weight: var(--reg-font-weight);
@@ -1244,6 +1248,10 @@ h6{
 @media (width > 992px) {
 
     /*Node Page*/
+    .width-node-intro{
+        width: 100%;
+    }
+
     .node-menu-header{
         font-family: var(--main-font-family);
         font-weight: var(--h3-reg-font-weight);
