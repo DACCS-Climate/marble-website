@@ -1077,8 +1077,9 @@ h6{
         z-index: 3;
     }
 
-    .hero-menu{
+    .hero-menu {
         width: 80%;
+    }
 
     .mobile-menu-title-spacing{
         margin-left: 0px;
