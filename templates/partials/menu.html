@@ -1,40 +1,44 @@
-{% set menu_link_class = menu_link_class|default("menu-link-white") %}
+{% set menu_text_class = menu_text_class|default("menu-text-white") %}
+{% if menu_text_class == "menu-text-white" %}
+    {% set toggler_icon_class = "mobile-toggler-icon-white" %}
+    {% set mobile_title_class = "mobile-menu-title-white" %}
+
+{% else %}
+    {% set toggler_icon_class = ""  %}
+    {% set mobile_title_class = "mobile-menu-title-default" %}
+{% endif %}
 <div class="d-flex justify-content-start justify-content-lg-center position-relative">
     <nav class="navbar navbar-expand-lg position-absolute menu">
         <div class="container-fluid">
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            <button id="navbarButton" class="navbar-toggler" type="button" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon {{ toggler_icon_class }}"></span>
             </button>
 
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <div class="col-1">
-                    <a href="index.html">
-                        <img id="menu-logo" src="images/logos/marble.png" class="img-fluid ms-4 d-none d-lg-block menu-logo" />
-                    </a>
-                </div>
-                <div class="col-10 menu-items">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item">
-                            <h6><a id="homeMenuButton" class="p-2 {{ menu_link_class }}" aria-current="page" href="index.html">Home</a></h6>
-                        </li>
-                        <li class="nav-item">
-                            <h6><a id="technologyMenuButton" class="p-2 {{ menu_link_class }}" href="index.html#technology">Technology</a></h6>
-                        </li>
-                        <li class="nav-item">
-                            <h6><a id="nodeMenuButton" class="p-2 {{ menu_link_class }}" href="node.html">Nodes</a></h6>
-                        </li>
-                        <li class="nav-item">
-                            <h6><a id="tutorialsMenuButton" class="p-2 {{ menu_link_class }}" href="tutorials/index.html">Tutorials</a></h6>
-                        </li>
-                        <li class="nav-item">
-                            <h6><a id="communityMenuButton" class="p-2 {{ menu_link_class }}" href="https://discourse.marbleclimate.com" target="_blank">Community</a></h6>
-                        </li>
-                        <li class="nav-item">
-                            <h6><a id="aboutMenuButton" class="p-2 {{ menu_link_class }}" href="about.html">About</a></h6>
-                        </li>
-                    </ul>
+            <div class="offcanvas offcanvas-start collapse navbar-collapse w-100 mobile-menu" id="navbarSupportedContent">
+                <div class="offcanvas-body w-100">
+                    <div class="offcanvas-header d-flex d-lg-none">
+                        <button type="button" class="btn-close text-reset mobile-close-icon-white" data-bs-toggle="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-column align-items-center align-items-sm-start">
+                    <div class="d-flex d-lg-none mobile-menu-title-white mobile-menu-title-spacing"><h3>MARBLE</h3></div>
+                    <div class="d-flex flex-column flex-lg-row w-100">
+                        <div class="navbar-nav mb-2 mb-lg-0 d-flex flex-column flex-sm-column flex-lg-row align-items-center align-items-sm-start align-items-md-left justify-content-lg-evenly menu-items-container">
+                            <div class="d-none d-lg-block">
+                                <a href="index.html">
+                                    <img id="menu-logo" src="images/logos/marble.png" class="img-fluid menu-logo" />
+                                </a>
+                            </div>
+
+                            <a id="homeMenuButton" class="nav-link menu-items-spacing {{ menu_text_class }}" aria-current="page" href="index.html"><h6>Home</h6></a>
+                            <a id="technologyMenuButton" class="nav-link menu-items-spacing {{ menu_text_class }}" href="index.html#technology"><h6>Technology</h6></a>
+                            <a id="nodeMenuButton" class="nav-link menu-items-spacing {{ menu_text_class }}" href="node.html"><h6>Nodes</h6></a>
+                            <a id="tutorialsMenuButton" class="nav-link menu-items-spacing {{ menu_text_class }}" href="tutorials/index.html"><h6>Tutorials</h6></a>
+                            <a id="communityMenuButton" class="nav-link menu-items-spacing {{ menu_text_class }}" href="https://discourse.marbleclimate.com" target="_blank"><h6>Community</h6></a>
+                            <a id="aboutMenuButton" class="nav-link menu-items-spacing {{ menu_text_class }}" href="about.html"><h6>About</h6></a>
+                        </div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
