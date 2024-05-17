@@ -551,19 +551,7 @@ h6{
     margin-top: 30px;
 }
 
-.technology-card{
-    min-width: 33%;
-}
-
-.technology-card h6{
-    margin-bottom: unset;
-}
-
-.technology-card-title{
-    min-height: 2.5em;
-}
-
-.technology-card-content{
+.margin-technology-card-content{
     margin-bottom: 30px;
 }
 
@@ -1049,10 +1037,22 @@ h6{
         margin-bottom: 30px;
     }
 
-    .margin-technology-card-content h6, .margin-technology-card-content p{
+    .margin-technology-card-content, .margin-technology-card-content h6{
         margin-bottom: 20px;
     }
 
+    /*Technology Section*/
+    .technology-card{
+        min-width: 33%;
+    }
+
+    .technology-card h6{
+        margin-bottom: unset;
+    }
+
+    .technology-card-title{
+        min-height: 1.5em;
+    }
 
     .width-usage-section{
         width: 95%;
@@ -1143,14 +1143,10 @@ h6{
     .margin-technology-card{
         margin-left: 15px;
         margin-right: 15px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 
-    .margin-technology-card-content{
-        margin-bottom: 50px;
-    }
-
-    .margin-technology-card-content h6, .margin-technology-card-content p{
+    .margin-technology-card-content, .margin-technology-card-content h6{
         margin-bottom: 30px;
     }
 
@@ -1251,5 +1247,18 @@ h6{
 
     .menu-text-colour:hover{
         color: var(--text-on-surface);
+    }
+
+    /*Technology Section*/
+    .technology-card{
+        min-width: 33%;
+    }
+
+    .technology-card h6{
+        margin-bottom: unset;
+    }
+
+    .technology-card-title{
+        min-height: 2.5em;
     }
 }

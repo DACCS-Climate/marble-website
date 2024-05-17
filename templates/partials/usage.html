@@ -5,9 +5,11 @@
                 <div class="container-fluid width-usage-section">
                     <div class="row">
                         <h3 class="header-title-margin"><a>{{ title }}</a></h3>
-                        <div>
-                            <p class="lead-in-text">{{ lead_in_text }}</p>
-                        </div>
+                        {% if lead_in_text %}
+                            <div>
+                                <p class="lead-in-text">{{ lead_in_text }}</p>
+                            </div>
+                        {% endif %}
                         <p>{{ section_content }}</p>
                     </div>
                 </div>
