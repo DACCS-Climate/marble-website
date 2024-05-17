@@ -1128,6 +1128,10 @@ h6{
     }
 
     /*Home*/
+    .margin-content-section{
+        margin-bottom: 120px;
+    }
+
     .width-content-section{
         width: 75%;
     }
@@ -1208,10 +1212,6 @@ h6{
 
 @media (width >= 992px) {
     /*Home*/
-    .margin-content-section {
-        margin-bottom: 120px;
-    }
-
     .margin-usage-card {
         margin-top: 0px;
     }
