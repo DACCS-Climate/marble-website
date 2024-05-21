@@ -431,10 +431,6 @@ h6{
     color: var(--white);
 }
 
-.value-statement{
-    margin-top: 60px;
-}
-
 .bg {
     position: absolute;
     top: 0;
@@ -544,10 +540,6 @@ h6{
 
 /*Home Page*/
 /*Custom Settings For Each Home Page Content Section*/
-.content-section{
-    margin-bottom: 120px;
-}
-
 .card-button-margin{
     margin-top: 30px;
 }
@@ -940,14 +932,6 @@ h6{
     text-decoration: none;
 }
 
-.committee-menu-button{
-    color: var(--black);
-    text-decoration: none;
-    margin-left: 60px;
-    margin-right: 60px;
-    cursor: pointer;
-}
-
 .committee-container{
     width: 93%;
 }
@@ -1035,75 +1019,106 @@ h6{
     font-weight: bold;
 }
 
-@media (width < 576px) {
-
-    .mobile-menu-title-spacing{
-        margin-left: 0px;
+/*Media Queries*/
+@media (width < 576px){
+    .banner-width-mobile{
+        width: 90%;
     }
 
-    .menu-items-spacing{
-        margin-left: 0px;
-        margin-bottom: 0px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-}
-
-@media (width >= 576px) {
-
-    .mobile-menu-title-spacing{
-        margin-left: 49px;
+    .value-statement{
+        margin-top: 60px;
+        width: 65%;
     }
 
-    .menu-items-spacing{
-        margin-left: 49px;
-        margin-bottom: 0px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-}
-
-@media (width <= 992px) {
-    .mobile-menu{
-        width: 100%;
-        background-color: var(--background-transparent);
-        backdrop-filter:var(--background-blur-mobile);
-        -webkit-backdrop-filter: var(--background-blur-mobile);
+    .content-section{
+        margin-bottom: 50px;
     }
 
-    .menu-text-colour{
-        color: var(--text-on-dark);
-        text-decoration: none;
+    .margin-faq-top{
+        margin-top: 30px;
     }
 
-    .menu-text-colour:hover{
-        color: var(--text-on-dark);
-    }
-
-    .nav-link{
-        width: 221px;
-    }
-
-    .navbar-nav .nav-link:not(:last-child){
-        border-bottom: solid;
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
         border-bottom-width: thin;
-        border-bottom-color: var(--white);
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 25px;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+}
+
+@media (width >= 576px){
+    .banner-width-mobile{
+        width: 90%;
+    }
+
+    .value-statement{
+        margin-top: 60px;
+        width: 65%;
+    }
+
+    .content-section{
+        margin-bottom: 50px;
+    }
+
+    .margin-faq-top{
+        margin-top: 30px;
+    }
+
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 25px;
+        margin-right: 25px;
+        cursor: pointer;
     }
 }
 
 @media (width > 992px) {
-
-    .menu-items-container{
-        width: 1000px;
+    .value-statement{
+        margin-top: 60px;
+        width: auto;
     }
 
-    .menu-text-colour{
-        color: var(--text-on-surface);
+    .content-section{
+        margin-bottom: 120px;
+    }
+
+    .margin-faq-top{
+        margin-top: 9px;
+    }
+
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .committee-menu-button{
+        color: var(--black);
         text-decoration: none;
+        margin-left: 60px;
+        margin-right: 60px;
+        cursor: pointer;
     }
-
-    .menu-text-colour:hover{
-        color: var(--text-on-surface);
-    }
-
 }
