@@ -1098,7 +1098,13 @@ h6{
 }
 
 @media (width >= 576px) {
-        .hero-menu-wrap{
+    .banner-title-home{
+        background: var(--linear-gradient-marble);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hero-menu-wrap{
         width: 500px;
         height: 400px;
         margin-left: 50px;
