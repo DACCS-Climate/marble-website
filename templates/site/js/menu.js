@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     technologyButton.addEventListener("click", () => {
-        bsOffcanvas.toggle();
+        bsOffcanvas.hide();
     })
 
     if (currentPath.includes("index.html") && currentURL.includes("index.html#technology") == false) {
