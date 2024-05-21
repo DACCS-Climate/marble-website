@@ -1084,6 +1084,11 @@ h6{
 }
 
 @media (width > 992px) {
+
+   .menu-items-container{
+        width: 1000px;
+    }
+
     .value-statement{
         margin-top: 60px;
         width: auto;
