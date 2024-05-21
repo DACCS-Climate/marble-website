@@ -521,6 +521,7 @@ h6{
 /*Quick Start menu*/
 /*See media queries at end of file*/
 .quick-start-title{
+    width: 121px;
     padding-bottom: 15px;
     margin-bottom: 25px;
     border-bottom: solid;
@@ -535,10 +536,6 @@ h6{
     background-color: var(--black-opacity-midlight);
     box-shadow: var(--elevation-3);
     z-index: 3;
-}
-
-.hero-menu{
-    width: 45%;
 }
 
 .hero-menu a {
@@ -1087,7 +1084,6 @@ h6{
     .menu-items-spacing{
         margin-left: 0px;
         margin-bottom: 0px;
-        padding-top: 30px;
         padding-bottom: 30px;
     }
 
