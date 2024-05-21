@@ -39,51 +39,7 @@
 
     {% include "partials/technology-card.html" %}
 
-    {% with %}
-        {% set title="Getting Started"%}
-        {% set lead_in_text = "" %}
-        {% set section_content = "Whether you're a student, researcher, or hobbyist, we've got you covered.
-        Before initiating your research journey, take the opportunity to explore services best suited to
-        your individual needs. Explore the diverse array of nodes and their offerings, tailored to cater
-        specifically to your research requirements." %}
-
-        {% set menu_1 = "Student" %}
-        {% set student_user_title = "I'm a Student" %}
-        {% set student_user_content =
-            "<ul>
-                <li>Marble promotes a hands-on learning experience that aligns with real-world scenarios in climate science and data analysis.</li>
-                <li>Marble allows you to work on real-world climate research projects using climate science-oriented datasets and tools.</li>
-                <li>This practical experience is valuable for your academic and professional development.</li>
-                <li>Marble takes care of data storage and processing on its platform, eliminating the need for high-end personal devices.</li>
-            </ul>"
-         %}
-        {% set button_href_student = "node.html" %}
-
-        {% set menu_2 = "Researcher" %}
-        {% set researcher_user_title = "I'm a Researcher" %}
-        {% set researcher_user_content =
-            "<ul>
-                <li>Marble promotes a hands-on learning experience that aligns with real-world scenarios in climate science and data analysis.</li>
-                <li>Marble allows you to work on real-world climate research projects using climate science-oriented datasets and tools.</li>
-                <li>This practical experience is valuable for your academic and professional development.</li>
-                <li>Marble takes care of data storage and processing on its platform, eliminating the need for high-end personal devices.</li>
-            </ul>"
-         %}
-        {% set button_href_researcher = "node.html" %}
-
-        {% set menu_3 = "Hobbyist" %}
-        {% set hobbyist_user_title = "I'm a Hobbyist" %}
-        {% set hobbyist_user_content =
-            "<ul>
-                <li>The JupyterLab work space comes prepackaged with tools geared towards climate data analysis, providing a hassle-free entry point for hobbyists.</li>
-                <li>Marble offers tutorials designed to guide beginners that cover a range of topics, from basic navigation of the STAC catalog to conducting specific analyses using climate data analysis tools</li>
-                <li>SpatioTemporal Asset Catalog (STAC) is a great starting point for hobbyist to familiarize themselves with the available geospatial datasets related to climate science.</li>
-            </ul>"
-         %}
-        {% set button_href_hobbyist = "node.html" %}
-
-        {% include "partials/usage.html" %}
-    {% endwith %}
+    {% include "partials/usage.html" %}
 
     {% include "partials/faq-card.html" %}
 
