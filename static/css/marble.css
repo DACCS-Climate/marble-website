@@ -1084,6 +1084,7 @@ h6{
     .menu-items-spacing{
         margin-left: 0px;
         margin-bottom: 0px;
+        padding-top: 30px;
         padding-bottom: 30px;
     }
 
@@ -1118,6 +1119,15 @@ h6{
         margin-left: 49px;
     }
 
+    .menu-items-spacing{
+        margin-left: 49px;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (width >=768px){
     .menu-items-spacing{
         margin-left: 49px;
         margin-bottom: 0px;
