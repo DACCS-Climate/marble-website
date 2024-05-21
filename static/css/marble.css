@@ -443,10 +443,6 @@ h6{
     color: var(--white);
 }
 
-.value-statement{
-    margin-top: 60px;
-}
-
 .bg {
     position: absolute;
     top: 0;
@@ -569,10 +565,6 @@ h6{
 
 /*Home Page*/
 /*Custom Settings For Each Home Page Content Section*/
-.content-section{
-    margin-bottom: 120px;
-}
-
 .card-button-margin{
     margin-top: 30px;
 }
@@ -625,7 +617,7 @@ h6{
     cursor: pointer;
 }
 
-.usage-menu-margin{
+.usage-menu-button h3{
     margin-right: 60px;
     margin-left: 60px;
 }
@@ -634,40 +626,27 @@ h6{
     background-color: var(--black-opacity-mid);
 }
 
-.student-user-content{
+.user-content{
     color: var(--text-on-dark);
+}
+
+.user-image{
+    width: 100%;
+    height: 842px;
+    background-position: center;
+    background-size: cover;
 }
 
 .student-user-image{
-    width: 100%;
-    height: 842px;
     background-image: url("../images/student-user.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-.researcher-user-content{
-    color: var(--text-on-dark);
 }
 
 .researcher-user-image{
-    width: 100%;
-    height: 842px;
     background-image: url("../images/researcher-user.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-.hobbyist-user-content{
-    color: var(--text-on-dark);
 }
 
 .hobbyist-user-image{
-    width: 100%;
-    height: 842px;
     background-image: url("../images/hobbyist-user.jpg");
-    background-position: center;
-    background-size: cover;
 }
 
 /*Extras*/
@@ -956,14 +935,6 @@ h6{
     text-decoration: none;
 }
 
-.committee-menu-button{
-    color: var(--black);
-    text-decoration: none;
-    margin-left: 60px;
-    margin-right: 60px;
-    cursor: pointer;
-}
-
 .committee-container{
     width: 93%;
 }
@@ -979,29 +950,33 @@ h6{
 /*Footer*/
 
 .footer{
-    background-image: url("../images/footer/world-relief-map.jpg");
+    background-image: url("../images/footer/world-relief-map.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 100px;
-    padding-bottom: 100px;
+}
+
+.footer-overlay{
+    background: var(--opaque-black);
 }
 
 .funder-logo-container{
     width: 95%;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.first-funder-logo{
-    min-width: 200px;
-    max-width: 300px;
-    margin-right: 20px;
+.funder-link{
+    min-width: 150px;
+    max-width: 250px;
+    align-content: center;
 }
 
 .funder-logo{
-    min-width: 100px;
-    max-width: 150px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
 }
 
 .copyright{
@@ -1051,7 +1026,11 @@ h6{
     font-weight: bold;
 }
 
-@media (width < 576px) {
+/*Media Queries*/
+@media (width < 576px){
+    .banner-width-mobile{
+        width: 90%;
+    }
 
     .banner-title-home{
         background: var(--linear-gradient-marble);
@@ -1095,6 +1074,10 @@ h6{
 }
 
 @media (width >= 576px) {
+    .banner-width-mobile{
+        width: 90%;
+    }
+
     .banner-title-home{
         background: var(--linear-gradient-marble);
         -webkit-background-clip: text;
@@ -1114,16 +1097,35 @@ h6{
     .hero-menu{
         width: 45%;
     }
-
-    .mobile-menu-title-spacing{
-        margin-left: 49px;
+  
+    .value-statement{
+        margin-top: 60px;
+        width: 65%;
     }
 
-    .menu-items-spacing{
-        margin-left: 49px;
-        margin-bottom: 0px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+    .content-section{
+        margin-bottom: 50px;
+    }
+
+    .margin-faq-top{
+        margin-top: 30px;
+    }
+
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 25px;
+        margin-right: 25px;
+        cursor: pointer;
     }
 }
 
@@ -1142,25 +1144,30 @@ h6{
         background-color: var(--background-transparent);
         backdrop-filter:var(--background-blur-mobile);
         -webkit-backdrop-filter: var(--background-blur-mobile);
+
+    .content-section{
+        margin-bottom: 50px;
     }
 
-    .menu-text-colour{
-        color: var(--text-on-dark);
-        text-decoration: none;
+    .margin-faq-top{
+        margin-top: 30px;
     }
 
-    .menu-text-colour:hover{
-        color: var(--text-on-dark);
-    }
-
-    .nav-link{
-        width: 221px;
-    }
-
-    .navbar-nav .nav-link:not(:last-child){
-        border-bottom: solid;
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
         border-bottom-width: thin;
-        border-bottom-color: var(--white);
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 25px;
+        margin-right: 25px;
+        cursor: pointer;
     }
 }
 
@@ -1171,18 +1178,25 @@ h6{
         -webkit-text-fill-color: transparent;
         filter: drop-shadow(0px 4px 4px var(--black-opacity-light));
     }
-
-    .menu-items-container{
-        width: 1000px;
+    .value-statement{
+        margin-top: 60px;
+        width: auto;
     }
 
-    .menu-text-colour{
-        color: var(--text-on-surface);
-        text-decoration: none;
+    .content-section{
+        margin-bottom: 120px;
     }
 
-    .menu-text-colour:hover{
-        color: var(--text-on-surface);
+    .margin-faq-top{
+        margin-top: 9px;
+    }
+
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     /*Body Components*/
@@ -1190,4 +1204,11 @@ h6{
         margin-bottom: 50px;
     }
 
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 60px;
+        margin-right: 60px;
+        cursor: pointer;
+    }
 }
