@@ -1218,6 +1218,10 @@ h6{
 }
 
 @media (width > 992px) {
+   .menu-items-container{
+        width: 1000px;
+    }
+  
     .banner-title-home{
         background: var(--linear-gradient-marble);
         -webkit-background-clip: text;
