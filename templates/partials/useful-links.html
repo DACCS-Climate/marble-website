@@ -1,18 +1,33 @@
+{% set link_content = [
+    {
+        'text': 'Get started as an admin',
+        'href': 'tutorials/admin/getting-started/getting-started.html'
+    },
+    {
+        'text': 'Deploy a node',
+        'href': 'tutorials/admin/getting-started/installation.html'
+    },
+    {
+        'text': 'Marble Project Source',
+        'href': 'https://github.com/DACCS-Climate/marble-website/'
+    },
+    {
+        'text': 'Node Registry',
+        'href': 'https://github.com/DACCS-Climate/Marble-node-registry'
+    },
+    {
+        'text': 'Python Client',
+        'href': 'https://github.com/DACCS-Climate/marble_client_python'
+    }
+]%}
+
 <div>
-        <h3 class="header-title-margin">{{ useful_links_title }}</h3>
-
-        {% set link_text_array = ["Get started as an admin", "Deploy a node", "Marble website source", "Node Registry", "Python Client"] %}
-        {% set link_url_array = ["tutorials/admin/getting-started/getting-started.html",
-        "tutorials/admin/getting-started/installation.html",
-        "https://github.com/DACCS-Climate/marble-website/",
-        "https://github.com/DACCS-Climate/Marble-node-registry",
-        "https://github.com/DACCS-Climate/marble_client_python"] %}
-
-        {% set array_length = link_text_array|length %}
-
-        <div class="d-flex flex-column">
-            {% for array_item in range(array_length) %}
-                <a class = "useful-link text-primary" href="{{ link_url_array[array_item] }}">{{ link_text_array[array_item] }}</a>
-            {% endfor %}
-        </div>
+    <h3 class="header-title-margin">Useful Links</h3>
+    <div class="d-flex flex-column">
+        {% for link in link_content %}
+            <a class="useful-link text-primary" href="{{ link['href'] }}">
+                {{ link["text"] }}
+            </a>
+        {% endfor %}
+    </div>
 </div>

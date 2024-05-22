@@ -1,22 +1,39 @@
+{% set social_links = [
+    {
+        'icon': 'images/logos/social-media/icon_Linkedin.svg',
+        'href': 'https://www.linkedin.com/company/marbleclimate',
+        'alt': 'Linkedin',
+    },
+    {
+        'icon': 'images/logos/social-media/icon_Github.svg',
+        'href': 'https://github.com/DACCS-Climate',
+        'alt': 'GitHub'
+    },
+    {
+        'icon': 'images/logos/social-media/icon_Mastodon.svg',
+        'href': 'https://mastodon.social/@marbleclimate',
+        'alt': 'Mastodon'
+    },
+    {
+        'icon': 'images/logos/social-media/instagram.svg',
+        'href': 'https://www.instagram.com/marbleclimate',
+        'alt': 'Instagram'
+    },
+    {
+        'icon': 'images/logos/social-media/twitter.svg',
+        'href': 'https://twitter.com/marble_climate',
+        'alt': 'Twitter'
+    }
+] %}
+
 <div class="social-media-section">
-    <h3 class="header-title-margin">{{ social_media_title }}</h3>
-
-    {% set link_icon_array = ["images/logos/social-media/icon_Linkedin.svg",
-    "images/logos/social-media/icon_Github.svg",
-    "images/logos/social-media/icon_Mastodon.svg",
-    "images/logos/social-media/instagram.svg",
-    "images/logos/social-media/twitter.svg"] %}
-    {% set link_url_array = ["https://www.linkedin.com/company/marbleclimate",
-    "https://github.com/DACCS-Climate",
-    "https://mastodon.social/@marbleclimate",
-    "https://www.instagram.com/marbleclimate",
-    "https://twitter.com/marble_climate"] %}
-
-    {% set array_length = link_icon_array|length %}
-
-    <div>
-        {% for array_item in range(array_length) %}
-            <a href="{{ link_url_array[array_item] }}"><img class="social-media-icon" src="{{ link_icon_array[array_item] }}"></a>
+    <h3 class="header-title-margin">Connect With Us</h3>
+    <div class="d-flex flex-nowrap">
+        {% for social in social_links %}
+            {# ensure there is no whitespace or text inside anchor tag #}
+            <a class="social-media-link" href="{{ social['href'] }}">
+                <img class="social-media-icon" alt="{{ social['alt'] }}" src="{{ social['icon'] }}">
+            </a>
         {% endfor %}
     </div>
 </div>
