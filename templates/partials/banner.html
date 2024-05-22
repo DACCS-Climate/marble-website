@@ -11,23 +11,28 @@
 
         <div class="banner-overlay-container">
            <div class="container-fluid">
-             <div class="row align-items-center">
-               <div class="col-10 offset-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-1">
-                   <h1><span id="banner-title" class="{{ banner_title_class }}">{{ page_title }}</span></h1>
-                   <p class="banner-slogan">{{ page_slogan|default("") }}</p>
-               </div>
+             <div class="row">
+                 <div class="d-flex justify-content-center">
+                     <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between banner-overlay-elements">
+                         <div class="margin-banner-title">
+                             <h1><span id="banner-title" class="d-none d-md-flex {{ banner_title_class }}">{{ page_title }}</span></h1>
+                             <h2><span id="banner-title" class="d-flex d-md-none {{ banner_title_class }}">{{ page_title }}</span></h2>
+                             <p class="banner-slogan">{{ page_slogan|default("") }}</p>
+                         </div>
 
-               <div class="d-flex align-items-center hero-menu-wrap">
-                 <div class="hero-menu">
-                   <h5 class="quick-start-title">Quick Start</h5>
-                   <ul>
-                       <li><h6><a href="tutorials/index.html">Tutorials</a></h6></li>
-                       <li><h6><a href="node.html">Choose a Node</a></h6></li>
-                       <li><h6><a href="tutorials/users/catalog/catalog.html">Discover Data</a></h6></li> <!-- TODO: update this to stac-browser when implemented -->
-                       <li><h6><a href="https://discourse.marbleclimate.com" target="_blank">Forum</a></h6></li>
-                   </ul>
+                         <div class="d-flex align-items-center hero-menu-wrap">
+                           <div class="hero-menu">
+                             <h5 class="quick-start-title">Quick Start</h5>
+                             <ul>
+                                 <li><h6><a href="tutorials/index.html">Tutorials</a></h6></li>
+                                 <li><h6><a href="node.html">Choose a Node</a></h6></li>
+                                 <li><h6><a href="tutorials/users/catalog/catalog.html">Discover Data</a></h6></li> <!-- TODO: update this to stac-browser when implemented -->
+                                 <li><h6><a href="https://discourse.marbleclimate.com" target="_blank">Forum</a></h6></li>
+                             </ul>
+                           </div>
+                         </div>
+                     </div>
                  </div>
-               </div>
              </div>
          </div>
         </div>
