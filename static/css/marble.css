@@ -1153,7 +1153,11 @@ h6{
         margin-right: 25px;
         cursor: pointer;
     }
-  
+
+    .node-menu-container a:not(:last-child) {
+        margin-right: 20px;
+    }
+
     .node-menu-header{
         font-family: var(--main-font-family);
         font-weight: var(--h3-reg-font-weight);
