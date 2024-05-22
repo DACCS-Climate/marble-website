@@ -430,10 +430,6 @@ h6{
     color: var(--white);
 }
 
-.value-statement{
-    margin-top: 60px;
-}
-
 .bg {
     position: absolute;
     top: 0;
@@ -587,7 +583,7 @@ h6{
     cursor: pointer;
 }
 
-.usage-menu-margin{
+.usage-menu-button h3{
     margin-right: 60px;
     margin-left: 60px;
 }
@@ -596,37 +592,30 @@ h6{
     background-color: var(--opaque-black);
 }
 
-.student-user-content{
+.user-content{
     color: var(--text-on-dark);
 }
 
-.student-user-image{
+.user-image{
     width: 100%;
     background-image: url("../images/student-user.jpg");
+    height: 842px;
     background-position: center;
     background-size: cover;
 }
 
-.researcher-user-content{
-    color: var(--text-on-dark);
+.student-user-image{
+    background-image: url("../images/student-user.jpg");
 }
 
 .researcher-user-image{
     width: 100%;
     background-image: url("../images/researcher-user.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-.hobbyist-user-content{
-    color: var(--text-on-dark);
 }
 
 .hobbyist-user-image{
     width: 100%;
     background-image: url("../images/hobbyist-user.jpg");
-    background-position: center;
-    background-size: cover;
 }
 
 /*FAQ*/
@@ -909,14 +898,6 @@ h6{
     text-decoration: none;
 }
 
-.committee-menu-button{
-    color: var(--black);
-    text-decoration: none;
-    margin-left: 60px;
-    margin-right: 60px;
-    cursor: pointer;
-}
-
 .committee-container{
     width: 93%;
 }
@@ -932,29 +913,33 @@ h6{
 /*Footer*/
 
 .footer{
-    background-image: url("../images/footer/world-relief-map.jpg");
+    background-image: url("../images/footer/world-relief-map.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 100px;
-    padding-bottom: 100px;
+}
+
+.footer-overlay{
+    background: var(--opaque-black);
 }
 
 .funder-logo-container{
     width: 95%;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.first-funder-logo{
-    min-width: 200px;
-    max-width: 300px;
-    margin-right: 20px;
+.funder-link{
+    min-width: 150px;
+    max-width: 250px;
+    align-content: center;
 }
 
 .funder-logo{
-    min-width: 100px;
-    max-width: 150px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 100%;
 }
 
 .copyright{
@@ -1004,6 +989,8 @@ h6{
     font-weight: bold;
 }
 
+/*Media Queries*/
+
 @media (width < 576px) {
     /*Banner*/
     .hero-menu-wrap{
@@ -1041,6 +1028,10 @@ h6{
         margin-bottom: 20px;
     }
 
+      .banner-width-mobile{
+        width: 90%;
+    }
+  
     /*Technology Section*/
     .technology-card{
         min-width: 33%;
@@ -1107,6 +1098,37 @@ h6{
         width: 30px;
         margin-top: 10px;
         margin-right: 30px;
+    }
+  
+    /*About*/
+    .value-statement{
+        margin-top: 60px;
+        width: 65%;
+    }
+
+    .content-section{
+        margin-bottom: 50px;
+    }
+
+    .margin-faq-top{
+        margin-top: 30px;
+    }
+
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 25px;
+        margin-right: 25px;
+        cursor: pointer;
     }
 
 }
@@ -1204,49 +1226,91 @@ h6{
         margin-top: 10px;
         margin-right: 30px;
     }
+  
+    /*About*/
+    .banner-width-mobile{
+        width: 90%;
+    }
+
+    .value-statement{
+        margin-top: 60px;
+        width: 65%;
+    }
+
+    .content-section{
+        margin-bottom: 50px;
+    }
+
+    .margin-faq-top{
+        margin-top: 30px;
+    }
+
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 25px;
+        margin-right: 25px;
+        cursor: pointer;
+    }
 }
 
 @media (width >= 992px) {
     /*Home*/
-    .margin-usage-card {
+    .margin-usage-card{
         margin-top: 0px;
     }
 
-    .user-image-height {
+    .user-image-height{
         height: 842px;
     }
 
     /*Extras*/
-    .width-extras-section {
+    .width-extras-section{
         width: 75%;
     }
 
     /*Social Media*/
-    .margin-social-media {
+    .margin-social-media{
         margin-top: 120px;
     }
 
-    .social-media-icon {
+    .social-media-icon{
         height: 40px;
         width: 40px;
         margin-top: 15px;
         margin-right: 30px;
     }
 }
-
+    
 @media (width > 992px) {
-
-    .menu-items-container{
-        width: 1000px;
+    .value-statement{
+        margin-top: 60px;
+        width: auto;
     }
 
-    .menu-text-colour{
-        color: var(--text-on-surface);
-        text-decoration: none;
+    .content-section{
+        margin-bottom: 120px;
     }
 
-    .menu-text-colour:hover{
-        color: var(--text-on-surface);
+    .margin-faq-top{
+        margin-top: 9px;
+    }
+
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
     /*Technology Section*/
@@ -1260,5 +1324,13 @@ h6{
 
     .technology-card-title{
         min-height: 2.5em;
+    }
+  
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 60px;
+        margin-right: 60px;
+        cursor: pointer;
     }
 }
