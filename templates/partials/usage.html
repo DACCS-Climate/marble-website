@@ -1,3 +1,49 @@
+{% set usage_sections = [
+    {
+        "id": "student",
+        "image-class": "student-user-image",
+        "button-text": "Student",
+        "title": "I'm a Student",
+        "content": "
+            <ul>
+                <li>Marble promotes a hands-on learning experience that aligns with real-world scenarios in climate science and data analysis.</li>
+                <li>Marble allows you to work on real-world climate research projects using climate science-oriented datasets and tools.</li>
+                <li>This practical experience is valuable for your academic and professional development.</li>
+                <li>Marble takes care of data storage and processing on its platform, eliminating the need for high-end personal devices.</li>
+            </ul>
+        ",
+        "href": "node.html"
+    },
+    {
+        "id": "researcher",
+        "image-class": "researcher-user-image",
+        "button-text": "Researcher",
+        "title": "I'm a Researcher",
+        "content": "
+            <ul>
+                <li>Marble provides a comprehensive platform that addresses various aspects of a researcher's workflow, from data storage and processing.</li>
+                <li>Marble's integration of OGC API complaint tools, allows researchers to move their applications to the data significantly reducing data transfer requirements and enhance efficiency by executing analysis processes directly where the data is stored.</li>
+                <li>Marble provides avenues for collaboration by allowing researchers to easily share workflows and results with colleagues. This not only promotes knowledge exchange but also facilitates collaborative research efforts.</li>
+            </ul>
+        ",
+        "href": "node.html"
+    },
+    {
+        "id": "hobbyist",
+        "image-class": "hobbyist-user-image",
+        "button-text": "Hobbyist",
+        "title": "I'm a Hobbyist",
+        "content": "
+            <ul>
+                <li>The JupyterLab work space comes prepackaged with tools geared towards climate data analysis, providing a hassle-free entry point for hobbyists.</li>
+                <li>Marble offers tutorials designed to guide beginners that cover a range of topics, from basic navigation of the STAC catalog to conducting specific analyses using climate data analysis tools</li>
+                <li>SpatioTemporal Asset Catalog (STAC) is a great starting point for hobbyist to familiarize themselves with the available geospatial datasets related to climate science.</li>
+            </ul>
+        ",
+        "href": "node.html"
+    }
+]%}
+
 <div class="container-fluid content-section">
     <div class="row">
         <div class="container-fluid">
@@ -5,9 +51,11 @@
                 <div class="container-fluid w-75">
                     <div class="row">
                         <h3 class="header-title-margin"><a>{{ title }}</a></h3>
-                        <div>
-                            <p class="lead-in-text">{{ lead_in_text }}</p>
-                        </div>
+                        {%  if lead_in_text %}
+                            <div>
+                                <p class="lead-in-text">{{ lead_in_text }}</p>
+                            </div>
+                        {%  endif %}
                         <p>{{ section_content }}</p>
                     </div>
                 </div>
@@ -15,76 +63,28 @@
             <div class="row">
                 <div class="d-flex justify-content-center mb-5">
                     <div class="d-flex justify-content-center w-75 usage-menu-container">
-                        <a id="studentMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_1 }}</h3></a>
-                        <a id="researcherMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_2 }}</h3></a>
-                        <a id="hobbyistMenuButton" class="mx-2 usage-menu-button"><h3 class="usage-menu-margin">{{ menu_3 }}</h3></a>
+                        {% for section in usage_sections %}
+                            <a id="{{ section['id'] }}MenuButton"
+                               class="mx-2 usage-menu-button {{ 'text-primary' if loop.index == 1 else '' }}">
+                                <h3>{{ section["button-text"] }}</h3>
+                            </a>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
             <div class="row">
-                <!-- NOTE: The getStartedDisplayArea is the only visible div.  The content divs, studentUser, etc. are swapped
-                 into the display area on click of the menu above -->
-                <div id="getStartedDisplayArea" class="d-flex g-0">
-
-                </div>
-
-                <div id="studentUser" class="d-none">
-                    <div class="d-flex student-user-image">
-                        <div class="d-flex align-items-end w-100">
-                            <div class="d-flex justify-content-center py-5 w-100 getStartedOpacity">
-                                <div class="student-user-content w-75">
-                                    <h2 class="usage-content-title">{{ student_user_title }}</h2>
-                                    <p>{{ student_user_content|safe }}</p>
-                                    <div class="usage-content-button">
-                                        {% with button_type = "transparent_button" %}
-                                            {%  set button_label = "Explore" %}
-                                            {% set button_href = button_href_student %}
-                                            {% include "partials/button.html" %}
-                                        {% endwith %}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div id="researcherUser" class="d-none ">
-
-                    <div class="d-flex researcher-user-image">
-                        <div class="d-flex align-items-end w-100">
-                             <div class="d-flex justify-content-center py-5 w-100 getStartedOpacity">
-                                 <div class="researcher-user-content w-75">
-                                    <h2>{{ researcher_user_title }}</h2>
-                                    <p>{{ researcher_user_content|safe }}</p>
-                                     {% with button_type = "transparent_button" %}
-                                        {%  set button_label = "Explore" %}
-                                        {% set button_href = button_href_researcher %}
-                                        {% include "partials/button.html" %}
-                                     {% endwith %}
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="hobbyistUser" class="d-none ">
-                    <div class="d-flex hobbyist-user-image">
-                        <div class="d-flex align-items-end w-100">
-                            <div class="d-flex justify-content-center py-5 w-100 getStartedOpacity">
-                                 <div class="hobbyist-user-content w-75">
-                                    <h2>{{ hobbyist_user_title }}</h2>
-                                    <p>{{ hobbyist_user_content|safe }}</p>
-                                    {% with button_type = "transparent_button" %}
-                                        {%  set button_label = "Explore" %}
-                                        {% set button_href = button_href_hobbyist %}
-                                        {% include "partials/button.html" %}
-                                    {% endwith %}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
+                {% for section in usage_sections %}
+                    {% with %}
+                        {% set id = section["id"] + "User" %}
+                        {% set initial = loop.index == 1 %}
+                        {% set image_class = section["image-class"] %}
+                        {% set title = section["title"] %}
+                        {% set content = section["content"] %}
+                        {% set href = section["href"] %}
+                        {% include "partials/usage-section.html" %}
+                    {% endwith %}
+                {% endfor %}
+            </div>
         </div>
         <script src="js/usage.js"></script>
     </div>

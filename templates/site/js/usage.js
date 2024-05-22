@@ -1,39 +1,19 @@
-var studentButton = document.getElementById('studentMenuButton');
-var researcherButton = document.getElementById('researcherMenuButton');
-var hobbyistButton = document.getElementById('hobbyistMenuButton');
+let options = [
+    {
+        "button": document.getElementById("studentMenuButton"),
+        "div": document.getElementById("studentUser"),
+        "hash": "usage-student"
+    },
+    {
+        "button": document.getElementById("researcherMenuButton"),
+        "div": document.getElementById("researcherUser"),
+        "hash": "usage-researcher"
+    },
+    {
+        "button": document.getElementById("hobbyistMenuButton"),
+        "div": document.getElementById("hobbyistUser"),
+        "hash": "usage-hobbyist"
+    }
+]
 
-var studentUser = document.getElementById('studentUser');
-var researcherUser = document.getElementById('researcherUser');
-var hobbyistUser = document.getElementById('hobbyistUser');
-
-var displayArea = document.getElementById('getStartedDisplayArea')
-
-studentButton.classList.add("text-primary") ;
-displayArea.innerHTML = studentUser.innerHTML;
-
-studentButton.onclick = function () {
-    studentButton.classList.add("text-primary");
-    researcherButton.classList.remove("text-primary");
-    hobbyistButton.classList.remove("text-primary");
-
-    displayArea.innerHTML = studentUser.innerHTML;
-
-}
-
-researcherButton.onclick = function () {
-    studentButton.classList.remove("text-primary");
-    researcherButton.classList.add("text-primary");
-    hobbyistButton.classList.remove("text-primary");
-
-    displayArea.innerHTML = researcherUser.innerHTML;
-
-}
-
-hobbyistButton.onclick = function () {
-    studentButton.classList.remove("text-primary");
-    researcherButton.classList.remove("text-primary");
-    hobbyistButton.classList.add("text-primary");
-
-    displayArea.innerHTML = hobbyistUser.innerHTML;
-
-}
+{% include "partials/menu-options.js" %}
