@@ -983,6 +983,13 @@ h6{
 /*Media Queries*/
 
 @media (width < 576px){
+
+    .navbar-nav .nav-link:not(:last-child){
+        border-bottom: solid;
+        border-bottom-width: thin;
+        border-bottom-color: var(--white);
+    }
+
     .mobile-menu-title-spacing{
         margin-left: 0px;
     }
@@ -1024,13 +1031,6 @@ h6{
 
     .mobile-menu-title-spacing{
         margin-left: 0px;
-    }
-
-    .menu-items-spacing{
-        margin-left: 0px;
-        margin-bottom: 0px;
-        padding-top: 30px;
-        padding-bottom: 30px;
     }
 
     /*Body Components*/
@@ -1107,13 +1107,6 @@ h6{
 
     .mobile-menu-title-spacing {
         margin-left: 0px;
-    }
-
-    .menu-items-spacing {
-        margin-left: 0px;
-        margin-bottom: 0px;
-        padding-top: 30px;
-        padding-bottom: 30px;
     }
   
     .margin-content-section{
@@ -1305,12 +1298,46 @@ h6{
     }
 }
 
-@media (width >=768px){
+@media (width >= 768px) {
+    .mobile-menu-title-spacing{
+        margin-left: 49px;
+    }
+
     .menu-items-spacing{
         margin-left: 49px;
         margin-bottom: 0px;
         padding-top: 30px;
         padding-bottom: 30px;
+    }
+
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 25px;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+
+    .width-node-services-div{
+        width: 80%;
+    }
+
+    .node-version-text {
+        font-family: var(--main-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 16px;
+        letter-spacing: 0.024px;
+        line-height: var(--line-height-normal);
+        margin-left: 0px;
     }
 }
 
@@ -1333,12 +1360,6 @@ h6{
 
     .nav-link{
         width: 221px;
-    }
-
-    .navbar-nav .nav-link:not(:last-child){
-        border-bottom: solid;
-        border-bottom-width: thin;
-        border-bottom-color: var(--white);
     }
 
     .node-info-left{
@@ -1391,44 +1412,20 @@ h6{
         margin-top: 30px;
     }
 }
-
-@media (width >= 768px) {
-    .mobile-menu-title-spacing{
-        margin-left: 49px;
-    }
-
-    .committee-menu-container{
-        border-bottom: var(--black);
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-    }
-
-    .committee-menu-button{
-        color: var(--black);
-        text-decoration: none;
-        margin-left: 25px;
-        margin-right: 25px;
-        cursor: pointer;
-    }
-
-    .width-node-services-div{
-        width: 80%;
-    }
-
-    .node-version-text {
-        font-family: var(--main-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 16px;
-        letter-spacing: 0.024px;
-        line-height: var(--line-height-normal);
-        margin-left: 0px;
-    }
-}
   
 @media (width > 992px) {
+    /*Menu*/
+    .menu-items-spacing{
+        margin-left: 0px;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .navbar-nav .nav-link:not(:last-child) {
+        border-bottom: none;
+    }
+
     /*Node Page*/
     .width-node-intro{
         width: 100%;
@@ -1460,7 +1457,7 @@ h6{
         margin-right: 118px;
     }
   
-   .menu-items-container{
+    .menu-items-container{
         width: 1000px;
     }
   
