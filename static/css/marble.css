@@ -1415,13 +1415,6 @@ h6{
   
 @media (width > 992px) {
     /*Menu*/
-    .menu-items-spacing{
-        margin-left: 0px;
-        margin-bottom: 0px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
     .navbar-nav .nav-link:not(:last-child) {
         border-bottom: none;
     }
