@@ -1029,10 +1029,6 @@ h6{
         width: 80%;
     }
 
-    .mobile-menu-title-spacing{
-        margin-left: 0px;
-    }
-
     /*Body Components*/
     .header-title-margin{
         margin-bottom: 30px;
@@ -1103,10 +1099,6 @@ h6{
         border-bottom: solid;
         border-bottom-width: thin;
         border-bottom-color: var(--white);
-    }
-
-    .mobile-menu-title-spacing {
-        margin-left: 0px;
     }
   
     .margin-content-section{
@@ -1342,13 +1334,6 @@ h6{
 }
 
 @media (width <= 992px) {
-    .mobile-menu {
-        width: 100%;
-        background-color: var(--background-transparent);
-        backdrop-filter: var(--background-blur-mobile);
-        -webkit-backdrop-filter: var(--background-blur-mobile);
-    }
-
     .menu-text-colour{
         color: var(--text-on-dark);
         text-decoration: none;
@@ -1417,6 +1402,12 @@ h6{
     /*Menu*/
     .navbar-nav .nav-link:not(:last-child) {
         border-bottom: none;
+    }
+
+    .mobile-menu {
+        background-color: var(--background-transparent);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
     }
 
     /*Node Page*/
