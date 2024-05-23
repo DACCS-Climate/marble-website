@@ -24,13 +24,13 @@
             <a class='paragraph-href' href='https://jupyter.org/'>workspace</a>
             that includes climate data analytics tools.</p>
 
-            <p>The key principle is to bring the computation to where the data is, rather than vice versa. The platform
-            strives to serve the diverse needs of climate researchers, non-profits, government agencies at all levels,
-            civic minded individuals, educators and journalists, enabling them to study and communicate the impacts of
-            climate change without worrying about the technical logistics. Marble is the bridge between intricate climate
-            data and the people who seek to understand it, fostering a community of inquiry and discovery in the realm of
-            climate science.</p>
-        "%}
+        <p>The key principle is to bring the computation to where the data is, rather than vice versa. The platform
+        strives to serve the diverse needs of climate researchers, non-profits, government agencies at all levels,
+        civic minded individuals, educators and journalists, enabling them to study and communicate the impacts of
+        climate change without worrying about the technical logistics.Marble is the bridge between intricate climate
+        data and the people who seek to understand it, fostering a community of inquiry and discovery in the realm of
+        climate science.</p>" %}
+
         {% set button_href = "about.html" %}
         {% set button_label = "Learn More" %}
         {% include "partials/general-content.html" %}
@@ -42,8 +42,6 @@
 
     {% include "partials/faq-card.html" %}
 
-    {% with %}
-        {% include "partials/extras.html" %}
-    {% endwith %}
+    {% include "partials/extras.html" %}
 
 {% endblock content %}
