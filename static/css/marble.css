@@ -1082,15 +1082,6 @@ h6{
         -webkit-backdrop-filter: var(--background-blur-mobile);
     }
 
-    .menu-text-colour {
-        color: var(--text-on-dark);
-        text-decoration: none;
-    }
-
-    .menu-text-colour:hover {
-        color: var(--text-on-dark);
-    }
-
     .navbar-nav .nav-link:not(:last-child) {
         border-bottom: solid;
         border-bottom-width: thin;
