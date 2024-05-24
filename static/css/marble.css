@@ -556,7 +556,7 @@ h6{
     list-style-type: none;
 }
 
-.hero-menu ul li h6 a{
+.hero-menu ul li a{
     display: flex;
     width: 192px;
     height: 47px;
