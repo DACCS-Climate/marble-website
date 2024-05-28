@@ -633,6 +633,7 @@ h6{
 }
 
 .student-user-image{
+    width: 100%;
     background-image: url("../images/student-user.jpg");
 }
 
@@ -1315,9 +1316,7 @@ h6{
     .header-title-margin{
         margin-bottom: 30px;
     }
-}
 
-@media (width >= 576px) {
     .mobile-menu-title-spacing{
         margin-left: 49px;
     }
