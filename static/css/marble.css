@@ -633,17 +633,14 @@ h6{
 }
 
 .student-user-image{
-    width: 100%;
     background-image: url("../images/student-user.jpg");
 }
 
 .researcher-user-image{
-    width: 100%;
     background-image: url("../images/researcher-user.jpg");
 }
 
 .hobbyist-user-image{
-    width: 100%;
     background-image: url("../images/hobbyist-user.jpg");
 }
 
@@ -1104,7 +1101,6 @@ h6{
     }
 
     .user-image-height{
-        width: 100%;
         height: auto;
     }
 
@@ -1241,7 +1237,6 @@ h6{
     }
 
     .user-image-height{
-        width: 100%;
         height: auto;
     }
 
