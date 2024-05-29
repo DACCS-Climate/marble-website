@@ -332,6 +332,14 @@ h6{
     text-decoration: none;
 }
 
+.header-title-margin{
+    margin-bottom: 30px;
+}
+
+.header-card-title-margin{
+    margin-bottom: 20px;
+}
+
 /*Menu*/
 /*See media queries at bottom of file*/
 
@@ -677,6 +685,12 @@ h6{
     cursor: pointer;
 }
 
+
+.margin-node-menu-item {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 .node-menu-item:focus{
     color: var(--primary);
 }
@@ -943,15 +957,6 @@ h6{
 
 /*Media Queries*/
 @media (width < 576px){
-    /*Body Components*/
-    .header-title-margin{
-        margin-bottom: 30px;
-    }
-
-    .header-card-title-margin{
-        margin-bottom: 20px;
-    }
-
     /*Menu*/
     .navbar-nav .nav-link:not(:last-child){
         border-bottom: solid;
@@ -1085,12 +1090,6 @@ h6{
         text-decoration: unset;
     }
 
-    /*Node*/
-    .margin-node-menu-item {
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
     .margin-node-menu-container {
         margin-left: 0px;
         margin-top: 0px;
@@ -1161,15 +1160,6 @@ h6{
 
     .hero-menu{
         width: 45%;
-    }
-
-    /*Body Components*/
-    .header-title-margin{
-        margin-bottom: 30px;
-    }
-
-    .header-card-title-margin{
-        margin-bottom: 20px;
     }
 
     /*Node Page*/
@@ -1452,11 +1442,6 @@ h6{
 
     .node-menu-container a:not(:last-child) {
         margin-right: 20px;
-    }
-
-    .margin-node-menu-item {
-        margin-top: 10px;
-        margin-bottom: 20px;
     }
 
     .node-info-left {
