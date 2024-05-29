@@ -1084,7 +1084,40 @@ h6{
         display: inline-block;
         text-decoration: unset;
     }
-  
+
+    /*Node*/
+    .margin-node-menu-item {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .margin-node-menu-container {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .node-menu-container a:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .node-menu-header {
+        font-family: var(--secondary-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 20px;
+        letter-spacing: 0.03px;
+        line-height: var(--line-height-normal);
+    }
+
+    .node-dropdown-chevron {
+        margin-left: 10px;
+        font-family: var(--secondary-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 20px;
+        line-height: var(--line-height-normal);
+    }
+
     /*About*/
     .value-statement{
         margin-top: 60px;
@@ -1163,38 +1196,6 @@ h6{
 
     .margin-value-statement {
         margin-top: 50px;
-    }
-
-    .margin-node-menu-item {
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .node-menu-header {
-        font-family: var(--secondary-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 20px;
-        letter-spacing: 0.03px;
-        line-height: var(--line-height-normal);
-    }
-
-    .node-dropdown-chevron {
-        margin-left: 10px;
-        font-family: var(--secondary-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 20px;
-        line-height: var(--line-height-normal);
-    }
-
-    .margin-node-menu-container {
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 20px;
-    }
-
-    .node-menu-container a:not(:last-child) {
-        margin-right: 20px;
     }
 
     .node-info-left {
@@ -1609,7 +1610,7 @@ h6{
     }
   
       .node-menu-container a:not(:last-child) {
-        margin-right: 20px;
+        margin-right: 50px;
     }
 
     .node-menu-header{
