@@ -964,6 +964,14 @@ h6{
 
 /*Media Queries*/
 @media (width < 576px){
+    /*Menu*/
+    .mobile-menu {
+        width: 100%;
+        background-color: var(--background-transparent);
+        backdrop-filter: var(--background-blur-mobile);
+        -webkit-backdrop-filter: var(--background-blur-mobile);
+    }
+
     .navbar-nav .nav-link:not(:last-child){
         border-bottom: solid;
         border-bottom-width: thin;
