@@ -1096,6 +1096,50 @@ h6{
         display: inline-block;
         text-decoration: unset;
     }
+
+    /*Node*/
+
+    .services-header {
+        font-family: var(--secondary-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 20px;
+        letter-spacing: 0.03px;
+        line-height: var(--line-height-normal);
+    }
+
+    .width-node-services-div{
+        width: 95%;
+    }
+
+    .node-card{
+        max-width: 345px;
+        max-height: 208px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .margin-node-card-title{
+        margin-bottom: 10px;
+    }
+
+    .services-button-margin {
+        margin-top: 10px;
+    }
+
+    .services-button a:not(:last-child) {
+        margin-right: 10px
+    }
+
+    .margin-services-title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
   
     /*About*/
     .value-statement{
@@ -1330,48 +1374,6 @@ h6{
         letter-spacing: 0.048px;
         line-height: var(--line-height-normal);
         margin-left: 0px;
-    }
-
-    .margin-services-title {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .services-header {
-        font-family: var(--secondary-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 20px;
-        letter-spacing: 0.03px;
-        line-height: var(--line-height-normal);
-    }
-
-    .width-node-services-div{
-        width: 95%;
-    }
-
-    .node-card{
-        max-width: 345px;
-        max-height: 208px;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .margin-node-card-title{
-        margin-bottom: 10px;
-    }
-
-    .services-button-margin {
-        margin-top: 10px;
-    }
-
-    .services-button a:not(:last-child) {
-        margin-right: 10px
     }
 }
 
@@ -1631,7 +1633,7 @@ h6{
         padding-bottom: 20px;
     }
   
-      .node-menu-container a:not(:last-child) {
+    .node-menu-container a:not(:last-child) {
         margin-right: 20px;
     }
 
@@ -1664,7 +1666,14 @@ h6{
     }
 
     .width-node-services-div{
-        width: 95%;
+        width: 80%;
+    }
+
+    .services-header{
+        font-family: var(--main-font-family);
+        font-weight: var(--h3-reg-font-weight);
+        font-size: 48px;
+        line-height: var(--line-height-normal);
     }
 }
 
@@ -1678,9 +1687,7 @@ h6{
         height: 842px;
     }
 
-    .width-node-services-div{
-        width: 80%;
-    }
+
 
     .node-details-text {
         font-family: var(--main-font-family);
@@ -1705,17 +1712,6 @@ h6{
 
     .services-button:not(:last-child) {
         margin-right: 10px
-    }
-
-    .services-header{
-        font-family: var(--main-font-family);
-        font-weight: var(--h3-reg-font-weight);
-        font-size: 48px;
-        line-height: var(--line-height-normal);
-    }
-
-    .width-node-services-div{
-        width: 75%;
     }
 
     .margin-node-card-title{
