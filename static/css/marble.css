@@ -981,12 +981,6 @@ h6{
     }
 
     /*Banner*/
-    .banner-title-home{
-        background: var(--linear-gradient-marble);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
     .hero-menu-wrap{
         width: 241px;
         height: 417px;
@@ -1311,12 +1305,6 @@ h6{
         width: 90%;
     }
 
-    .banner-title-home{
-        background: var(--linear-gradient-marble);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
     .margin-banner-title{
         margin-bottom: 50px;
     }
@@ -1382,12 +1370,6 @@ h6{
 }
 
 @media (width >= 576px) {
-    .banner-title-home{
-        background: var(--linear-gradient-marble);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-  
     .mobile-menu-title-spacing{
         margin-left: 49px;
     }
@@ -1731,6 +1713,13 @@ h6{
 }
 
 @media (width <= 992px) {
+
+    .banner-title-home{
+        background: var(--linear-gradient-marble);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     .menu-text-colour{
         color: var(--text-on-dark);
         text-decoration: none;
