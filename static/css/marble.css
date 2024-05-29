@@ -327,6 +327,9 @@ h6{
 }
 
 /*Body Components*/
+.header-title-margin{
+    margin-bottom: 30px;
+}
 
 .paragraph-href{
     color: var(--primary);
@@ -515,6 +518,10 @@ h6{
 }
 
 /*Quick Start menu*/
+.banner-overlay-elements{
+    width: 75%;
+}
+
 /*See media queries at end of file*/
 .quick-start-title{
     width: 121px;
@@ -549,7 +556,7 @@ h6{
     list-style-type: none;
 }
 
-.hero-menu ul li h6 a{
+.hero-menu ul li a{
     display: flex;
     width: 192px;
     height: 47px;
@@ -569,19 +576,7 @@ h6{
     margin-top: 30px;
 }
 
-.technology-card{
-    min-width: 33%;
-}
-
-.technology-card h6{
-    margin-bottom: unset;
-}
-
-.technology-card-title{
-    min-height: 2.5em;
-}
-
-.technology-card-content{
+.margin-technology-card-content{
     margin-bottom: 30px;
 }
 
@@ -632,7 +627,7 @@ h6{
 
 .user-image{
     width: 100%;
-    height: 842px;
+    background-image: url("../images/student-user.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -647,6 +642,12 @@ h6{
 
 .hobbyist-user-image{
     background-image: url("../images/hobbyist-user.jpg");
+}
+
+/*FAQ*/
+
+.margin-faq-content{
+    margin-top: 20px;
 }
 
 /*Extras*/
@@ -667,21 +668,6 @@ h6{
 
 .social-media-section{
     margin-top: 120px;
-}
-
-.social-media-link{
-    /* height and width matches social-media-icon */
-    height: 40px;
-    width: 40px;
-    margin-top: 15px;
-    margin-right: 30px;
-    display: inline-block;
-    text-decoration: unset;
-}
-
-.social-media-icon{
-    height: 40px;
-    width: 40px;
 }
 
 /*Node Page*/
@@ -1036,7 +1022,8 @@ h6{
 }
 
 /*Media Queries*/
-@media (width < 576px){
+@media (width < 576px) {
+
     .mobile-menu-title-spacing{
         margin-left: 0px;
     }
@@ -1048,6 +1035,260 @@ h6{
         padding-bottom: 30px;
     }
 
+    /*Banner*/
+    .hero-menu-wrap{
+        width: 241px;
+        height: 417px;
+        margin-left: 0px;
+        padding: 40px;
+        background-color: var(--black-opacity-midlight);
+        box-shadow: var(--elevation-3);
+        z-index: 3;
+    }
+
+    .hero-menu{
+        width: 80%;
+    }
+
+    /*Home*/
+    .margin-content-section{
+        margin-bottom: 50px;
+    }
+
+    .width-content-section{
+        width: 95%;
+    }
+
+    .technology-container-width{
+        width: 100%;
+    }
+
+    .margin-technology-card{
+        margin-bottom: 30px;
+    }
+
+    .margin-technology-card-content, .margin-technology-card-content h6{
+        margin-bottom: 20px;
+    }
+
+      .banner-width-mobile{
+        width: 90%;
+    }
+  
+    /*Technology Section*/
+    .technology-card{
+        min-width: 33%;
+    }
+
+    .technology-card h6{
+        margin-bottom: unset;
+    }
+
+    .technology-card-title{
+        min-height: 1.5em;
+    }
+
+    .width-usage-section{
+        width: 95%;
+    }
+
+    .margin-usage-card{
+        margin-top: 30px;
+    }
+
+    .padding-usage-content{
+        padding-top: 20px;
+    }
+
+    .user-image-height{
+        height: auto;
+    }
+
+    /*Extras*/
+    .width-faq-section{
+       width: 95%;
+    }
+
+    .spacing-faq-card{
+        width: 100%;
+        margin-top: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .margin-feedback-button{
+        margin-left: 20px;
+    }
+
+    .margin-useful-links{
+        margin-left: 0px;
+    }
+
+    .width-extras-section{
+        width: 95%;
+    }
+
+    /*Social Media*/
+    .margin-social-media{
+        margin-top: 50px;
+    }
+
+    .social-media-icon{
+        height: 30px;
+        width: 30px;
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+
+    .social-media-link{
+        /* height and width matches social-media-icon */
+        height: 30px;
+        width: 30px;
+        margin-top: 10px;
+        margin-right: 30px;
+        display: inline-block;
+        text-decoration: unset;
+    }
+  
+    /*About*/
+    .value-statement{
+        margin-top: 60px;
+        width: 65%;
+    }
+
+    .content-section{
+        margin-bottom: 50px;
+    }
+
+    .margin-faq-top{
+        margin-top: 30px;
+    }
+
+    .committee-menu-container{
+        border-bottom: var(--black);
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .committee-menu-button{
+        color: var(--black);
+        text-decoration: none;
+        margin-left: 25px;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+
+}
+
+@media (width >= 576px) {
+    /*Banner*/
+    .hero-menu-wrap{
+        width: 500px;
+        height: 400px;
+        margin-left: 50px;
+        padding: 40px;
+        background-color: var(--black-opacity-midlight);
+        box-shadow: var(--elevation-3);
+        z-index: 3;
+    }
+
+    .hero-menu{
+        width: 45%;
+    }
+
+    /*Home*/
+    .margin-content-section{
+        margin-bottom: 120px;
+    }
+
+    .width-content-section{
+        width: 75%;
+    }
+
+    .technology-container-width{
+        width: 75%;
+    }
+
+    .margin-technology-card{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+
+    .margin-technology-card-content, .margin-technology-card-content h6{
+        margin-bottom: 30px;
+    }
+
+    .width-usage-section{
+        width: 75%;
+    }
+
+    .margin-usage-card{
+        margin-top: 30px;
+    }
+
+    .padding-usage-content{
+        padding-top: 25px;
+    }
+
+    .user-image-height{
+        height: auto;
+    }
+
+    /*Extras*/
+    .width-faq-section{
+       width: 75%;
+    }
+
+    .spacing-faq-card{
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .margin-feedback-button{
+        margin-left: 0px;
+    }
+
+    .margin-useful-links{
+        margin-left: 50px;
+    }
+
+    .width-extras-section{
+        width: 95%;
+    }
+
+    /*Social Media*/
+    .margin-social-media{
+        margin-top: 50px;
+    }
+
+    .social-media-icon{
+        height: 40px;
+        width: 40px;
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+
+    .social-media-link{
+        /* height and width matches social-media-icon */
+        height: 40px;
+        width: 40px;
+        margin-top: 15px;
+        margin-right: 30px;
+        display: inline-block;
+        text-decoration: unset;
+    }
+  
+    /*About*/
     .banner-width-mobile{
         width: 90%;
     }
@@ -1062,38 +1303,15 @@ h6{
         margin-bottom: 50px;
     }
 
-    .hero-menu-wrap{
-        width: 241px;
-        height: 417px;
-        margin-left: 0px;
-        padding: 40px;
-        background-color: var(--black-opacity-midlight);
-        box-shadow: var(--elevation-3);
-        z-index: 3;
-    }
-
     .hero-menu {
         width: 80%;
-    }
-
-    .mobile-menu-title-spacing{
-        margin-left: 0px;
-    }
-
-    .menu-items-spacing{
-        margin-left: 0px;
-        margin-bottom: 0px;
-        padding-top: 30px;
-        padding-bottom: 30px;
     }
 
     /*Body Components*/
     .header-title-margin{
         margin-bottom: 30px;
     }
-}
 
-@media (width >= 576px) {
     .mobile-menu-title-spacing{
         margin-left: 49px;
     }
@@ -1171,6 +1389,28 @@ h6{
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
+    /*Extras*/
+    .width-extras-section{
+        width: 75%;
+    }
+
+    .social-media-icon{
+        height: 40px;
+        width: 40px;
+        margin-top: 15px;
+        margin-right: 30px;
+    }
+
+    .social-media-link{
+        /* height and width matches social-media-icon */
+        height: 40px;
+        width: 40px;
+        margin-top: 15px;
+        margin-right: 30px;
+        display: inline-block;
+        text-decoration: unset;
+    }
 }
 
 @media (width <= 992px) {
@@ -1199,38 +1439,31 @@ h6{
         border-bottom-width: thin;
         border-bottom-color: var(--white);
     }
+}
 
-    .content-section{
+@media (width >= 992px) {
+    /*Home*/
+    .margin-usage-card{
+        margin-top: 0px;
+    }
+
+    .user-image-height {
+        height: 842px;
+    }
+}
+    
+@media (width > 992px) {
+    /*Body Components*/
+    .header-title-margin{
         margin-bottom: 50px;
     }
 
-    .margin-faq-top{
-        margin-top: 30px;
-    }
-
-    .committee-menu-container{
-        border-bottom: var(--black);
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-    }
-
-    .committee-menu-button{
-        color: var(--black);
-        text-decoration: none;
-        margin-left: 25px;
-        margin-right: 25px;
-        cursor: pointer;
-    }
-}
-
-@media (width > 992px) {
-   .menu-items-container{
+    /*Menu*/
+    .menu-items-container{
         width: 1000px;
     }
-  
+
+    /*Banner*/
     .banner-title-home{
         background: var(--linear-gradient-marble);
         -webkit-background-clip: text;
@@ -1263,9 +1496,44 @@ h6{
         margin-bottom: 50px;
     }
 
-    /*Body Components*/
-    .header-title-margin{
-        margin-bottom: 50px;
+    /*Technology Section*/
+    .technology-card{
+        min-width: 33%;
+    }
+
+    .technology-card h6{
+        margin-bottom: unset;
+    }
+
+    .technology-card-title{
+        min-height: 2.5em;
+    }
+
+    /*Extras*/
+    .width-extras-section{
+        width: 75%;
+    }
+
+    /*Social Media*/
+    .margin-social-media{
+        margin-top: 120px;
+    }
+
+    .social-media-icon{
+        height: 40px;
+        width: 40px;
+        margin-top: 15px;
+        margin-right: 30px;
+    }
+
+    .social-media-link{
+        /* height and width matches social-media-icon */
+        height: 40px;
+        width: 40px;
+        margin-top: 15px;
+        margin-right: 30px;
+        display: inline-block;
+        text-decoration: unset;
     }
 
     .committee-menu-button{

@@ -44,24 +44,26 @@
     }
 ]%}
 
-<div class="container-fluid content-section">
+<div class="container-fluid margin-content-section">
     <div class="row">
         <div class="container-fluid">
             <div class="row">
-                <div class="container-fluid w-75">
+                <div class="container-fluid width-usage-section">
                     <div class="row">
                         <h3 class="header-title-margin"><a>{{ title }}</a></h3>
-                        {%  if lead_in_text %}
+
+                        {% if lead_in_text %}
                             <div>
                                 <p class="lead-in-text">{{ lead_in_text }}</p>
                             </div>
-                        {%  endif %}
+                        {% endif %}
+
                         <p>{{ section_content }}</p>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="d-flex justify-content-center mb-5">
+                <div class="d-none d-lg-flex justify-content-center mb-5 w-100">
                     <div class="d-flex justify-content-center w-75 usage-menu-container">
                         {% for section in usage_sections %}
                             <a id="{{ section['id'] }}MenuButton"

@@ -15,6 +15,7 @@
 
     {% with %}
         {% set title = "About Marble" %}
+        {% set mobile_title = "About Marble" %}
         {% set content = "
             <p>Marble is a network of cloud based web services <a class='paragraph-href' href='node.html'>nodes</a>
             that provide access to large climate and satellite data sets.
@@ -38,7 +39,14 @@
 
     {% include "partials/technology-card.html" %}
 
-    {% include "partials/usage.html" %}
+    {% with %}
+        {% set title = "Getting Started" %}
+        {% set section_content = "Whether you're a student, researcher, or hobbyist, we've got you covered. Before
+        initiating your research journey, take the opportunity to explore services best suited to your individual
+        needs. Explore the  diverse array of nodes and their offerings, tailored to cater specifically to your research
+        requirements." %}
+        {% include "partials/usage.html" %}
+    {% endwith %}
 
     {% include "partials/faq-card.html" %}
 
