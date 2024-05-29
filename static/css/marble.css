@@ -1232,6 +1232,19 @@ h6{
     .node-menu-container a:not(:last-child) {
         margin-right: 20px;
     }
+
+    .node-image-background{
+        width: 100%;
+        height: 692px;
+        max-height: 692px;
+        background-color: var(--background-black);
+        background-repeat: no-repeat;
+        background-size: auto 80%;
+        background-position: center;
+        background-origin: content-box;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
   
     /*Home*/
     .margin-content-section{
@@ -1485,17 +1498,17 @@ h6{
     }
 
     .node-info-left {
-        margin-left: 0px;
+        margin-left: 30px;
     }
 
     .node-info-bottom-left {
-        margin-left: 0px;
+        margin-left: 30px;
     }
 
     .node-info-bottom-right {
-        margin-left: 0px;
+        margin-left: 30px;
         margin-top: 0px;
-        margin-right: 0px;
+        margin-right: 30px;
     }
 
     .node-details-text {
@@ -1657,19 +1670,6 @@ h6{
         line-height: var(--line-height-normal);
     }
 
-    .node-image-background{
-        width: 100%;
-        height: 692px;
-        max-height: 692px;
-        background-color: var(--background-black);
-        background-repeat: no-repeat;
-        background-size: auto 80%;
-        background-position: center;
-        background-origin: content-box;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
     .width-node-services-div{
         width: 95%;
     }
@@ -1699,10 +1699,6 @@ h6{
     }
 
     .node-info-left{
-        margin-left: 50px;
-    }
-
-    .node-info-bottom-left{
         margin-left: 50px;
     }
 
