@@ -45,7 +45,7 @@ const converters = {
     "services": (val) => {
         const services_row = document.createElement("div");
         services_row.id = "nodeServices";
-        services_row.classList.add("d-flex", "flex-wrap", "justify-content-start", "node-services-div");
+        services_row.classList.add("d-flex", "flex-wrap", "justify-content-between", "width-node-services-div");
 
         val.forEach( (service, index) => {
             const node_card_template = document.getElementById("node-card-template")
@@ -107,7 +107,8 @@ document.addEventListener("DOMContentLoaded", function () {
         // for the rest. If not, just create a menu with the nodes in the node registry
         const initial_node_count = 3;
         node_keys.forEach((key, index) => {
-            const node_menu_item = document.createElement('h3');
+            const node_menu_item = document.createElement('div'); //Replace h3 tag for mobile
+            node_menu_item.classList.add("node-menu-header", "margin-node-menu-item");
             node_menu_item.setAttribute('onclick', 'getNode(' + '"'+ key +'"' + ')');
             node_menu_item.innerText = json[key].name;
             if (index < initial_node_count) {
