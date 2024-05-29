@@ -981,6 +981,12 @@ h6{
     }
 
     /*Banner*/
+    .banner-title-home{
+        background: var(--linear-gradient-marble);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     .hero-menu-wrap{
         width: 241px;
         height: 417px;
