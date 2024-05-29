@@ -12,9 +12,9 @@
 
 <!-- TODO: add links for FAQ when it is created above -->
 
-<div class="container-fluid content-section">
+<div class="container-fluid margin-content-section">
     <div class="row mt-5">
-        <div class="container-fluid w-75">
+        <div class="container-fluid width-faq-section">
             <div class="row">
                 <h3 class="header-title-margin"><a>FAQ</a></h3>
                 <div>
@@ -26,9 +26,9 @@
             {% for content in faq_content %}
             <div class="row margin-faq-top">
                 <div class="d-flex justify-content-center">
-                    <div class="mb-1 border border-1 rounded faq-card-content">
+                    <div class="border border-1 rounded spacing-faq-card">
                         <div class="d-flex justify-content-between">
-                            <div class="">
+                            <div>
                                 <h6 class="header-title-margin"> {{ content["title"] }}</h6>
                             </div>
                             <div>
@@ -41,7 +41,7 @@
 
                             </div>
                         </div>
-                        <div class="flex-row">
+                        <div class="flex-row margin-faq-content">
                             <p> {{ content["content"]|safe }}</p>
                         </div>
                     </div>

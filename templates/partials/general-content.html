@@ -1,4 +1,4 @@
-<div class="container-fluid content-section w-75">
+<div class="container-fluid margin-content-section width-content-section">
     <div class="row mt-5">
         {% if title_position == "left" %}
             <div class="d-flex">
@@ -21,10 +21,10 @@
         {% else %}
             <div class="d-none d-lg-flex flex-column">
                 <h3 class="header-title-margin">{{ title }}</h3>
-                <div><p>{{ content|safe }}</p></div>
+                <div>{{ content|safe }}</div>
             </div>
             <div class="d-flex d-lg-none flex-column">
-                <h3 class="h3-title-margin">{{ mobile_title }}</h3>
+                <h3 class="header-title-margin">{{ mobile_title }}</h3>
                 <div>{{ content|safe }}</div>
             </div>
             {% if github_href %}
@@ -33,8 +33,15 @@
                 {% endwith %}
             {% endif %}
             {% if button_href %}
-                <div class="card-button-margin">
+                <div class="d-none d-lg-flex card-button-margin">
                      {% with button_type = "reg_action_button"%}
+                        {% set button_label = button_label|default("Click Here") %}
+                        {% include "partials/button.html" %}
+                    {% endwith %}
+                </div>
+
+                <div class="d-flex d-lg-none card-button-margin">
+                     {% with button_type = "med_action_button"%}
                         {% set button_label = button_label|default("Click Here") %}
                         {% include "partials/button.html" %}
                     {% endwith %}
