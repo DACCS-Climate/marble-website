@@ -698,6 +698,11 @@ h6{
     cursor: pointer;
 }
 
+.margin-node-menu-item {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 .node-menu-item:focus{
     color: var(--primary);
 }
@@ -1097,12 +1102,6 @@ h6{
         text-decoration: unset;
     }
 
-    /*Node*/
-    .margin-node-menu-item {
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
     .margin-node-menu-container {
         margin-left: 0px;
         margin-top: 0px;
@@ -1471,11 +1470,6 @@ h6{
 
     .node-menu-container a:not(:last-child) {
         margin-right: 20px;
-    }
-
-    .margin-node-menu-item {
-        margin-top: 10px;
-        margin-bottom: 20px;
     }
 
     .node-info-left {
