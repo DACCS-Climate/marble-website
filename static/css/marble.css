@@ -1661,10 +1661,6 @@ h6{
         padding-bottom: 30px;
     }
 
-    .width-node-services-div{
-        width: 80%;
-    }
-
     .services-header{
         font-family: var(--main-font-family);
         font-weight: var(--h3-reg-font-weight);
@@ -1803,7 +1799,7 @@ h6{
     }
 
     .width-node-services-div{
-        width: 75%;
+        width: 80%;
     }
 
     .node-card{
