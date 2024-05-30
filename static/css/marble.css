@@ -681,6 +681,10 @@ h6{
     margin-bottom: 30px;
 }
 
+.node-main-info a h2, .node-main-info p{
+    margin-bottom: unset;
+}
+
 .node-info-text{
     color: var(--text-on-dark);
 }
