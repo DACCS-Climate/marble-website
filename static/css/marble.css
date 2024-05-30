@@ -678,7 +678,7 @@ h6{
 /*Node Page*/
 /*See media queries at end of file*/
 .node-main-info{
-    margin-bottom: 27px;
+    margin-bottom: 32px;
 }
 
 .node-info-text{
@@ -1123,15 +1123,6 @@ h6{
         margin-top: 0px;
         margin-right: 0px;
     }
-
-    .node-details-text {
-        font-family: var(--main-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 12px;
-        letter-spacing: 0.048px;
-        line-height: var(--line-height-normal);
-        margin-left: 0px;
-    }
   
     /*About*/
     .value-statement{
@@ -1511,15 +1502,6 @@ h6{
         margin-right: 30px;
     }
 
-    .node-details-text {
-        font-family: var(--main-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 12px;
-        letter-spacing: 0.048px;
-        line-height: var(--line-height-normal);
-        margin-left: 0px;
-    }
-
     .services-header {
         font-family: var(--secondary-font-family);
         font-weight: var(--reg-font-weight);
@@ -1687,15 +1669,6 @@ h6{
 
     .width-node-services-div{
         width: 80%;
-    }
-
-    .node-details-text {
-        font-family: var(--main-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 16px;
-        letter-spacing: 0.024px;
-        line-height: var(--line-height-normal);
-        margin-left: 0px;
     }
 
     .node-info-left{
