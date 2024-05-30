@@ -1125,15 +1125,20 @@ h6{
         border-bottom-width: thin;
         margin-top: 50px;
         margin-bottom: 20px;
-        padding-bottom: 20px;
+    }
+
+    .margin-committee-title{
+        margin-bottom: 20px;
     }
 
     .committee-menu-button{
         color: var(--black);
         text-decoration: none;
-        margin-left: 25px;
-        margin-right: 25px;
         cursor: pointer;
+    }
+
+    .margin-committee-menu-button a:not(:last-child){
+        margin-right: 50px;
     }
 
 }
@@ -1307,8 +1312,7 @@ h6{
         display: inline-block;
         text-decoration: unset;
     }
-  
-    /*About*/
+
     .banner-width-mobile{
         width: 90%;
     }
@@ -1327,6 +1331,7 @@ h6{
         width: 80%;
     }
 
+    /*Node*/
     .node-info-bottom-left {
         margin-left: 0px;
     }
@@ -1380,6 +1385,11 @@ h6{
 
     .services-button a:not(:last-child) {
         margin-right: 10px
+    }
+
+    /*About*/
+    .margin-committee-title{
+        margin-bottom: 30px;
     }
 }
 
@@ -1569,15 +1579,16 @@ h6{
         border-bottom-width: thin;
         margin-top: 50px;
         margin-bottom: 20px;
-        padding-bottom: 20px;
     }
 
     .committee-menu-button{
         color: var(--black);
         text-decoration: none;
-        margin-left: 25px;
-        margin-right: 25px;
         cursor: pointer;
+    }
+
+    .margin-committee-menu-button a:not(:last-child){
+        margin-right: 50px;
     }
 }
 
@@ -1621,15 +1632,6 @@ h6{
         margin-bottom: 0px;
         padding-top: 30px;
         padding-bottom: 30px;
-    }
-
-    .committee-menu-container{
-        border-bottom: var(--black);
-        border-bottom-style: solid;
-        border-bottom-width: thin;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
     }
   
       .node-menu-container a:not(:last-child) {
@@ -1928,11 +1930,7 @@ h6{
         text-decoration: unset;
     }
 
-    .committee-menu-button{
-        color: var(--black);
-        text-decoration: none;
-        margin-left: 60px;
-        margin-right: 60px;
-        cursor: pointer;
+    .margin-committee-menu-button a:not(:last-child){
+        margin-right: 120px;
     }
 }
