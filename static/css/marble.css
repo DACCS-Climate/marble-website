@@ -778,6 +778,10 @@ h6{
     margin-bottom: 120px;
 }
 
+.margin-node-card-title{
+    margin-bottom: 10px;
+}
+
 .node-card-link-button{
     width: 93px;
     height: 30px;
@@ -1120,12 +1124,8 @@ h6{
         margin-bottom: 0px;
         padding-left: 15px;
         padding-right: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .margin-node-card-title{
-        margin-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .services-button-margin {
@@ -1139,6 +1139,10 @@ h6{
     .margin-services-title {
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    .services-button:not(:last-child) {
+        margin-right: 10px
     }
   
     /*About*/
@@ -1529,7 +1533,7 @@ h6{
         margin-top: 0px;
     }
 
-    .services-button:not(:last-child) {
+    .services-button a:not(:last-child) {
         margin-right: 10px
     }
 
@@ -1537,10 +1541,6 @@ h6{
         width: 345px;
         height: 238px;
         padding: 15px;
-    }
-
-    .margin-node-card-title{
-        margin-bottom: 10px;
     }
 
     .services-button-margin {
@@ -1709,15 +1709,6 @@ h6{
     .services-margin-div{
         margin-top:50px;
     }
-
-    .services-button:not(:last-child) {
-        margin-right: 10px
-    }
-
-    .margin-node-card-title{
-        margin-bottom: 10px;
-    }
-
 }
 
 @media (width <= 992px) {
@@ -1799,8 +1790,8 @@ h6{
         margin-top:50px;
     }
 
-    .services-button:not(:last-child) {
-        margin-right: 10px
+    .services-button a:not(:last-child) {
+        margin-right: 20px
     }
 
     .services-header{
@@ -1830,10 +1821,6 @@ h6{
         padding-right: 17px;
         padding-top: 24px;
         padding-bottom: 24px;
-    }
-
-    .margin-node-card-title{
-        margin-bottom: 10px;
     }
 
     .services-button-margin{
