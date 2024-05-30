@@ -782,6 +782,10 @@ h6{
     margin-bottom: 10px;
 }
 
+.node-card p{
+    margin-bottom: unset;
+}
+
 .node-card-link-button{
     width: 93px;
     height: 30px;
