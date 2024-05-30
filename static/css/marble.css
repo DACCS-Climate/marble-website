@@ -808,6 +808,10 @@ h6{
     border-bottom-width: thin;
 }
 
+.services-button-margin {
+    margin-top: 10px;
+}
+
 /*About Page*/
 
 .about-intro{
@@ -1126,10 +1130,6 @@ h6{
         padding-right: 15px;
         padding-top: 20px;
         padding-bottom: 20px;
-    }
-
-    .services-button-margin {
-        margin-top: 10px;
     }
 
     .services-button a:not(:last-child) {
@@ -1543,10 +1543,6 @@ h6{
         padding: 15px;
     }
 
-    .services-button-margin {
-        margin-top: 10px;
-    }
-
     /*Node Page*/
     .margin-value-statement{
         margin-top: 60px;
@@ -1821,10 +1817,6 @@ h6{
         padding-right: 17px;
         padding-top: 24px;
         padding-bottom: 24px;
-    }
-
-    .services-button-margin{
-        margin-top: 30px;
     }
 
     /*Body Components*/
