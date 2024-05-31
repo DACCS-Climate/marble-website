@@ -84,6 +84,8 @@ const nodeBackgroundClass=[
     "node-planet-background3"
 ]
 
+let options = [];
+
 document.addEventListener("DOMContentLoaded", function () {
     const githubURL = "{{ node_registry_url }}";
     fetch(githubURL).then(resp => resp.json()).then(json => {
@@ -108,6 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const initial_node_count = 3;
         node_keys.forEach((key, index) => {
             const node_menu_item = document.createElement('div'); //Replace h3 tag for mobile
+            node_menu_item.id = key;
             node_menu_item.classList.add("node-menu-header", "margin-node-menu-item");
             node_menu_item.setAttribute('onclick', 'getNode(' + '"'+ key +'"' + ')');
             node_menu_item.innerText = json[key].name;
@@ -124,6 +127,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 node_menu_item.setAttribute("tabindex", `${index - initial_node_count}`)
                 node_dropdown_content.appendChild(h5_dropdown_item);
             }
+
+            options.push({
+                "div":"document.getElementById(" + '"' + key + '"' +")",
+                "button":"document.getElementById(" + '"' + key + '"' +")",
+                "hash":key});
         })
         if (node_count <= initial_node_count) {
             node_dropdown_container.remove();
@@ -162,3 +170,5 @@ function getNode(node_id){
 function capitalize(word){
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
+
+{% include "partials/menu-options.js" %}
