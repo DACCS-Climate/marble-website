@@ -778,6 +778,14 @@ h6{
     margin-bottom: 120px;
 }
 
+.margin-node-card-title{
+    margin-bottom: 10px;
+}
+
+.node-card p{
+    margin-bottom: unset;
+}
+
 .node-card-link-button{
     width: 93px;
     height: 30px;
@@ -802,6 +810,10 @@ h6{
     border-bottom-style: solid;
     border-bottom-color: var(--black);
     border-bottom-width: thin;
+}
+
+.services-button-margin {
+    margin-top: 10px;
 }
 
 /*About Page*/
@@ -1095,6 +1107,46 @@ h6{
         margin-right: 30px;
         display: inline-block;
         text-decoration: unset;
+    }
+
+    /*Node*/
+
+    .services-header {
+        font-family: var(--secondary-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 20px;
+        letter-spacing: 0.03px;
+        line-height: var(--line-height-normal);
+    }
+
+    .width-node-services-div{
+        width: 95%;
+    }
+
+    .node-card{
+        max-width: 345px;
+        max-height: 208px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .services-button a:not(:last-child) {
+        margin-right: 10px
+    }
+
+    .margin-services-title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .services-button:not(:last-child) {
+        margin-right: 10px
     }
   
     /*About*/
@@ -1537,7 +1589,7 @@ h6{
         margin-top: 0px;
     }
 
-    .services-button:not(:last-child) {
+    .services-button a:not(:last-child) {
         margin-right: 10px
     }
 
@@ -1545,14 +1597,6 @@ h6{
         width: 345px;
         height: 238px;
         padding: 15px;
-    }
-
-    .margin-node-card-title{
-        margin-bottom: 10px;
-    }
-
-    .services-button-margin {
-        margin-top: 10px;
     }
 
     /*Node Page*/
@@ -1633,7 +1677,7 @@ h6{
         padding-bottom: 30px;
     }
   
-      .node-menu-container a:not(:last-child) {
+    .node-menu-container a:not(:last-child) {
         margin-right: 20px;
     }
 
@@ -1665,8 +1709,11 @@ h6{
         padding-bottom: 30px;
     }
 
-    .width-node-services-div{
-        width: 95%;
+    .services-header{
+        font-family: var(--main-font-family);
+        font-weight: var(--h3-reg-font-weight);
+        font-size: 48px;
+        line-height: var(--line-height-normal);
     }
 }
 
@@ -1680,9 +1727,7 @@ h6{
         height: 842px;
     }
 
-    .width-node-services-div{
-        width: 80%;
-    }
+
 
     .node-details-text {
         font-family: var(--main-font-family);
@@ -1704,26 +1749,6 @@ h6{
     .services-margin-div{
         margin-top:50px;
     }
-
-    .services-button:not(:last-child) {
-        margin-right: 10px
-    }
-
-    .services-header{
-        font-family: var(--main-font-family);
-        font-weight: var(--h3-reg-font-weight);
-        font-size: 48px;
-        line-height: var(--line-height-normal);
-    }
-
-    .width-node-services-div{
-        width: 75%;
-    }
-
-    .margin-node-card-title{
-        margin-bottom: 10px;
-    }
-
 }
 
 @media (width <= 992px) {
@@ -1805,8 +1830,8 @@ h6{
         margin-top:50px;
     }
 
-    .services-button:not(:last-child) {
-        margin-right: 10px
+    .services-button a:not(:last-child) {
+        margin-right: 20px
     }
 
     .services-header{
@@ -1822,7 +1847,7 @@ h6{
     }
 
     .width-node-services-div{
-        width: 75%;
+        width: 80%;
     }
 
     .node-card{
@@ -1836,14 +1861,6 @@ h6{
         padding-right: 17px;
         padding-top: 24px;
         padding-bottom: 24px;
-    }
-
-    .margin-node-card-title{
-        margin-bottom: 10px;
-    }
-
-    .services-button-margin{
-        margin-top: 30px;
     }
 
     /*Body Components*/
