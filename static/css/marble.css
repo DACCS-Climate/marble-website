@@ -705,6 +705,11 @@ h6{
     cursor: pointer;
 }
 
+.margin-node-menu-item {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
 .node-menu-item:focus{
     color: var(--primary);
 }
@@ -785,6 +790,14 @@ h6{
     margin-bottom: 120px;
 }
 
+.margin-node-card-title{
+    margin-bottom: 10px;
+}
+
+.node-card p{
+    margin-bottom: unset;
+}
+
 .node-card-link-button{
     width: 93px;
     height: 30px;
@@ -809,6 +822,10 @@ h6{
     border-bottom-style: solid;
     border-bottom-color: var(--black);
     border-bottom-width: thin;
+}
+
+.services-button-margin {
+    margin-top: 10px;
 }
 
 /*About Page*/
@@ -1104,6 +1121,66 @@ h6{
         display: inline-block;
         text-decoration: unset;
     }
+
+    /*Node*/
+
+    .services-header {
+        font-family: var(--secondary-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 20px;
+        letter-spacing: 0.03px;
+        line-height: var(--line-height-normal);
+    }
+
+    .width-node-services-div{
+        width: 95%;
+    }
+
+    .node-menu-header {
+        font-family: var(--secondary-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 20px;
+        letter-spacing: 0.03px;
+        line-height: var(--line-height-normal);
+    }
+
+    .node-menu-container a:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .node-dropdown-chevron {
+        margin-left: 10px;
+        font-family: var(--secondary-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 20px;
+        line-height: var(--line-height-normal);
+    }
+
+    .node-card{
+        max-width: 345px;
+        max-height: 208px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .services-button a:not(:last-child) {
+        margin-right: 10px
+    }
+
+    .margin-services-title {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .services-button:not(:last-child) {
+        margin-right: 10px
+    }
   
     /*About*/
     .value-statement{
@@ -1140,7 +1217,6 @@ h6{
     .margin-committee-menu-button a:not(:last-child){
         margin-right: 50px;
     }
-
 }
 
 @media (width >= 576px) {
@@ -1164,68 +1240,6 @@ h6{
         margin-bottom: 30px;
     }
 
-    /*Node Page*/
-
-    .width-node-intro{
-        width: 65%;
-    }
-
-    .margin-content-section{
-        margin-bottom: 50px;
-    }
-
-    .node-image-background {
-        width: 100%;
-        height: 864px;
-        max-height: 864px;
-        padding: 20px;
-        background-color: var(--background-black);
-        background-repeat: no-repeat;
-        background-size: auto 35%;
-        background-position: 50% 30%;
-        background-origin: content-box;
-    }
-
-    .margin-value-statement {
-        margin-top: 50px;
-    }
-
-    .margin-node-menu-item {
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .node-menu-header {
-        font-family: var(--secondary-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 20px;
-        letter-spacing: 0.03px;
-        line-height: var(--line-height-normal);
-    }
-
-    .node-dropdown-chevron {
-        margin-left: 10px;
-        font-family: var(--secondary-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 20px;
-        line-height: var(--line-height-normal);
-    }
-
-    .margin-node-menu-container {
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-right: 0px;
-        margin-bottom: 20px;
-    }
-
-    .node-menu-container a:not(:last-child) {
-        margin-right: 20px;
-    }
-
-    .node-info-left {
-        margin-left: 0px;
-    }
-  
     /*Home*/
     .margin-content-section{
         margin-bottom: 120px;
@@ -1364,7 +1378,7 @@ h6{
 
     .node-card{
         max-width: 345px;
-        max-height: 208px;
+        max-height: 238px;
         margin-left: 0px;
         margin-top: 0px;
         margin-right: 0px;
@@ -1483,51 +1497,16 @@ h6{
         margin-right: 20px;
     }
 
-    .margin-node-menu-item {
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .node-info-left {
-        margin-left: 0px;
-    }
-
-    .node-info-bottom-left {
-        margin-left: 0px;
-    }
-
     .node-info-bottom-right {
         margin-left: 0px;
         margin-top: 0px;
         margin-right: 0px;
     }
 
-    .node-details-text {
-        font-family: var(--main-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 12px;
-        letter-spacing: 0.048px;
-        line-height: var(--line-height-normal);
-        margin-left: 0px;
-    }
-
-    .services-header {
-        font-family: var(--secondary-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 20px;
-        letter-spacing: 0.03px;
-        line-height: var(--line-height-normal);
-    }
-
     .services-title-border {
         border-bottom-style: solid;
         border-bottom-color: var(--black);
         border-bottom-width: thin;
-    }
-
-    .margin-services-title {
-        margin-top: 30px;
-        margin-bottom: 30px;
     }
 
     .width-node-services-div {
@@ -1538,39 +1517,16 @@ h6{
         margin-top: 0px;
     }
 
-    .services-button:not(:last-child) {
-        margin-right: 10px
-    }
-
-    .node-card {
-        width: 345px;
-        height: 238px;
-        padding: 15px;
-    }
-
-    .margin-node-card-title{
-        margin-bottom: 10px;
-    }
-
-    .services-button-margin {
-        margin-top: 10px;
-    }
-
-    /*Node Page*/
     .margin-value-statement{
         margin-top: 60px;
     }
-  
+
     .value-statement{
         width: 65%;
     }
 
     .content-section{
         margin-bottom: 50px;
-    }
-
-    .margin-faq-top{
-        margin-top: 30px;
     }
 
     .committee-menu-container{
@@ -1589,6 +1545,63 @@ h6{
 
     .margin-committee-menu-button a:not(:last-child){
         margin-right: 50px;
+    }
+
+    .width-node-intro{
+        width: 65%;
+    }
+
+    .margin-content-section{
+        margin-bottom: 50px;
+    }
+
+    .node-image-background {
+        width: 100%;
+        height: 864px;
+        max-height: 864px;
+        padding: 20px;
+        background-color: var(--background-black);
+        background-repeat: no-repeat;
+        background-size: auto 35%;
+        background-position: 50% 30%;
+        background-origin: content-box;
+    }
+
+    .node-info-left {
+        margin-left: 0px;
+    }
+
+    /*About*/
+    .margin-committee-title{
+        margin-bottom: 30px;
+    }
+
+    .mobile-menu-title-spacing{
+        margin-left: 49px;
+    }
+
+    .menu-items-spacing{
+        margin-left: 49px;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .mobile-menu {
+        width: 100%;
+        background-color: var(--background-transparent);
+        backdrop-filter: var(--background-blur-mobile);
+        -webkit-backdrop-filter: var(--background-blur-mobile);
+    }
+
+    .navbar-nav .nav-link:not(:last-child) {
+        border-bottom: solid;
+        border-bottom-width: thin;
+        border-bottom-color: var(--white);
+    }
+
+    .margin-faq-top{
+        margin-top: 30px;
     }
 }
 
@@ -1633,10 +1646,6 @@ h6{
         padding-top: 30px;
         padding-bottom: 30px;
     }
-  
-      .node-menu-container a:not(:last-child) {
-        margin-right: 20px;
-    }
 
     .node-menu-header{
         font-family: var(--main-font-family);
@@ -1666,8 +1675,11 @@ h6{
         padding-bottom: 30px;
     }
 
-    .width-node-services-div{
-        width: 95%;
+    .services-header{
+        font-family: var(--main-font-family);
+        font-weight: var(--h3-reg-font-weight);
+        font-size: 48px;
+        line-height: var(--line-height-normal);
     }
 }
 
@@ -1681,9 +1693,7 @@ h6{
         height: 842px;
     }
 
-    .width-node-services-div{
-        width: 80%;
-    }
+
 
     .node-details-text {
         font-family: var(--main-font-family);
@@ -1705,26 +1715,6 @@ h6{
     .services-margin-div{
         margin-top:50px;
     }
-
-    .services-button:not(:last-child) {
-        margin-right: 10px
-    }
-
-    .services-header{
-        font-family: var(--main-font-family);
-        font-weight: var(--h3-reg-font-weight);
-        font-size: 48px;
-        line-height: var(--line-height-normal);
-    }
-
-    .width-node-services-div{
-        width: 75%;
-    }
-
-    .margin-node-card-title{
-        margin-bottom: 10px;
-    }
-
 }
 
 @media (width <= 992px) {
@@ -1759,21 +1749,6 @@ h6{
         width: 100%;
     }
 
-    .node-menu-header{
-        font-family: var(--main-font-family);
-        font-weight: var(--h3-reg-font-weight);
-        font-size: 48px;
-        line-height: var(--line-height-normal);
-    }
-
-    .node-dropdown-chevron{
-        margin-left: 28px;
-        font-family: var(--main-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 24px;
-        line-height: var(--line-height-normal);
-    }
-
     .margin-node-menu-container{
         margin-left: 50px;
         margin-top: 50px;
@@ -1806,8 +1781,8 @@ h6{
         margin-top:50px;
     }
 
-    .services-button:not(:last-child) {
-        margin-right: 10px
+    .services-button a:not(:last-child) {
+        margin-right: 20px
     }
 
     .services-header{
@@ -1823,7 +1798,7 @@ h6{
     }
 
     .width-node-services-div{
-        width: 75%;
+        width: 80%;
     }
 
     .node-card{
@@ -1837,14 +1812,6 @@ h6{
         padding-right: 17px;
         padding-top: 24px;
         padding-bottom: 24px;
-    }
-
-    .margin-node-card-title{
-        margin-bottom: 10px;
-    }
-
-    .services-button-margin{
-        margin-top: 30px;
     }
 
     /*Body Components*/
