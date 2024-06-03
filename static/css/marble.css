@@ -685,7 +685,6 @@ h6{
     cursor: pointer;
 }
 
-
 .margin-node-menu-item {
     margin-top: 10px;
     margin-bottom: 20px;
@@ -1116,6 +1115,26 @@ h6{
         width: 95%;
     }
 
+    .node-menu-header {
+        font-family: var(--secondary-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 20px;
+        letter-spacing: 0.03px;
+        line-height: var(--line-height-normal);
+    }
+
+    .node-menu-container a:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .node-dropdown-chevron {
+        margin-left: 10px;
+        font-family: var(--secondary-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 20px;
+        line-height: var(--line-height-normal);
+    }
+
     .node-card{
         max-width: 345px;
         max-height: 208px;
@@ -1173,7 +1192,6 @@ h6{
     .margin-committee-menu-button a:not(:last-child){
         margin-right: 50px;
     }
-
 }
 
 @media (width >= 576px) {
@@ -1192,36 +1210,11 @@ h6{
         width: 45%;
     }
 
-    /*Node Page*/
-
-    .width-node-intro{
-        width: 65%;
+    /*Body Components*/
+    .header-title-margin{
+        margin-bottom: 30px;
     }
 
-    .margin-content-section{
-        margin-bottom: 50px;
-    }
-
-    .node-image-background {
-        width: 100%;
-        height: 864px;
-        max-height: 864px;
-        padding: 20px;
-        background-color: var(--background-black);
-        background-repeat: no-repeat;
-        background-size: auto 35%;
-        background-position: 50% 30%;
-        background-origin: content-box;
-    }
-
-    .margin-value-statement {
-        margin-top: 50px;
-    }
-
-    .node-info-left {
-        margin-left: 0px;
-    }
-  
     /*Home*/
     .width-content-section{
         width: 75%;
@@ -1355,7 +1348,7 @@ h6{
 
     .node-card{
         max-width: 345px;
-        max-height: 208px;
+        max-height: 238px;
         margin-left: 0px;
         margin-top: 0px;
         margin-right: 0px;
@@ -1376,80 +1369,6 @@ h6{
 
     .services-button a:not(:last-child) {
         margin-right: 10px
-    }
-
-    /*About*/
-    .margin-committee-title{
-        margin-bottom: 30px;
-    }
-}
-
-@media (width >= 576px) {
-    /*Body Components*/
-
-    .banner-title-home{
-        background: var(--linear-gradient-marble);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-  
-    .mobile-menu-title-spacing{
-        margin-left: 49px;
-    }
-
-    .menu-items-spacing{
-        margin-left: 49px;
-        margin-bottom: 0px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    .banner-width-mobile{
-        width: 90%;
-    }
-  
-    .margin-banner-title{
-        margin-bottom: 50px;
-    }
-
-    .hero-menu-wrap{
-        width: 500px;
-        height: 400px;
-        margin-left: 50px;
-        padding: 40px;
-        background-color: var(--black-opacity-midlight);
-        box-shadow: var(--elevation-3);
-        z-index: 3;
-    }
-
-    .hero-menu{
-        width: 45%;
-    }
-
-    .mobile-menu {
-        width: 100%;
-        background-color: var(--background-transparent);
-        backdrop-filter: var(--background-blur-mobile);
-        -webkit-backdrop-filter: var(--background-blur-mobile);
-    }
-
-    .navbar-nav .nav-link:not(:last-child) {
-        border-bottom: solid;
-        border-bottom-width: thin;
-        border-bottom-color: var(--white);
-    }
-  
-    .margin-faq-top{
-        margin-top: 30px;
-    }
-
-    /*Node Page*/
-    .margin-value-statement {
-        margin-top: 50px;
-    }
-
-    .width-node-intro{
-        width: 65%;
     }
 
     .node-menu-header {
@@ -1479,46 +1398,16 @@ h6{
         margin-right: 20px;
     }
 
-    .node-info-left {
-        margin-left: 0px;
-    }
-
-    .node-info-bottom-left {
-        margin-left: 0px;
-    }
-
     .node-info-bottom-right {
         margin-left: 0px;
         margin-top: 0px;
         margin-right: 0px;
     }
 
-    .node-details-text {
-        font-family: var(--main-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 12px;
-        letter-spacing: 0.048px;
-        line-height: var(--line-height-normal);
-        margin-left: 0px;
-    }
-
-    .services-header {
-        font-family: var(--secondary-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 20px;
-        letter-spacing: 0.03px;
-        line-height: var(--line-height-normal);
-    }
-
     .services-title-border {
         border-bottom-style: solid;
         border-bottom-color: var(--black);
         border-bottom-width: thin;
-    }
-
-    .margin-services-title {
-        margin-top: 30px;
-        margin-bottom: 30px;
     }
 
     .width-node-services-div {
@@ -1529,27 +1418,16 @@ h6{
         margin-top: 0px;
     }
 
-    .services-button a:not(:last-child) {
-        margin-right: 10px
-    }
-
-    .node-card {
-        width: 345px;
-        height: 238px;
-        padding: 15px;
-    }
-
-    /*Node Page*/
     .margin-value-statement{
         margin-top: 60px;
     }
-  
+
     .value-statement{
         width: 65%;
     }
 
-    .margin-faq-top{
-        margin-top: 30px;
+    .content-section{
+        margin-bottom: 50px;
     }
 
     .committee-menu-container{
@@ -1568,6 +1446,63 @@ h6{
 
     .margin-committee-menu-button a:not(:last-child){
         margin-right: 50px;
+    }
+
+    .width-node-intro{
+        width: 65%;
+    }
+
+    .margin-content-section{
+        margin-bottom: 50px;
+    }
+
+    .node-image-background {
+        width: 100%;
+        height: 864px;
+        max-height: 864px;
+        padding: 20px;
+        background-color: var(--background-black);
+        background-repeat: no-repeat;
+        background-size: auto 35%;
+        background-position: 50% 30%;
+        background-origin: content-box;
+    }
+
+    .node-info-left {
+        margin-left: 0px;
+    }
+
+    /*About*/
+    .margin-committee-title{
+        margin-bottom: 30px;
+    }
+
+    .mobile-menu-title-spacing{
+        margin-left: 49px;
+    }
+
+    .menu-items-spacing{
+        margin-left: 49px;
+        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .mobile-menu {
+        width: 100%;
+        background-color: var(--background-transparent);
+        backdrop-filter: var(--background-blur-mobile);
+        -webkit-backdrop-filter: var(--background-blur-mobile);
+    }
+
+    .navbar-nav .nav-link:not(:last-child) {
+        border-bottom: solid;
+        border-bottom-width: thin;
+        border-bottom-color: var(--white);
+    }
+
+    .margin-faq-top{
+        margin-top: 30px;
     }
 }
 
@@ -1611,10 +1546,6 @@ h6{
         margin-bottom: 0px;
         padding-top: 30px;
         padding-bottom: 30px;
-    }
-
-    .node-menu-container a:not(:last-child) {
-        margin-right: 20px;
     }
 
     .node-menu-header{
@@ -1723,21 +1654,6 @@ h6{
     /*Node Page*/
     .width-node-intro{
         width: 100%;
-    }
-
-    .node-menu-header{
-        font-family: var(--main-font-family);
-        font-weight: var(--h3-reg-font-weight);
-        font-size: 48px;
-        line-height: var(--line-height-normal);
-    }
-
-    .node-dropdown-chevron{
-        margin-left: 28px;
-        font-family: var(--main-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 24px;
-        line-height: var(--line-height-normal);
     }
 
     .margin-node-menu-container{
