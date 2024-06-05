@@ -654,6 +654,13 @@ h6{
 }
 
 /*FAQ*/
+.margin-faq-content{
+    margin-top: 20px;
+}
+
+.margin-feedback-card{
+    margin-bottom: 30px;
+}
 
 /*Extras*/
 
@@ -1046,6 +1053,11 @@ h6{
         margin-top: 30px;
     }
 
+    .margin-usage-text{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
     .padding-usage-content{
         padding-top: 20px;
     }
@@ -1240,6 +1252,11 @@ h6{
 
     .margin-usage-card{
         margin-top: 30px;
+    }
+
+    .margin-usage-text{
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
     .padding-usage-content{
@@ -1641,6 +1658,11 @@ h6{
     /*Home*/
     .margin-usage-card{
         margin-top: 0px;
+    }
+
+    .margin-usage-text{
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .user-image-height {
