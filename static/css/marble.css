@@ -426,6 +426,13 @@ h6{
     );
 }
 
+.mobile-menu {
+    width: 100%;
+    background-color: var(--background-transparent);
+    backdrop-filter: var(--background-blur-mobile);
+    -webkit-backdrop-filter: var(--background-blur-mobile);
+}
+
 .mobile-menu-title-default{
     color: var(--indigo-100);
     margin-left: 49px;
