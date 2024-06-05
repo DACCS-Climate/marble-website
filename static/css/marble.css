@@ -1145,6 +1145,10 @@ h6{
         margin-right: 0px;
     }
 
+    .margin-node-email{
+        margin-top: 0px;
+    }
+
     .services-header {
         font-family: var(--secondary-font-family);
         font-weight: var(--reg-font-weight);
@@ -1778,6 +1782,10 @@ h6{
     .node-info-bottom-right{
         margin-top:0px;
         margin-right: 50px;
+    }
+
+    .margin-node-email{
+        margin-top: 60px;
     }
 
     .services-margin-div{
