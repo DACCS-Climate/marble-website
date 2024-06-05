@@ -1629,6 +1629,13 @@ h6{
 }
 
 @media (width <= 992px) {
+
+    .banner-title-home{
+        background: var(--linear-gradient-marble);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     .menu-text-colour{
         color: var(--text-on-dark);
         text-decoration: none;
