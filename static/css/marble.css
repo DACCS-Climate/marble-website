@@ -327,13 +327,17 @@ h6{
 }
 
 /*Body Components*/
+.paragraph-href{
+    color: var(--primary);
+    text-decoration: none;
+}
+
 .header-title-margin{
     margin-bottom: 30px;
 }
 
-.paragraph-href{
-    color: var(--primary);
-    text-decoration: none;
+.header-card-title-margin{
+    margin-bottom: 20px;
 }
 
 /*Menu*/
@@ -650,29 +654,19 @@ h6{
 }
 
 /*FAQ*/
-
 .margin-faq-content{
     margin-top: 20px;
 }
 
-/*Extras*/
-
-/*Feedback*/
-
-.feedback-card{
-    margin-bottom: 50px;
-}
-
-/*Useful Link*/
-
-.useful-link{
+.margin-feedback-card{
     margin-bottom: 30px;
 }
 
-/*Social Media*/
+/*Extras*/
 
-.social-media-section{
-    margin-top: 120px;
+/*Useful Link*/
+.useful-link{
+    margin-bottom: 30px;
 }
 
 /*Node Page*/
@@ -981,6 +975,7 @@ h6{
 
 /*Media Queries*/
 @media (width < 576px){
+    /*Menu*/
     .navbar-nav .nav-link:not(:last-child){
         border-bottom: solid;
         border-bottom-width: thin;
@@ -1058,6 +1053,11 @@ h6{
         margin-top: 30px;
     }
 
+    .margin-usage-text{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
     .padding-usage-content{
         padding-top: 20px;
     }
@@ -1071,9 +1071,8 @@ h6{
        width: 95%;
     }
 
-    .spacing-faq-card{
+    .padding-faq-card{
         width: 100%;
-        margin-top: 30px;
         padding-left: 25px;
         padding-right: 25px;
         padding-top: 25px;
@@ -1173,15 +1172,11 @@ h6{
     .services-button:not(:last-child) {
         margin-right: 10px
     }
-  
+
     /*About*/
     .value-statement{
         margin-top: 60px;
         width: 65%;
-    }
-
-    .content-section{
-        margin-bottom: 50px;
     }
 
     .margin-faq-top{
@@ -1233,10 +1228,6 @@ h6{
     }
 
     /*Home*/
-    .margin-content-section{
-        margin-bottom: 120px;
-    }
-
     .width-content-section{
         width: 75%;
     }
@@ -1263,6 +1254,11 @@ h6{
         margin-top: 30px;
     }
 
+    .margin-usage-text{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
     .padding-usage-content{
         padding-top: 25px;
     }
@@ -1276,9 +1272,8 @@ h6{
        width: 75%;
     }
 
-    .spacing-faq-card{
+    .padding-faq-card{
         width: 100%;
-        margin-top: 20px;
         padding-left: 25px;
         padding-right: 25px;
         padding-top: 48px;
@@ -1607,14 +1602,7 @@ h6{
 }
 
 @media (width >= 992px) {
-    /*Home*/
-    .margin-usage-card{
-        margin-top: 0px;
-    }
 
-    .user-image-height {
-        height: 842px;
-    }
 
 
 
@@ -1672,6 +1660,24 @@ h6{
         background-color: var(--background-transparent);
         backdrop-filter: none;
         -webkit-backdrop-filter: none;
+    }
+
+    /*Home*/
+    .margin-usage-card{
+        margin-top: 0px;
+    }
+
+    .margin-usage-text{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .user-image-height {
+        height: 842px;
+    }
+
+    .margin-content-section{
+        margin-bottom: 120px;
     }
 
     /*Node Page*/
@@ -1771,12 +1777,8 @@ h6{
         width: auto;
     }
 
-    .content-section{
-        margin-bottom: 120px;
-    }
-
     .margin-faq-top{
-        margin-top: 9px;
+        margin-top: 20px;
     }
 
     .committee-menu-container{
