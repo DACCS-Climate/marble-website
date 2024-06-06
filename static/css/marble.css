@@ -679,7 +679,11 @@ h6{
 /*Node Page*/
 /*See media queries at end of file*/
 .node-main-info{
-    margin-bottom: 27px;
+    margin-bottom: 30px;
+}
+
+.node-main-info a h2, .node-main-info p{
+    margin-bottom: unset;
 }
 
 .node-info-text{
@@ -1121,6 +1125,35 @@ h6{
     }
 
     /*Node*/
+    .node-image-background {
+        width: 100%;
+        height: 864px;
+        max-height: 864px;
+        padding: 20px;
+        background-color: var(--background-black);
+        background-repeat: no-repeat;
+        background-size: auto 35%;
+        background-position: 50% 30%;
+        background-origin: content-box;
+    }
+
+    .node-info-left {
+        margin-left: 0px;
+    }
+
+    .node-info-bottom-left {
+        margin-left: 0px;
+    }
+
+    .node-info-bottom-right {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    .margin-node-email{
+        margin-top: 0px;
+    }
 
     .services-header {
         font-family: var(--secondary-font-family);
@@ -1132,26 +1165,6 @@ h6{
 
     .width-node-services-div{
         width: 95%;
-    }
-
-    .node-menu-header {
-        font-family: var(--secondary-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 20px;
-        letter-spacing: 0.03px;
-        line-height: var(--line-height-normal);
-    }
-
-    .node-menu-container a:not(:last-child) {
-        margin-right: 20px;
-    }
-
-    .node-dropdown-chevron {
-        margin-left: 10px;
-        font-family: var(--secondary-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 20px;
-        line-height: var(--line-height-normal);
     }
 
     .node-card{
@@ -1234,6 +1247,65 @@ h6{
         margin-bottom: 30px;
     }
 
+    /*Node Page*/
+
+    .width-node-intro{
+        width: 65%;
+    }
+
+    .margin-content-section{
+        margin-bottom: 50px;
+    }
+
+    .margin-value-statement {
+        margin-top: 50px;
+    }
+
+    .margin-node-menu-item {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .node-menu-header {
+        font-family: var(--secondary-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 20px;
+        letter-spacing: 0.03px;
+        line-height: var(--line-height-normal);
+    }
+
+    .node-dropdown-chevron {
+        margin-left: 10px;
+        font-family: var(--secondary-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 20px;
+        line-height: var(--line-height-normal);
+    }
+
+    .margin-node-menu-container {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .node-menu-container a:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .node-image-background{
+        width: 100%;
+        height: 692px;
+        max-height: 692px;
+        background-color: var(--background-black);
+        background-repeat: no-repeat;
+        background-size: auto 80%;
+        background-position: center;
+        background-origin: content-box;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+  
     /*Home*/
     .width-content-section{
         width: 75%;
@@ -1422,10 +1494,31 @@ h6{
         margin-right: 20px;
     }
 
+    .margin-node-menu-item {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .node-info-left {
+        margin-left: 30px;
+    }
+
+    .node-info-bottom-left {
+        margin-left: 30px;
+    }
+  
     .node-info-bottom-right {
-        margin-left: 0px;
+        margin-left: 30px;
         margin-top: 0px;
-        margin-right: 0px;
+        margin-right: 30px;
+    }
+
+    .services-header {
+        font-family: var(--secondary-font-family);
+        font-weight: var(--reg-font-weight);
+        font-size: 20px;
+        letter-spacing: 0.03px;
+        line-height: var(--line-height-normal);
     }
 
     .services-title-border {
@@ -1587,6 +1680,10 @@ h6{
         line-height: var(--line-height-normal);
     }
 
+    .width-node-services-div{
+        width: 95%;
+    }
+
     .node-image-background{
         width: 100%;
         height: 692px;
@@ -1613,20 +1710,7 @@ h6{
 
 
 
-    .node-details-text {
-        font-family: var(--main-font-family);
-        font-weight: var(--reg-font-weight);
-        font-size: 16px;
-        letter-spacing: 0.024px;
-        line-height: var(--line-height-normal);
-        margin-left: 0px;
-    }
-
     .node-info-left{
-        margin-left: 50px;
-    }
-
-    .node-info-bottom-left{
         margin-left: 50px;
     }
 
@@ -1718,6 +1802,10 @@ h6{
     .node-info-bottom-right{
         margin-top:0px;
         margin-right: 50px;
+    }
+
+    .margin-node-email{
+        margin-top: 60px;
     }
 
     .services-margin-div{
