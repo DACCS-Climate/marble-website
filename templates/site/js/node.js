@@ -110,12 +110,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const initial_node_count = 3;
         node_keys.forEach((key, index) => {
             const node_menu_item = document.createElement('div'); //Replace h3 tag for mobile
-            node_menu_item.id = key;
+            
             node_menu_item.classList.add("node-menu-header", "margin-node-menu-item");
             node_menu_item.setAttribute('onclick', 'getNode(' + '"'+ key +'"' + ')');
             node_menu_item.innerText = json[key].name;
             if (index < initial_node_count) {
                 const h3_node_menu_item = document.createElement("a");
+                h3_node_menu_item.id = key;
                 h3_node_menu_item.setAttribute("tabindex",  '"' + index +'"' );
                 h3_node_menu_item.classList.add("node-menu-item")
                 h3_node_menu_item.appendChild(node_menu_item)
@@ -129,8 +130,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             options.push({
-                "div":"document.getElementById(" + '"' + key + '"' +")",
-                "button":"document.getElementById(" + '"' + key + '"' +")",
+                "button":document.getElementById(key),
+                "div":document.getElementById(key),
                 "hash":key});
         })
         if (node_count <= initial_node_count) {
