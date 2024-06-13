@@ -84,7 +84,6 @@ const nodeBackgroundClass=[
     "node-planet-background3"
 ]
 
-let options = [];
 
 document.addEventListener("DOMContentLoaded", function () {
     const githubURL = "{{ node_registry_url }}";
@@ -110,7 +109,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const initial_node_count = 3;
         node_keys.forEach((key, index) => {
             const node_menu_item = document.createElement('div'); //Replace h3 tag for mobile
-            
             node_menu_item.classList.add("node-menu-header", "margin-node-menu-item");
             node_menu_item.setAttribute('onclick', 'getNode(' + '"'+ key +'"' + ')');
             node_menu_item.innerText = json[key].name;
@@ -128,17 +126,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 node_menu_item.setAttribute("tabindex", `${index - initial_node_count}`)
                 node_dropdown_content.appendChild(h5_dropdown_item);
             }
-
-            let options_object = {};
-            
-            options_object["button"] = document.getElementById(key);
-            options_object["hash"] = key;
-            
-            options.push(options_object);
-            /*
-            options.push({
-                "button":document.getElementById(key),
-                "hash":key});*/
         })
         if (node_count <= initial_node_count) {
             node_dropdown_container.remove();
@@ -178,4 +165,26 @@ function capitalize(word){
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
 
-{% include "partials/menu-options.js" %}
+/*Builds and uses options dictionary to change menu items in Node page and add hash to Node page URL*/
+function buildMenuOptions(){
+    let options = [];
+    const githubURL = "{{ node_registry_url }}";
+
+    fetch(githubURL).then(resp => resp.json()).then(json => {
+        var node_keys = Object.keys(json);
+        node_keys.forEach((key, index) => {
+
+            let options_object = {};
+            
+            options_object["button"] = document.getElementById(key);
+            options_object["hash"] = key;
+            
+            options.push(options_object);
+        })
+    
+        {% include "partials/menu-options.js" %}
+
+    })
+}
+
+buildMenuOptions()
