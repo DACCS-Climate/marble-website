@@ -129,10 +129,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 node_dropdown_content.appendChild(h5_dropdown_item);
             }
 
+            let options_object = {};
+            
+            options_object["button"] = document.getElementById(key);
+            options_object["hash"] = key;
+            
+            options.push(options_object);
+            /*
             options.push({
                 "button":document.getElementById(key),
-                "div":document.getElementById(key),
-                "hash":key});
+                "hash":key});*/
         })
         if (node_count <= initial_node_count) {
             node_dropdown_container.remove();
