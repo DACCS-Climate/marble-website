@@ -87,6 +87,7 @@ const nodeBackgroundClass=[
 
 document.addEventListener("DOMContentLoaded", function () {
     const githubURL = "{{ node_registry_url }}";
+    let options = [];
     fetch(githubURL).then(resp => resp.json()).then(json => {
         const menu_elem = document.getElementById("nodeMenu");
         const node_dropdown_container = document.getElementById("nodeDropdownContainer")
@@ -126,7 +127,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 node_menu_item.setAttribute("tabindex", `${index - initial_node_count}`)
                 node_dropdown_content.appendChild(h5_dropdown_item);
             }
+
+            /*Builds dictionary to change colour of menu items in Node page and add hash to Node page URL*/
+            let options_object = {};
+            options_object["button"] = document.getElementById(key);
+            options_object["hash"] = key;
+            
+            options.push(options_object);
+
         })
+        /*Uses options dictionary to change colour of menu items in Node page and add hash to Node page URL*/
+        {% include "partials/menu-options.js" %}
+
         if (node_count <= initial_node_count) {
             node_dropdown_container.remove();
         }
@@ -164,27 +176,3 @@ function getNode(node_id){
 function capitalize(word){
     return word.charAt(0).toUpperCase() + word.slice(1);
 }
-
-/*Builds and uses options dictionary to change menu items in Node page and add hash to Node page URL*/
-function buildMenuOptions(){
-    let options = [];
-    const githubURL = "{{ node_registry_url }}";
-
-    fetch(githubURL).then(resp => resp.json()).then(json => {
-        var node_keys = Object.keys(json);
-        node_keys.forEach((key, index) => {
-
-            let options_object = {};
-            
-            options_object["button"] = document.getElementById(key);
-            options_object["hash"] = key;
-            
-            options.push(options_object);
-        })
-    
-        {% include "partials/menu-options.js" %}
-
-    })
-}
-
-buildMenuOptions()
