@@ -29,7 +29,7 @@
                         {% set href = organization["href"] %}
                         {% set title = organization["name"] %}
                         {% set text = organization["name"] %}
-                        {% set icon_class = organization["icon_class"]|default("fa-building-columns") %}
+                        {% set icon_class = organization["icon_class"]|default("fa-solid fa-building-columns") %}
                         {% include "partials/profile-link.html" %}
                     {% endwith %}
             {% endif %}
