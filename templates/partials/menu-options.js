@@ -17,14 +17,12 @@ options.forEach((option) => {
 })
 
 setInitialOption = () => {
-    window.onload = () => {
-        if (window.location.hash) {
-            options.forEach((option) => {
-                if (`#${option.hash}` === window.location.hash) {
-                    option.button.click();
-                }
-            })
-        }
+    if (window.location.hash) {
+        options.forEach((option) => {
+            if (`#${option.hash}` === window.location.hash) {
+                option.button.click();
+            }
+        })
     }
 }
 
