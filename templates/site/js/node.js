@@ -99,19 +99,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (node_count > 0) {
             const url_params = new URLSearchParams(window.location.search);
             const param_node_key = url_params.get("node");
-            const url_hash = window.location.hash;
-            let hash_node_key;
-
-            if(url_hash){
-                hash_node_key = url_hash.replace("#","");
-                // Display the node's information and services from the hash string.
-                getNode(hash_node_key);
-            }
-            else{
-                const default_node_key = json[param_node_key] ? param_node_key : node_keys[0]
-                // Display the first node's information and services by default.
-                getNode(default_node_key);
-            }
+            const default_node_key = json[param_node_key] ? param_node_key : node_keys[0]
+            // Display the first node's information and services by default.
+            getNode(default_node_key);
         }
 
         // Node Menu
