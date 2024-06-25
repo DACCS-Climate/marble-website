@@ -84,8 +84,10 @@ const nodeBackgroundClass=[
     "node-planet-background3"
 ]
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const githubURL = "{{ node_registry_url }}";
+    let options = [];
     fetch(githubURL).then(resp => resp.json()).then(json => {
         const menu_elem = document.getElementById("nodeMenu");
         const node_dropdown_container = document.getElementById("nodeDropdownContainer")
@@ -108,8 +110,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const initial_node_count = 3;
         node_keys.forEach((key, index) => {
             const node_menu_item = document.createElement('div'); //Replace h3 tag for mobile
+            node_menu_item.id = key;
             node_menu_item.classList.add("node-menu-header", "margin-node-menu-item");
-            node_menu_item.setAttribute('onclick', 'getNode(' + '"'+ key +'"' + ')');
+            node_menu_item.addEventListener("click", (event) => {
+                event.stopPropagation();
+                getNode(key);
+            })
+        
             node_menu_item.innerText = json[key].name;
             if (index < initial_node_count) {
                 const h3_node_menu_item = document.createElement("a");
@@ -124,7 +131,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 node_menu_item.setAttribute("tabindex", `${index - initial_node_count}`)
                 node_dropdown_content.appendChild(h5_dropdown_item);
             }
+
+            /*Builds options array to change colour of menu items in Node page and add hash to Node page URL*/
+            let options_object = {};
+            options_object["button"] = node_menu_item;
+            options_object["hash"] = key;
+            
+            options.push(options_object);
+
         })
+        /*Uses options array to change colour of menu items in Node page and add hash to Node page URL*/
+        {% include "partials/menu-options.js" %}
+
         if (node_count <= initial_node_count) {
             node_dropdown_container.remove();
         }
