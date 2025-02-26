@@ -10,31 +10,46 @@
         </div>
 
         <div class="banner-overlay-container">
-           <div class="container-fluid">
-             <div class="row">
-                 <div class="d-flex justify-content-center">
-                     <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between banner-overlay-elements">
-                         <div class="margin-banner-title">
-                             <h1><span id="banner-title" class="d-none d-md-flex {{ banner_title_class }}">{{ page_title }}</span></h1>
-                             <h2><span id="banner-title" class="d-flex d-md-none {{ banner_title_class }}">{{ page_title }}</span></h2>
-                             <p class="banner-slogan">{{ page_slogan|default("") }}</p>
-                         </div>
-
-                         <div class="d-flex align-items-center hero-menu-wrap">
-                             <div class="hero-menu">
-                               <h5 class="quick-start-title">Quick Start</h5>
-                               <ul>
-                                   <li><a href="tutorials/index.html" class="subtitle-2">Tutorials</a></li>
-                                   <li><a href="node.html" class="subtitle-2">Choose a Node</a></li>
-                                   <li><a href="tutorials/users/catalog/catalog.html" class="subtitle-2">Discover Data</a></li> <!-- TODO: update this to stac-browser when implemented -->
-                                   <li><a href="https://discourse.marbleclimate.com" target="_blank" class="subtitle-2">Forum</a></li>
-                               </ul>
+            <div class="banner-overlay-content">
+               <div class="container-fluid">
+                 <div class="row">
+                     <div class="d-flex justify-content-center">
+                         <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between banner-overlay-elements">
+                             <div class="margin-banner-title">
+                                 <h1><span id="banner-title" class="d-none d-md-flex {{ banner_title_class }}">{{ page_title }}</span></h1>
+                                 <h2><span id="banner-title" class="d-flex d-md-none {{ banner_title_class }}">{{ page_title }}</span></h2>
+                                 <p class="banner-slogan">{{ page_slogan|default("") }}</p>
                              </div>
-                         </div>
-                    </div>
+
+                             <div class="d-flex align-items-center hero-menu-wrap">
+                                 <div class="hero-menu">
+                                   <h5 class="quick-start-title">Quick Start</h5>
+                                   <ul>
+                                       <li><a href="tutorials/index.html" class="subtitle-2">Tutorials</a></li>
+                                       <li><a href="node.html" class="subtitle-2">Choose a Node</a></li>
+                                       <li><a href="tutorials/users/catalog/catalog.html" class="subtitle-2">Discover Data</a></li> <!-- TODO: update this to stac-browser when implemented -->
+                                       <li><a href="https://discourse.marbleclimate.com" target="_blank" class="subtitle-2">Forum</a></li>
+                                   </ul>
+                                 </div>
+                             </div>
+                        </div>
+                     </div>
+
                  </div>
              </div>
-         </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="d-flex flex-column justify-content-center  align-items-center">
+                         <div>
+                             <h4 class="banner-scroll-text"> Scroll</h4>
+                         </div>
+                         <div>
+                             <i class="fa-solid fa-chevron-down banner-scroll-icon"></i>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            </div>
         </div>
     {% else %}
         {% if page == "node" %}
