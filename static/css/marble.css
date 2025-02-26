@@ -42,6 +42,7 @@
     --linear-gradient-black: linear-gradient(90deg,transparent, rgba(0,0,0,0.5), transparent);
     --linear-gradient-marble: linear-gradient(90deg, #3F6BAE 3%, #6DA39F 33.33%, #D89E37 66.67%, #823628 100%);
     --white: #FFFFFF;
+    --white-opacity-lighter: rgba(255,255,255,0.3);
 
     --border-black: #000000;
 
@@ -524,6 +525,15 @@ h6{
     background-color: var(--background-transparent);
 }
 
+.banner-overlay-content{
+    width: 100%;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .banner-overlay-container-node{
     min-height: 60vh;
     padding: 60px 0 0 0;
@@ -543,6 +553,16 @@ h6{
 
 .banner-overlay-elements{
     width: 75%;
+}
+
+.banner-scroll-text{
+    color: var(--white-opacity-lighter);
+    text-transform: uppercase;
+    margin-bottom: unset;
+}
+
+.banner-scroll-icon{
+    color: var(--white-opacity-lighter);
 }
 
 /*Quick Start menu*/
