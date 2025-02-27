@@ -42,6 +42,8 @@
     --linear-gradient-black: linear-gradient(90deg,transparent, rgba(0,0,0,0.5), transparent);
     --linear-gradient-marble: linear-gradient(90deg, #3F6BAE 3%, #6DA39F 33.33%, #D89E37 66.67%, #823628 100%);
     --white: #FFFFFF;
+    --white-opacity-lighter: rgba(255,255,255,0.3);
+    --primary-opacity-middark: rgba(48,79,255,0.75);
 
     --border-black: #000000;
 
@@ -524,6 +526,20 @@ h6{
     background-color: var(--background-transparent);
 }
 
+.banner-scroll-container{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+}
+
+.banner-overlay-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .banner-overlay-container-node{
     min-height: 60vh;
     padding: 60px 0 0 0;
@@ -543,6 +559,11 @@ h6{
 
 .banner-overlay-elements{
     width: 75%;
+}
+
+.banner-scroll-icon{
+    font-size: 60px;
+    color: var(--primary-opacity-middark);
 }
 
 /*Quick Start menu*/
