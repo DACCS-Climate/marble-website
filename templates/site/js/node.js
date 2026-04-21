@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Node Menu
         // If number of nodes larger than initial_node_count, create a menu with these first nodes, and create a dropdown
         // for the rest. If not, just create a menu with the nodes in the node registry
-        const initial_node_count = 3;
+        const initial_node_count = 4;
         node_keys.forEach((key, index) => {
             const node_menu_item = document.createElement('div'); //Replace h3 tag for mobile
             node_menu_item.id = key;
